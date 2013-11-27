@@ -1,6 +1,7 @@
 <?php 
 class ControllerAccountAccount extends Controller { 
 	public function index() {
+            echo "deze file aanpassen voor account";
 		if (!$this->customer->isLogged()) {
 	  		$this->session->data['redirect'] = $this->url->link('account/account', '', 'SSL');
 	  
