@@ -75,6 +75,9 @@ class ControllerAccountAccount extends Controller {
 			$this->template = 'default/template/account/account.tpl';
 		}
 		
+                var_dump($this->data);
+                exit();
+                
 		$this->children = array(
 			'common/column_left',
 			'common/column_right',
