@@ -4,3 +4,5 @@ system/logs/error.log
 system/image/cache
 
 config.php
+
+*.jpg
