@@ -23,6 +23,7 @@
     <?php } ?>
     <div class="right">
       <div class="description">
+          <?php echo $visualizer; ?>
         <?php if ($manufacturer) { ?>
         <span><?php echo $text_manufacturer; ?></span> <a href="<?php echo $manufacturers; ?>"><?php echo $manufacturer; ?></a><br />
         <?php } ?>
