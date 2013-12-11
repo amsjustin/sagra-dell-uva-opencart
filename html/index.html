@@ -97,7 +97,9 @@
                                     <div class="product__content-title">
                                         <h1>Duetto Greco Matera DOC</h1>
                                     </div>
-                                    <div class="product__content-visual"></div>
+                                    <div class="product__content-visual">
+                                        <canvas id="product-visual-01" width="180" height="180"></canvas>
+                                    </div>
                                     <div class="product__content-price">
                                         <a href="#">€29,95 <i class="icon-arrow-right"></i></a>
                                     </div>
@@ -159,6 +161,7 @@
         <script type="text/javascript" src="js/lib/jquery-1.8.2.min.js"></script>
         <script type="text/javascript" src="js/lib/jquery.inputfield.js"></script>
         <script type="text/javascript" src="js/lib/respond.min.js"></script>
+        <script type="text/javascript" src="js/lib/chart.min.js"></script>
 
         <script type="text/javascript">
             var menuState = false;
@@ -173,6 +176,59 @@
                     menuState = true;
                 }
             });
+            
+            var wines = [{
+                "id": 1,
+                "radar": [28,48,40,19,96,27,100]
+            },{
+                "id": 2,
+                "radar": [28,48,40,19,96,27,100]
+            },{
+                "id": 3,
+                "radar": [28,48,40,19,96,27,100]
+            }];
+            
+            var userRadar = [65,59,90,81,56,55,40];
+//            var wineRader = [28,48,40,19,96,27,100];
+            
+            var forEach = function(array, action) {
+                
+                for(i = 0; i < array.length; i++) {
+                    action(array[i]);
+                }
+            }
+            
+            var createRadarChart = function(array) {
+                console.log(array.id);
+                
+//                var userChart = array.user
+//                var wineChart
+//                var canvasId
+//                
+//                var radarChartData = {
+//                    labels : ["Eating","Drinking","Sleeping","Designing","Coding","Partying","Running"],
+//                    datasets : [
+//                        {
+//                            fillColor : "rgba(220,220,220,0.5)",
+//                            strokeColor : "rgba(220,220,220,1)",
+//                            pointColor : "rgba(220,220,220,1)",
+//                            pointStrokeColor : "#fff",
+//                            data : userRadar
+//                        },
+//                        {
+//                            fillColor : "rgba(151,187,205,0.5)",
+//                            strokeColor : "rgba(151,187,205,1)",
+//                            pointColor : "rgba(151,187,205,1)",
+//                            pointStrokeColor : "#fff",
+//                            data : wineRader
+//                        }
+//                    ]	
+//                }
+//                var myRadar = new Chart(document.getElementById("product-visual-01").getContext("2d")).Radar(radarChartData,{scaleShowLabels : false, pointLabelFontSize : 10});
+            }
+            
+            forEach(wines, createRadarChart);
+            
         </script>
 
     </body>
