@@ -48,7 +48,8 @@
     </head>
     <body>
         <div class="wrapper">
-            <header class="header">
+            <div class="main">
+                <header class="header">
                     <div class="header__top">
                         <div class="inner">
                             <div class="header__logo">
@@ -90,12 +91,9 @@
                         </div>
                     </div>
                 </header>
-            <?php if ($categories) { ?>
-            
-            <?php } ?>
-            <?php if ($error) { ?>
-
-            <div class="warning"><?php echo $error ?><img src="catalog/view/theme/default/image/close.png" alt="" class="close" /></div>
-
-            <?php } ?>
-            <div id="notification"></div>
+                <section class="content">
+                    <div class="inner">
+                    <?php if ($error) { ?>
+                    <div class="warning"><?php echo $error ?><img src="catalog/view/theme/default/image/close.png" alt="" class="close" /></div>
+                    <?php } ?>
+                    <div id="notification"></div>

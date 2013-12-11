@@ -98,17 +98,61 @@
                                         <h1>Duetto Greco Matera DOC</h1>
                                     </div>
                                     <div class="product__content-visual">
-                                        <canvas id="product-visual-01" width="180" height="180"></canvas>
+                                        <canvas id="product-visual-1" width="180" height="180"></canvas>
                                     </div>
                                     <div class="product__content-price">
                                         <a href="#">€29,95 <i class="icon-arrow-right"></i></a>
                                     </div>
                                 </div>
                             </article>
-                            <div class="product"></div>
-                            <div class="product"></div>
-                            <div class="product"></div>
-                            <div class="product"></div>
+                            <article class="product">
+                                <div class="product__img">
+                                    <img src="assets/img/wine-preview.jpg">
+                                </div>
+                                <div class="product__content">
+                                    <div class="product__content-title">
+                                        <h1>Duetto Greco Matera DOC</h1>
+                                    </div>
+                                    <div class="product__content-visual">
+                                        <canvas id="product-visual-2" width="180" height="180"></canvas>
+                                    </div>
+                                    <div class="product__content-price">
+                                        <a href="#">€29,95 <i class="icon-arrow-right"></i></a>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="product">
+                                <div class="product__img">
+                                    <img src="assets/img/wine-preview.jpg">
+                                </div>
+                                <div class="product__content">
+                                    <div class="product__content-title">
+                                        <h1>Duetto Greco Matera DOC</h1>
+                                    </div>
+                                    <div class="product__content-visual">
+                                        <canvas id="product-visual-3" width="180" height="180"></canvas>
+                                    </div>
+                                    <div class="product__content-price">
+                                        <a href="#">€29,95 <i class="icon-arrow-right"></i></a>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="product">
+                                <div class="product__img">
+                                    <img src="assets/img/wine-preview.jpg">
+                                </div>
+                                <div class="product__content">
+                                    <div class="product__content-title">
+                                        <h1>Duetto Greco Matera DOC</h1>
+                                    </div>
+                                    <div class="product__content-visual">
+                                        <canvas id="product-visual-4" width="180" height="180"></canvas>
+                                    </div>
+                                    <div class="product__content-price">
+                                        <a href="#">€29,95 <i class="icon-arrow-right"></i></a>
+                                    </div>
+                                </div>
+                            </article>
                         </section>
                         <div class="clear-fix"></div>
                     </div>
@@ -164,6 +208,8 @@
         <script type="text/javascript" src="js/lib/chart.min.js"></script>
 
         <script type="text/javascript">
+            
+            // Click handler for the global menu
             var menuState = false;
             $('#gloval-nav-btn').click(function(){
                 if(menuState) {
@@ -177,56 +223,69 @@
                 }
             });
             
-            var wines = [{
-                "id": 1,
-                "radar": [28,48,40,19,96,27,100]
-            },{
-                "id": 2,
-                "radar": [28,48,40,19,96,27,100]
-            },{
-                "id": 3,
-                "radar": [28,48,40,19,96,27,100]
-            }];
+            // Creating the data for chart.js
+            // Extend data with new object in wines array
+            var wines = [
+                {
+                    "userData": [65,59,90,81,56,55,40],
+                    "id": 1,
+                    "wineData": [28,48,40,19,96,27,100]
+                },
+                {
+                    "userData": [65,59,90,81,56,55,40],
+                    "id": 2,
+                    "wineData": [50,32,10,2,96,58,87]
+                },
+                {
+                    "userData": [65,59,90,81,56,55,40],
+                    "id": 3,
+                    "wineData": [28,48,40,19,96,27,100]
+                },
+                {
+                    "userData": [65,59,90,81,56,55,40],
+                    "id": 4,
+                    "wineData": [28,48,40,19,96,27,100]
+                },
+            ];
             
-            var userRadar = [65,59,90,81,56,55,40];
-//            var wineRader = [28,48,40,19,96,27,100];
-            
-            var forEach = function(array, action) {
+            // Function that generates the chart by array input
+            var createRadarChart = function(array) {
+                console.log(array.id);
                 
+                var userChart = array.userData; // userChart data array
+                var wineChart = array.wineData; // wineChart data array
+                var canvasId = "product-visual-" + array.id; // Generate canvas id, has to correspond with the <html> canvas id
+                
+                var radarChartData = {
+                    labels : ["Eating","Drinking","Sleeping","Designing","Coding","Partying","Running"],
+                    datasets : [
+                        {
+                            fillColor : "rgba(220,220,220,0.5)",
+                            strokeColor : "rgba(220,220,220,1)",
+                            pointColor : "rgba(220,220,220,1)",
+                            pointStrokeColor : "#fff",
+                            data : userChart
+                        },
+                        {
+                            fillColor : "rgba(151,187,205,0.5)",
+                            strokeColor : "rgba(151,187,205,1)",
+                            pointColor : "rgba(151,187,205,1)",
+                            pointStrokeColor : "#fff",
+                            data : wineChart
+                        }
+                    ]	
+                }
+                var myRadar = new Chart(document.getElementById(canvasId).getContext("2d")).Radar(radarChartData,{scaleShowLabels : false, pointLabelFontSize : 1});
+            }
+            
+            // Foreach loop
+            var forEach = function(array, action) {
                 for(i = 0; i < array.length; i++) {
                     action(array[i]);
                 }
             }
             
-            var createRadarChart = function(array) {
-                console.log(array.id);
-                
-//                var userChart = array.user
-//                var wineChart
-//                var canvasId
-//                
-//                var radarChartData = {
-//                    labels : ["Eating","Drinking","Sleeping","Designing","Coding","Partying","Running"],
-//                    datasets : [
-//                        {
-//                            fillColor : "rgba(220,220,220,0.5)",
-//                            strokeColor : "rgba(220,220,220,1)",
-//                            pointColor : "rgba(220,220,220,1)",
-//                            pointStrokeColor : "#fff",
-//                            data : userRadar
-//                        },
-//                        {
-//                            fillColor : "rgba(151,187,205,0.5)",
-//                            strokeColor : "rgba(151,187,205,1)",
-//                            pointColor : "rgba(151,187,205,1)",
-//                            pointStrokeColor : "#fff",
-//                            data : wineRader
-//                        }
-//                    ]	
-//                }
-//                var myRadar = new Chart(document.getElementById("product-visual-01").getContext("2d")).Radar(radarChartData,{scaleShowLabels : false, pointLabelFontSize : 10});
-            }
-            
+            // Loop trough wines and create radarchart
             forEach(wines, createRadarChart);
             
         </script>

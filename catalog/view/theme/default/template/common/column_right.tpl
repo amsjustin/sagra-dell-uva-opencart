@@ -1,3 +1,4 @@
+Col right
 <?php if ($modules) { ?>
 <div id="column-right">
   <?php foreach ($modules as $module) { ?>
