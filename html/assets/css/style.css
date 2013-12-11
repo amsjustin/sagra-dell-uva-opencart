@@ -1,0 +1,323 @@
+/* ==========================================================================
+    GLOBALS
+============================================================================= */
+
+html, 
+body {
+    height: 100%;
+    font-family: 'arapeyregular';
+    background-color: #abdae2;
+}
+
+.clear-fix {
+    clear: both;
+}
+
+i,
+.italic {
+    font-family: 'arapeyitalic';
+}
+
+/* ==========================================================================
+    WRAPPER
+============================================================================= */
+
+.wrapper {
+    width: 100%;
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -160px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* ==========================================================================
+    SPACER
+============================================================================= */
+
+.spacer {
+    height: 0px;
+}
+
+/* ==========================================================================
+    MAIN INNER
+============================================================================= */
+
+.main {
+    width: 100%;
+    margin: 0 auto 50px;
+}
+.inner {
+    margin: 0 auto;
+    width: 717px;
+    padding: 0px 25px;
+}
+
+@media (max-width: 767px) {
+    .inner {
+        width: 430px;
+    }
+}
+@media (max-width: 480px) {
+    .inner {
+        width: 100%;
+    }
+}
+@media (min-width: 1200px) {
+    .inner {
+        width: 1150px;
+    }
+}
+
+/* ==========================================================================
+    HEADER
+============================================================================= */
+
+.header {
+    border-bottom: solid 2px #fff;
+}
+.header__top {
+    background: #fff;
+}
+.header__bottom {
+    background-color: #ded592;
+    padding: 20px 0px;
+}
+.header__logo {
+    width: 250px;
+    height: 138px;
+    margin: 20px 0px;
+    float: left;
+}
+.header__account {
+    float: right;
+}
+
+@media (max-width: 767px) {}
+@media (max-width: 480px) {}
+@media (min-width: 1200px) {}
+
+.search {
+    float: left;
+    width: 250px;
+}
+.search__input-holder {
+    background-color: #fff;
+    float: left;
+}
+.search__input-holder input:focus {
+    outline: none;
+}
+.search__input-holder input {
+    background: none;
+    border: none;
+    width: 149px;
+    padding: 16px 25px;
+}
+.search__form-submit {
+    float: right;
+    cursor: pointer;
+}
+
+/* ==========================================================================
+    GLOBAL NAV
+============================================================================= */
+
+.global-nav__container {
+    min-width: 300px;
+    float: right;
+    position: relative;
+}
+.global-nav__button {
+    float: right;
+}
+.global-nav {
+    position: absolute;
+    top: 101px;
+    width: 100%;
+    background-color: #fff;
+}
+.global-nav ul {
+    list-style: none;
+    padding: 0px;
+    overflow: hidden;
+}
+.global-nav ul li {
+    overflow: hidden;
+    padding: 0px 25px;
+}
+.global-nav ul li a {
+    padding: 15px 0px;
+    float: left;
+    width: 100%;
+    text-decoration: none;
+    color: #aa5f7e;
+}
+.global-nav ul li a:hover {
+    color: #000;
+}
+.global-nav--inactive {
+    display: none;
+}
+.global-nav--isactive {
+    display: block;
+    animation: animate-global-nav 0.5s;
+    -webkit-animation: animate-global-nav 0.5s; /* Safari and Chrome */
+}
+
+/* Animations */
+@keyframes animate-global-nav {
+    from {
+        opacity: 0;
+        top: 0;
+    }
+    to {
+        opacity: 1;
+        top: 101px;
+    }
+}
+@-webkit-keyframes animate-global-nav {
+    from {
+        opacity: 0;
+        top: 0;
+    }
+    to {
+        opacity: 1;
+        top: 101px;
+    }
+}
+
+/* ==========================================================================
+    CATEGORIE
+============================================================================= */
+
+.content {
+    margin-top: 25px;
+}
+
+/* ==========================================================================
+    CATEGORIE
+============================================================================= */
+
+.category-menu {
+    float: left;
+    min-width: 200px;
+    background: #fff;
+    padding: 25px;
+    border-bottom: solid 2px #aa5f7e;
+}
+.category-menu ul {
+    list-style: none;
+    padding: 0;
+}
+.category-menu h1 {
+    margin: 0px 0px 20px 0px;
+}
+
+/* ==========================================================================
+    PRODUCT OVERVIEW
+============================================================================= */
+
+.product-overview {
+    width: 850px;
+    margin: 0px 0px 0px 25px;
+    float: right;
+}
+.product-overview__breadcrumb {
+    color: #fff;
+    border-bottom: solid 1px #fff;
+    height: 25px;
+}
+.product-overview__breadcrumb a {
+    color: #fff;
+}
+.product {
+    width: 400px;
+    min-height: 50px;
+    margin: 25px 25px 0px 0px;
+    float: left;
+}
+.product h1 {
+    color: #918a53;
+    font-size: 24px;
+}
+.product__img {
+    width: 91px;
+    float: left;
+    margin-right: 18px;
+    overflow: hidden;
+    padding: 20px 0px;
+    text-align: center;
+    background-color: #fff;
+}
+.product__content {
+    float: left;
+    width: 290px;
+    background-color: #fff;
+}
+
+/* ==========================================================================
+    FOOTER
+============================================================================= */
+
+.footer {
+    background: #fff;
+    width: 100%;
+    min-height: 160px;
+    position: relative;
+    z-index: 1;
+}
+.footer__col {
+    width: 161px;
+    margin: 0px 25px;
+    float: left;
+}
+.footer__col--first {
+    margin: 0px 25px 0px 0px; 
+}
+.footer__col--last {
+    margin: 0px 0px 0px 25px; 
+}
+.footer__nav {
+    list-style: none;
+    padding: 0;
+}
+.footer__nav a {
+    color: #000;
+}
+
+@media (max-width: 767px) {
+    .footer__col {
+        width: 100%;
+    }
+}
+@media (max-width: 480px) {
+    .footer__col {
+        width: 100%;
+    }
+}
+@media (min-width: 1200px) {
+    .footer__col {
+        width: 250px;
+    }
+}
+
+/* ==========================================================================
+    ICONS
+============================================================================= */
+
+.icon-pancake {
+    background-image: url('../img/icon-pancake.jpg');
+    background-size: 51px 50px;
+    width: 51px;
+    height: 50px;
+    display: inline-block;
+}
+.icon-magnifyglass {
+    background-image: url('../img/icon-magnifyglass.jpg');
+    background-size: 51px 50px;
+    width: 51px;
+    height: 50px;
+    display: inline-block;
+}
