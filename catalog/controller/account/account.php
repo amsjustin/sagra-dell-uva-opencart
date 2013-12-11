@@ -11,7 +11,8 @@ class ControllerAccountAccount extends Controller {
 	
 		$this->language->load('account/account');
 
-		$this->document->setTitle($this->language->get('heading_title'));
+		//$this->document->setTitle($this->language->get('heading_title'));
+                $this->document->setTitle('Sagra Dell\'UVA');
 
       	$this->data['breadcrumbs'] = array();
 
@@ -21,6 +22,7 @@ class ControllerAccountAccount extends Controller {
         	'separator' => false
       	); 
 
+        // BREADCRUMBS
       	$this->data['breadcrumbs'][] = array(       	
         	'text'      => $this->language->get('text_account'),
 			'href'      => $this->url->link('account/account', '', 'SSL'),
@@ -35,12 +37,26 @@ class ControllerAccountAccount extends Controller {
 			$this->data['success'] = '';
 		}
 		
-    	$this->data['heading_title'] = $this->language->get('heading_title');
-
-    	$this->data['text_my_account'] = $this->language->get('text_my_account');
-		$this->data['text_my_orders'] = $this->language->get('text_my_orders');
-		$this->data['text_my_newsletter'] = $this->language->get('text_my_newsletter');
-    	$this->data['text_edit'] = $this->language->get('text_edit');
+        // HEADER PAGINA TITEL
+    	//$this->data['heading_title'] = $this->language->get('heading_title');
+        $this->data['heading_title'] = 'Jouw wijn smaak';
+        
+        // TITEL VAN KOPJE
+    	//$this->data['text_my_account'] = $this->language->get('text_my_account');
+        $this->data['text_my_account'] = 'Mijn persoonlijke wijnsmaak';
+        
+        // TITEL VAN KOPJE 2
+	//$this->data['text_my_orders'] = $this->language->get('text_my_orders');
+        $this->data['text_my_orders'] = 'Mijn statistieken';
+                
+        // TITEL VAN KOPJE 3
+	//$this->data['text_my_newsletter'] = $this->language->get('text_my_newsletter');
+        $this->data['text_my_newsletter'] = 'Mijn aanbevelingen';
+                
+        //
+    	//$this->data['text_edit'] = $this->language->get('text_edit');
+        $this->data['text_edit'] = 'linkje';
+        
     	$this->data['text_password'] = $this->language->get('text_password');
     	$this->data['text_address'] = $this->language->get('text_address');
 		$this->data['text_wishlist'] = $this->language->get('text_wishlist');
