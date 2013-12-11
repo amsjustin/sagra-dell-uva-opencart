@@ -61,3 +61,7 @@
 =======
 2013-12-04 14:01:23 - PHP Notice:  Use of undefined constant this - assumed 'this' in /Users/moppedijk/Documents/00 Moppedijk/Hva/S02/Blok01/Project04/00 Sagra/sources/sagra-dell-uva-opencart/catalog/model/catalog/product.php on line 60
 >>>>>>> f6177d51368579005317d2fb8c85330675b560db
+2013-12-11 14:47:06 - PHP Notice:  Undefined variable: categories in /Applications/MAMP/htdocs/opencart/catalog/view/theme/default/template/common/content_top.tpl on line 3
+2013-12-11 14:47:06 - PHP Notice:  Undefined variable: categories in /Applications/MAMP/htdocs/opencart/catalog/view/theme/default/template/common/content_top.tpl on line 3
+2013-12-11 14:47:06 - PHP Notice:  Undefined variable: categories in /Applications/MAMP/htdocs/opencart/catalog/view/theme/default/template/common/content_top.tpl on line 3
+2013-12-11 14:47:06 - PHP Notice:  Undefined variable: categories in /Applications/MAMP/htdocs/opencart/catalog/view/theme/default/template/common/content_top.tpl on line 3

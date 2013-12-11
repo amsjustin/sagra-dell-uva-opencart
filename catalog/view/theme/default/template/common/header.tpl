@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html dir="<?php echo $direction; ?>" lang="<?php echo $lang; ?>">
+<html>
     <head>
         <meta charset="UTF-8" />
-        <title><?php echo $title; ?></title>
+        <title>Sagra dell'Uva</title>
         <base href="<?php echo $base; ?>" />
         <?php if ($description) { ?>
         <meta name="description" content="<?php echo $description; ?>" />
@@ -16,14 +16,21 @@
         <?php foreach ($links as $link) { ?>
         <link href="<?php echo $link['href']; ?>" rel="<?php echo $link['rel']; ?>" />
         <?php } ?>
-        <link rel="stylesheet" type="text/css" href="catalog/view/theme/default/stylesheet/stylesheet.css" />
+        <!--<link rel="stylesheet" type="text/css" href="catalog/view/theme/default/stylesheet/stylesheet.css" />-->
         <?php foreach ($styles as $style) { ?>
-        <link rel="<?php echo $style['rel']; ?>" type="text/css" href="<?php echo $style['href']; ?>" media="<?php echo $style['media']; ?>" />
+        
         <?php } ?>
-        <script type="text/javascript" src="catalog/view/javascript/jquery/jquery-1.7.1.min.js"></script>
-        <script type="text/javascript" src="catalog/view/javascript/jquery/ui/jquery-ui-1.8.16.custom.min.js"></script>
-        <link rel="stylesheet" type="text/css" href="catalog/view/javascript/jquery/ui/themes/ui-lightness/jquery-ui-1.8.16.custom.css" />
-        <script type="text/javascript" src="catalog/view/javascript/common.js"></script>
+        
+        <link rel="stylesheet" type="text/css" href="html/assets/css/font.css">
+        <link rel="stylesheet" type="text/css" href="html/assets/css/normalize.css">
+        <link rel="stylesheet" type="text/css" href="html/assets/css/style.css">
+        
+        <script type="text/javascript" src="html/js/lib/jquery-1.8.2.min.js"></script>
+        <script type="text/javascript" src="html/js/lib/jquery.inputfield.js"></script>
+        <script type="text/javascript" src="html/js/lib/respond.min.js"></script>
+        
+        
+        
         <?php foreach ($scripts as $script) { ?>
         <script type="text/javascript" src="<?php echo $script; ?>"></script>
         <?php } ?>
@@ -37,62 +44,54 @@
         DD_belatedPNG.fix('#logo img');
         </script>
         <![endif]-->
-        <?php if ($stores) { ?>
-        <script type="text/javascript"><!--
-            $(document).ready(function() {
-                <?php foreach ($stores as $store) { ?>
-                $('body').prepend('<iframe src="<?php echo $store; ?>" style="display: none;"></iframe>');
-                <?php } ?>
-        });
-        //--></script>
-        <?php } ?>
-        <?php echo $google_analytics; ?>
+        
     </head>
     <body>
-        <div id="container">
-            <div id="header">
-                <?php if ($logo) { ?>
-                <div id="logo"><a href="<?php echo $home; ?>"><img src="<?php echo $logo; ?>" title="<?php echo $name; ?>" alt="<?php echo $name; ?>" /></a></div>
-                <?php } ?>
-                <?php echo $language; ?>
-                <!--<?php /*echo $currency; */ ?>-->
-                <?php echo $cart; ?>
-                <div id="search">
-                    <div class="button-search"></div>
-                    <input type="text" name="search" placeholder="<?php echo $text_search; ?>" value="<?php echo $search; ?>" />
-                </div>
-                <div id="welcome">
-                    <?php if (!$logged) { ?>
-                    <?php echo $text_welcome; ?>
-                    <?php } else { ?>
-                    <?php echo $text_logged; ?>
-                    <?php } ?>
-                </div>
-                <div class="links"><a href="<?php echo $home; ?>"><?php echo $text_home; ?></a><a href="<?php echo $wishlist; ?>" id="wishlist-total"><?php echo $text_wishlist; ?></a><a href="<?php echo $account; ?>"><?php echo $text_account; ?></a><a href="<?php echo $shopping_cart; ?>"><?php echo $text_shopping_cart; ?></a><a href="<?php echo $checkout; ?>"><?php echo $text_checkout; ?></a></div>
-            </div>
-            <?php if ($categories) { ?>
-            <div id="menu">
-                <ul>
-                    <?php foreach ($categories as $category) { ?>
-                    <li><a href="<?php echo $category['href']; ?>"><?php echo $category['name']; ?></a>
-                        <?php if ($category['children']) { ?>
-                        <div>
-                            <?php for ($i = 0; $i < count($category['children']);) { ?>
-                            <ul>
-                                <?php $j = $i + ceil(count($category['children']) / $category['column']); ?>
-                                <?php for (; $i < $j; $i++) { ?>
-                                <?php if (isset($category['children'][$i])) { ?>
-                                <li><a href="<?php echo $category['children'][$i]['href']; ?>"><?php echo $category['children'][$i]['name']; ?></a></li>
-                                <?php } ?>
-                                <?php } ?>
-                            </ul>
-                            <?php } ?>
+        <div class="wrapper">
+            <header class="header">
+                    <div class="header__top">
+                        <div class="inner">
+                            <div class="header__logo">
+                                <a href="#"><img src="html/assets/img/logo.jpg"></a>
+                            </div>
+                            <div class="header__account">
+                                <p>Welcome visitor you can login or create an account</p>
+                            </div>
+                            <div class="clear-fix"></div>
                         </div>
-                        <?php } ?>
-                    </li>
-                    <?php } ?>
-                </ul>
-            </div>
+                    </div>
+                    <div class="header__bottom">
+                        <div class="inner">
+                            <div class="search">
+                                <form class="search__form">
+                                    <div class="search__input-holder">
+                                        <input type="text" value="search">
+                                    </div>
+                                    <div id="search-btn-submit" class="search__form-submit"><i class="icon-magnifyglass"></i></div>
+                                </form>
+                            </div>
+                            <div class="global-nav__container">
+                                <div class="global-nav__button">
+                                    <a id="gloval-nav-btn" title="Klik" href="javascript:void(0);">
+                                        <i class="icon-pancake"></i>
+                                    </a>
+                                </div>
+                                <nav id="global-nav" class="global-nav global-nav--inactive">
+                                    <ul class="global-nav__ul">
+                                        <li><a href="#">List</a></li>
+                                        <li><a href="#">List</a></li>
+                                        <li><a href="#">List</a></li>
+                                        <li><a href="#">List</a></li>
+                                        <li><a href="#">List</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                            <div class="clear-fix"></div>
+                        </div>
+                    </div>
+                </header>
+            <?php if ($categories) { ?>
+            
             <?php } ?>
             <?php if ($error) { ?>
 
