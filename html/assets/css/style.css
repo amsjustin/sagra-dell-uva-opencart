@@ -267,6 +267,7 @@ i,
     min-height: 160px;
     position: relative;
     z-index: 1;
+    margin-top: 25px;
 }
 .footer__col {
     width: 161px;
