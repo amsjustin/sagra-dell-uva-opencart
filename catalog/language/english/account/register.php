@@ -1,52 +1,52 @@
 <?php
 // Heading 
-$_['heading_title']        = 'Register Account';
+$_['heading_title']        = 'Account registreren';
 
 // Text
 $_['text_account']         = 'Account';
-$_['text_register']        = 'Register';
-$_['text_account_already'] = 'If you already have an account with us, please login at the <a href="%s">login page</a>.';
-$_['text_your_details']    = 'Your Personal Details';
-$_['text_your_address']    = 'Your Address';
-$_['text_newsletter']      = 'Newsletter';
-$_['text_your_password']   = 'Your Password';
-$_['text_agree']           = 'I have read and agree to the <a class="colorbox" href="%s" alt="%s"><b>%s</b></a>';
+$_['text_register']        = 'Registreren';
+$_['text_account_already'] = 'Als u al een account heeft kunt u hier <a href="%s">inloggen</a>.';
+$_['text_your_details']    = 'Uw persoonlijke gegevens';
+$_['text_your_address']    = 'Uw adres';
+$_['text_newsletter']      = 'Nieuwsbrief';
+$_['text_your_password']   = 'Wachtwoord';
+$_['text_agree']           = 'Ik heb de <a class="COLORbox" href="%s" alt="%s"><b>%s</b></a> gelezen en ga hiermee akkoord';
 
 // Entry
-$_['entry_firstname']      = 'First Name:';
-$_['entry_lastname']       = 'Last Name:';
-$_['entry_email']          = 'E-Mail:';
-$_['entry_telephone']      = 'Telephone:';
+$_['entry_firstname']      = 'Voornaam:';
+$_['entry_lastname']       = 'Achternaam:';
+$_['entry_email']          = 'E-mail adres:';
+$_['entry_telephone']      = 'Telefoon:';
 $_['entry_fax']            = 'Fax:';
-$_['entry_company']        = 'Company:';
-$_['entry_customer_group'] = 'Business Type:';
-$_['entry_company_id']     = 'Company ID:';
-$_['entry_tax_id']         = 'Tax ID:';
-$_['entry_address_1']      = 'Address 1:';
-$_['entry_address_2']      = 'Address 2:';
-$_['entry_postcode']       = 'Post Code:';
-$_['entry_city']           = 'City:';
-$_['entry_country']        = 'Country:';
-$_['entry_zone']           = 'Region / State:';
-$_['entry_newsletter']     = 'Subscribe:';
-$_['entry_password']       = 'Password:';
-$_['entry_confirm']        = 'Password Confirm:';
+$_['entry_account']        = 'Account:';
+$_['entry_company']        = 'Bedrijf:';
+$_['entry_company_id']     = 'KvK nr.:';
+$_['entry_tax_id']         = 'BTW nr.:';
+$_['entry_address_1']      = 'Adres 1:';
+$_['entry_address_2']      = 'Adres 2:';
+$_['entry_postcode']       = 'Postcode:';
+$_['entry_city']           = 'Woonplaats:';
+$_['entry_country']        = 'Land:';
+$_['entry_zone']           = 'Provincie / Regio:';
+$_['entry_newsletter']     = 'Aanmelden:';
+$_['entry_password']       = 'Kies wachtwoord:';
+$_['entry_confirm']        = 'Bevestig wachtwoord:';
 
 // Error
-$_['error_exists']         = 'Warning: E-Mail Address is already registered!';
-$_['error_firstname']      = 'First Name must be between 1 and 32 characters!';
-$_['error_lastname']       = 'Last Name must be between 1 and 32 characters!';
-$_['error_email']          = 'E-Mail Address does not appear to be valid!';
-$_['error_telephone']      = 'Telephone must be between 3 and 32 characters!';
-$_['error_password']       = 'Password must be between 4 and 20 characters!';
-$_['error_confirm']        = 'Password confirmation does not match password!';
-$_['error_company_id']     = 'Company ID required!';
-$_['error_tax_id']         = 'Tax ID required!';
-$_['error_vat']            = 'VAT number is invalid!';
-$_['error_address_1']      = 'Address 1 must be between 3 and 128 characters!';
-$_['error_city']           = 'City must be between 2 and 128 characters!';
-$_['error_postcode']       = 'Postcode must be between 2 and 10 characters!';
-$_['error_country']        = 'Please select a country!';
-$_['error_zone']           = 'Please select a region / state!';
-$_['error_agree']          = 'Warning: You must agree to the %s!';
+$_['error_exists']         = 'Er bestaat al een account met dit e-mail adres!';
+$_['error_firstname']      = 'Voornaam dient tussen de 1 en 32 tekens lang te zijn!';
+$_['error_lastname']       = 'Achternaam dient tussen de 1 en 32 tekens lang te zijn!';
+$_['error_email']          = 'E-mail adres lijkt ongeldig!';
+$_['error_telephone']      = 'Telefoon dient tussen de 3 en 32 tekens lang te zijn!';
+$_['error_password']       = 'Wachtwoord dient tussen de 4 en 20 tekens lang te zijn!';
+$_['error_confirm']        = 'Wachtwoorden komen niet overeen!';
+$_['error_company_id']     = 'KvK nr. verplicht!';
+$_['error_tax_id']         = 'BTW nr. verplicht!';
+$_['error_vat']            = 'BTW nr. is niet correct!';
+$_['error_address_1']      = 'Adres 1 dient tussen de 3 en 128 tekens lang te zijn!';
+$_['error_city']           = 'Woonplaats dient tussen de 2 en 128 tekens lang te zijn!';
+$_['error_postcode']       = 'Postcode dient tussen de 2 en 10 tekens lang te zijn!';
+$_['error_country']        = 'Keuze van land is verplicht!';
+$_['error_zone']           = 'Keuze van provincie / regio is verplicht!';
+$_['error_agree']          = 'U dient akkoord te gaan met onze %s!';
 ?>

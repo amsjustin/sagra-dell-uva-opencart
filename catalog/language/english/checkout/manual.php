@@ -1,29 +1,29 @@
 <?php
 // Text
-$_['text_for']          = '%s Gift Certificate for %s';
-$_['text_success']      = 'Order totals has been successfully re-calculated!';
+$_['text_for']          = '%s cadeaubon voor %s';
+$_['text_success']      = '<p>Uw bestelling is door ons succesvol ontvangen.</p><p>U kunt een overzicht van uw bestellingen inzien via uw <a href="%s">account-pagina</a> of door <a href="%s">hier</a> te klikken.<p>Bestaat uw aankoop uit een download, dan kunt u in uw account naar uw <a href="%s">downloads</a> gaan om deze te downloaden.</p></p><p>Indien u vragen heeft, neemt u dan <a href="%s">contact</a> met ons op.</p><p>Hartelijk dank voor uw bestelling!</p>';
 
 // Error
-$_['error_warning']     = 'Warning: Please check the form carefully for errors!';
-$_['error_permission']  = 'You do not have permission to access this page, please refer to your system administrator.';
-$_['error_customer']    = 'Warning: Can not find selected customer!';
-$_['error_email']       = 'E-Mail Address does not appear to be valid!';
-$_['error_postcode']    = 'Postcode must be between 2 and 10 characters!';
-$_['error_country']     = 'Please select a country!';
-$_['error_zone']        = 'Please select a region / state!';
-$_['error_stock']       = 'Products marked with *** are not available in the desired quantity or not in stock!';
-$_['error_minimum']     = 'Minimum order amount for %s is %s!';	
-$_['error_required']    = '%s required!';
-$_['error_shipping']    = 'Warning: Shipping method required!';
-$_['error_no_shipping'] = 'Warning: No Shipping options are available!';
-$_['error_payment']     = 'Warning: Payment method required!';
-$_['error_no_payment']  = 'Warning: No Payment options are available!';
-$_['error_coupon']      = 'Warning: Coupon is either invalid, expired or reached it\'s usage limit!';
-$_['error_voucher']     = 'Warning: Gift Voucher is either invalid or the balance has been used up!';
-$_['error_reward']      = 'Warning: Please enter the amount of reward points to use!';	
-$_['error_points']      = 'Warning: You don\'t have %s reward points!';
-$_['error_maximum']     = 'Warning: The maximum number of points that can be applied is %s!';
-$_['error_to_name']     = 'Recipient\'s Name must be between 1 and 64 characters!';
-$_['error_from_name']   = 'Your Name must be between 1 and 64 characters!';
-$_['error_amount']      = 'Amount must be between %s and %s!';
+$_['error_warning']     = 'Controlleer of alle verplichte velden volledig zijn ingevuld.';
+$_['error_permission']  = 'U heeft geen toegang tot deze pagina.';
+$_['error_customer']    = 'Klant niet gevonden.';
+$_['error_email']       = 'E-mail adres lijkt ongeldig.';
+$_['error_postcode']    = 'Postcode dient tussen de 2 en 10 tekens lang te zijn.';
+$_['error_country']     = 'Keuze van land is verplicht.';
+$_['error_zone']        = 'Keuze van provincie / regio is verplicht.';
+$_['error_stock']       = 'Producten met een *** zijn niet beschikbaar in de door u gewenste hoeveelheid.';
+$_['error_minimum']     = 'Minimaal te bestellen aantal voor dit product is %s.';	
+$_['error_required']    = '%s verplicht.';	
+$_['error_shipping']    = 'Geen verzendmethode geselecteerd.';
+$_['error_no_shipping'] = 'Verzendmethode(s) niet beschikbaar.';
+$_['error_payment']     = 'Geen betaalmethode geselecteerd.';
+$_['error_no_payment']  = 'Betaalmethode(s) niet beschikbaar.';
+$_['error_coupon']      = 'Uw kortingsbon is niet (meer) geldig, volledig verbruikt of de code is niet correct.';
+$_['error_voucher']     = 'Uw cadeaubon is niet (meer) geldig, volledig verbruikt of de code is niet correct.';
+$_['error_reward']      = 'Geef het aantal te gebruiken spaarpunten op.';	
+$_['error_points']      = 'U heeft geen %s spaarpunten.';
+$_['error_maximum']     = 'Het maximaal te gebruiken spaarpunten is %s.';
+$_['error_to_name']     = 'Naam ontvanger dient tussen de  1 en 64 tekens lang te zijn.';
+$_['error_from_name']   = 'Uw naam dient tussen de  1 en 64 tekens lang te zijn.';
+$_['error_amount']      = 'Verplichte waarde tussen de %s en %s Euro.';
 ?>

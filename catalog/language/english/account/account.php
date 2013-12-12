@@ -1,22 +1,21 @@
 <?php
+
 // Heading 
-$_['heading_title']      = 'My Account';
+$_['heading_title'] = 'Mijn profiel';
 
 // Text
-$_['text_account']       = 'Account';
-$_['text_my_account']    = 'My Account';
-$_['text_my_orders']     = 'My Orders';
-$_['text_my_newsletter'] = 'Newsletter';
-$_['text_edit']          = 'Edit your account information';
-$_['text_password']      = 'Change your password';
-$_['text_address']       = 'Modify your address book entries';
-$_['text_wishlist']      = 'Modify your wish list';
-$_['text_order']         = 'View your order history';
-$_['text_download']      = 'Downloads';
-$_['text_reward']        = 'Your Reward Points'; 
-$_['text_return']        = 'View your return requests'; 
-$_['text_transaction']   = 'Your Transactions'; 
-$_['text_newsletter']    = 'Subscribe / unsubscribe to newsletter';
-$_['text_recurring']     = 'Recurring payments';
-$_['text_transactions']  = 'Transactions';
+$_['text_account'] = 'Profiel';
+$_['text_my_account'] = 'Persoonlijke gegevens';
+$_['text_my_orders'] = 'Mijn bestellingen';
+$_['text_my_newsletter'] = 'Nieuwsbrief';
+$_['text_edit'] = 'Gegevens wijzigen';
+$_['text_password'] = 'Wachtwoord wijzigen';
+$_['text_address'] = 'Adres(sen) wijzigen';
+$_['text_wishlist'] = 'Wijnrek aanpassen';
+$_['text_order'] = 'Mijn bestelling(en)';
+$_['text_download'] = 'Mijn downloads';
+$_['text_reward'] = 'Mijn spaarpunten';
+$_['text_return'] = 'Mijn retouraanvragen';
+$_['text_transaction'] = 'Mijn transacties';
+$_['text_newsletter'] = 'Aanmelden / Afmelden nieuwsbrief';
 ?>

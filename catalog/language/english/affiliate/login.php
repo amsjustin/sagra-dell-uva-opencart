@@ -1,22 +1,22 @@
 <?php
 // Heading 
-$_['heading_title']                 = 'Affiliate Program';
+$_['heading_title'] = 'Affiliate Programma';
 
 // Text
 $_['text_account']                  = 'Account';
-$_['text_login']                    = 'Login';
-$_['text_description']              = '<p>%s affiliate program is free and enables members to earn revenue by placing a link or links on their web site which advertises %s or specific products on it. Any sales made to customers who have clicked on those links will earn the affiliate commission. The standard commission rate is currently %s.</p><p>For more information, visit our FAQ page or see our Affiliate terms &amp; conditions.</p>';
-$_['text_new_affiliate']            = 'New Affiliate';
-$_['text_register_account']         = '<p>I am not currently an affiliate.</p><p>Click Continue below to create a new affiliate account. Please note that this is not connected in any way to your customer account.</p>';
+$_['text_login']                    = 'Inloggen';
+$_['text_description']              = '<p>%s Affiliate programma is gratis en bied u de mogelijkheid geld te verdienen door een link, of meerdere linken, naar %s of specifieke producten te plaatsen op uw website. Elke verkoop via deze link(s) levert u een commissie op. De huidige commissie is %s.</p><p>Voor meer informatie zie onze Affiliate Voorwaarden.</p>';
+$_['text_new_affiliate']            = 'Nieuwe Affiliate';
+$_['text_register_account']         = '<p>Ik ben nog geen Affiliate.</p><p>Maak een nieuwe Affiliate account aan. Het Affiliate account is niet gekoppeld aan uw eventueele klant account.</p>';
 $_['text_returning_affiliate']      = 'Affiliate Login';
-$_['text_i_am_returning_affiliate'] = 'I am a returning affiliate.';
-$_['text_forgotten']                = 'Forgotten Password';
+$_['text_i_am_returning_affiliate'] = 'Ik ben een terugkerende Affiliate.';
+$_['text_forgotten']                = 'Wachtwoord vergeten';
 
 // Entry
-$_['entry_email']                   = 'Affiliate E-Mail:';
-$_['entry_password']                = 'Password:';
+$_['entry_email']    = 'E-mail adres:';
+$_['entry_password'] = 'Wachtwoord:';
 
 // Error
-$_['error_login']                   = 'Warning: No match for E-Mail Address and/or Password.';
-$_['error_approved']                = 'Warning: Your account requires approval before you can login.';
+$_['error_login']    = 'Het door u opgegeven e-mail adres en/of wachtwoord is niet gevonden in onze database, probeer het opnieuw.';
+$_['error_approved'] = 'Uw account dient eerst te worden goedgekeurd voordat kunt u inloggen. U ontvangt hier automatisch bericht van.';
 ?>

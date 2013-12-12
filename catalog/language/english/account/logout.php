@@ -1,9 +1,9 @@
 <?php
 // Heading 
-$_['heading_title'] = 'Account Logout';
+$_['heading_title'] = 'Account uitloggen';
 
 // Text
-$_['text_message']  = '<p>You have been logged off your account. It is now safe to leave the computer.</p><p>Your shopping cart has been saved, the items inside it will be restored whenever you log back into your account.</p>';
+$_['text_message']  = '<p>U bent succesvol uitgelogd.</p><p>Uw huidige winkelwagen en eventuele producten hierin zullen weer beschikbaar zijn wanneer u opnieuw inlogt.</p>';
 $_['text_account']  = 'Account';
-$_['text_logout']   = 'Logout';
+$_['text_logout']   = 'Uitloggen';
 ?>

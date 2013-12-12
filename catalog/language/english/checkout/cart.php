@@ -1,72 +1,56 @@
 <?php
 // Heading  
-$_['heading_title']          = 'Shopping Cart';
+$_['heading_title']         = 'Winkelwagen';
 
 // Text
-$_['text_success']           = 'Success: You have added <a href="%s">%s</a> to your <a href="%s">shopping cart</a>!';
-$_['text_remove']            = 'Success: You have modified your shopping cart!';
-$_['text_coupon']            = 'Success: Your coupon discount has been applied!';
-$_['text_voucher']           = 'Success: Your gift voucher discount has been applied!';
-$_['text_reward']            = 'Success: Your reward points discount has been applied!';
-$_['text_shipping']          = 'Success: Your shipping estimate has been applied!';
-$_['text_login']             = 'Attention: You must <a href="%s">login</a> or <a href="%s">create an account</a> to view prices!';
-$_['text_points']            = 'Reward Points: %s';
-$_['text_items']             = '%s item(s) - %s';
-$_['text_next']              = 'What would you like to do next?';
-$_['text_next_choice']       = 'Choose if you have a discount code or reward points you want to use or would like to estimate your delivery cost.';
-$_['text_use_coupon']        = 'Use Coupon Code';
-$_['text_use_voucher']       = 'Use Gift Voucher';
-$_['text_use_reward']        = 'Use Reward Points (Available %s)';
-$_['text_shipping_estimate'] = 'Estimate Shipping &amp; Taxes';
-$_['text_shipping_detail']   = 'Enter your destination to get a shipping estimate.';
-$_['text_shipping_method']   = 'Please select the preferred shipping method to use on this order.';
-$_['text_empty']             = 'Your shopping cart is empty!';
-$_['text_until_cancelled']   = 'until cancelled';
-$_['text_recurring_item']    = 'Recurring item';
-$_['text_payment_profile']   = 'Payment Profile';
-$_['text_trial_description'] = '%s every %d %s(s) for %d payment(s) then';
-$_['text_payment_description'] = '%s every %d %s(s) for %d payment(s)';
-$_['text_payment_until_canceled_description'] = '%s every %d %s(s) until canceled';
-$_['text_day']               = 'day';
-$_['text_week']              = 'week';
-$_['text_semi_month']        = 'half-month';
-$_['text_month']             = 'month';
-$_['text_year']              = 'year';
+$_['text_success']     	     = 'U heeft <a href="%s">%s</a> in uw <a href="%s">winkelwagen</a> geplaatst.';
+$_['text_remove']            = 'Succes: Uw winkelwagen is aangepast!';
+$_['text_coupon']            = 'Succes: Uw kortingsbon is toegepast!';
+$_['text_voucher']           = 'Succes: Uw cadeaubon is toegepast!';
+$_['text_reward']            = 'Succes: Uw spaarpunten zijn toegepast!';
+$_['text_shipping']          = 'Succes: De verzendkosten zijn berekend en toegepast!';
+$_['text_login']             = 'U moet <a href="%s">inloggen</a> of u <a href="%s">registreren</a> om de prijzen te bekijken!';
+$_['text_points']            = 'Spaarpunten: %s';
+$_['text_items']             = '%s product(en) - %s';
+$_['text_next']              = 'Wat wilt u nu doen?';
+$_['text_next_choice']       = 'Wilt u uw kortingsbon of spaarpunten gebruiken, of uw verzendkosten bereken? Maak dan de door uw gewenste keuze(s)';
+$_['text_use_coupon']        = 'Gebruik uw kortingsbon';
+$_['text_use_voucher']       = 'Gebruik uw cadeaubon';
+$_['text_use_reward']        = 'Gebruik uw spaarpunten (beschikbaar %s)';
+$_['text_shipping_estimate'] = 'Bereken verzendkosten';
+$_['text_shipping_detail']   = 'Geef hieronder de juiste gegevens in om de verzendkosten te kunnen berekenen.';
+$_['text_shipping_method']   = 'Kies de gewenste verzendmethode voor deze bestelling.';
+$_['text_empty']             = 'Uw winkelwage is leeg!';
 
 // Column
-$_['column_image']           = 'Image';
-$_['column_name']            = 'Product Name';
-$_['column_model']           = 'Model';
-$_['column_quantity']        = 'Quantity';
-$_['column_price']           = 'Unit Price';
-$_['column_total']           = 'Total';
+$_['column_image']    = 'Afbeelding';
+$_['column_name']     = 'Product';
+$_['column_model']    = 'Model';
+$_['column_quantity'] = 'Aantal';
+$_['column_price']    = 'Prijs';
+$_['column_total']    = 'Totaal';
 
 // Entry
-$_['entry_coupon']           = 'Enter your coupon here:';
-$_['entry_voucher']          = 'Enter your gift voucher code here:';
-$_['entry_reward']           = 'Points to use (Max %s):';
-$_['entry_country']          = 'Country:';
-$_['entry_zone']             = 'Region / State:';
-$_['entry_postcode']         = 'Post Code:';
+$_['entry_coupon']   = 'Voer de code van uw kortingsbon in:';
+$_['entry_voucher']  = 'Voer de code van uw cadeaubon in:';
+$_['entry_reward']   = 'Te gebruiken spaarpunten (Max. %s):';
+$_['entry_country']  = 'Land:';
+$_['entry_zone']     = 'Regio / Provincie:';
+$_['entry_postcode'] = 'Postcode:';
 
 // Error
-$_['error_stock']            = 'Products marked with *** are not available in the desired quantity or not in stock!';
-$_['error_minimum']          = 'Minimum order amount for %s is %s!';	
-$_['error_required']         = '%s required!';	
-$_['error_product']          = 'Warning: There are no products in your cart!';	
-$_['error_coupon']           = 'Warning: Coupon is either invalid, expired or reached it\'s usage limit!';
-$_['error_voucher']          = 'Warning: Gift Voucher is either invalid or the balance has been used up!';
-$_['error_reward']           = 'Warning: Please enter the amount of reward points to use!';	
-$_['error_points']           = 'Warning: You don\'t have %s reward points!';
-$_['error_maximum']          = 'Warning: The maximum number of points that can be applied is %s!';
-$_['error_postcode']         = 'Postcode must be between 2 and 10 characters!';
-$_['error_country']          = 'Please select a country!';
-$_['error_zone']             = 'Please select a region / state!';
-$_['error_shipping']         = 'Warning: Shipping method required!';
-$_['error_no_shipping']      = 'Warning: No Shipping options are available. Please <a href="%s">contact us</a> for assistance!';
-$_['error_profile_required'] = 'Please select a payment profile!';
-
-$_['text_trial']             = '%s every %s %s for %s payments then ';
-$_['text_recurring']         = '%s every %s %s';
-$_['text_length']            = ' for %s payments';
+$_['error_stock']       = 'Producten met een *** zijn niet beschikbaar in de door u gewenste hoeveelheid.';
+$_['error_minimum']     = 'Minimum te bestellen aantal voor product %s is %s.';	
+$_['error_required']    = '%s verplicht.';	
+$_['error_product']     = 'Uw winkelwagen is leeg.';
+$_['error_coupon']      = 'Uw kortingsbon is niet (meer) geldig, volledig verbruikt of de code is niet correct.';
+$_['error_voucher']     = 'Uw cadeaubon is niet (meer) geldig, volledig verbruikt of de code is niet correct.';
+$_['error_reward']      = 'Geef het aantal te gebruiken spaarpunten op.';	
+$_['error_points']      = 'U heeft geen %s spaarpunten.';
+$_['error_maximum']     = 'Het maximaal te gebruiken spaarpunten is %s.';
+$_['error_postcode']    = 'Postcode moet minimaal 2 en maximaal 10 tekens lang zijn.';
+$_['error_country']     = 'Selecteer een land.';
+$_['error_zone']        = 'Selecteer een regio / provincie.';
+$_['error_shipping']    = 'Geen verzendmethode geselecteerd!';
+$_['error_no_shipping'] = 'Geen verzendmethode(s) beschikbaar! Neem <a href="%s">contact</a> met ons op.';
 ?>

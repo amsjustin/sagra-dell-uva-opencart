@@ -1,32 +1,32 @@
 <?php
 // Heading
-$_['heading_title']     = 'Find Your Favorite Brand';
+$_['heading_title']     = 'Vind je favoriete merk!';
 
 // Text
-$_['text_brand']        = 'Brand';
-$_['text_index']        = 'Brand Index:';
-$_['text_error']        = 'Brand not found!';
-$_['text_empty']        = 'There are no products to list.';
-$_['text_quantity']     = 'Qty:';
-$_['text_manufacturer'] = 'Brand:';
-$_['text_model']        = 'Product Code:'; 
-$_['text_points']       = 'Reward Points:'; 
-$_['text_price']        = 'Price:'; 
-$_['text_tax']          = 'Ex Tax:'; 
-$_['text_reviews']      = 'Based on %s reviews.'; 
-$_['text_compare']      = 'Product Compare (%s)'; 
-$_['text_display']      = 'Display:';
-$_['text_list']         = 'List';
-$_['text_grid']         = 'Grid';
-$_['text_sort']         = 'Sort By:';
-$_['text_default']      = 'Default';
-$_['text_name_asc']     = 'Name (A - Z)';
-$_['text_name_desc']    = 'Name (Z - A)';
-$_['text_price_asc']    = 'Price (Low &gt; High)';
-$_['text_price_desc']   = 'Price (High &gt; Low)';
-$_['text_rating_asc']   = 'Rating (Lowest)';
-$_['text_rating_desc']  = 'Rating (Highest)';
-$_['text_model_asc']    = 'Model (A - Z)';
-$_['text_model_desc']   = 'Model (Z - A)';
-$_['text_limit']        = 'Show:';
+$_['text_brand']        = 'Merk';
+$_['text_index']        = 'Index:';
+$_['text_error']        = 'Merk niet gevonden!';
+$_['text_empty']        = 'Er zijn geen producten van dit merk.';
+$_['text_quantity']     = 'Aantal:';
+$_['text_manufacturer'] = 'Merk:';
+$_['text_model']        = 'Model:'; 
+$_['text_points']       = 'Spaarpunten:'; 
+$_['text_price']        = 'Prijs:'; 
+$_['text_tax']          = 'Excl. BTW:'; 
+$_['text_reviews']      = 'Gebaseerd op %s beoordeling(en).'; 
+$_['text_compare']      = 'Product vergelijk (%s)'; 
+$_['text_display']      = 'Weergave:';
+$_['text_list']         = 'Lijst';
+$_['text_grid']         = 'Rooster';
+$_['text_sort']         = 'Sorteer op:';
+$_['text_default']      = 'Standaard';
+$_['text_name_asc']     = 'Naam A - Z';
+$_['text_name_desc']    = 'Naam Z - A';
+$_['text_price_asc']    = 'Prijs Laag &gt; Hoog';
+$_['text_price_desc']   = 'Prijs Hoog &lt; Laag';
+$_['text_rating_asc']   = 'Laagste beoordeling'; 
+$_['text_rating_desc']  = 'Hoogste beoordeling';
+$_['text_model_asc']    = 'Model A - Z';
+$_['text_model_desc']   = 'Model Z - A';
+$_['text_limit']        = 'Aantal weergegeven:';
 ?>

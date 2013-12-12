@@ -1,21 +1,19 @@
 <?php
 // Heading 
-$_['heading_title']    = 'Account';
+$_['heading_title']    = 'Profiel';
 
 // Text
-$_['text_register']    = 'Register';
+$_['text_register']    = 'Registreer';
 $_['text_login']       = 'Login';
-$_['text_logout']      = 'Logout';
-$_['text_forgotten']   = 'Forgotten Password';
-$_['text_account']     = 'My Account';
-$_['text_edit']        = 'Edit Account';
-$_['text_password']    = 'Password';
-$_['text_address']     = 'Address Books';
-$_['text_wishlist']    = 'Wish List';
-$_['text_order']       = 'Order History';
+$_['text_logout']      = 'Uitloggen';
+$_['text_forgotten']   = 'Wachtwoord vergeten';
+$_['text_account']     = 'Mijn Profiel';
+$_['text_edit']        = 'Gegevens bewerken';
+$_['text_password']    = 'Wachtwoord';
+$_['text_wishlist']    = 'Wijnrek';
+$_['text_order']       = 'Bestelhistorie';
 $_['text_download']    = 'Downloads';
-$_['text_return']      = 'Returns';
-$_['text_transaction'] = 'Transactions';
-$_['text_newsletter']  = 'Newsletter';
-$_['text_recurring']   = 'Recurring payments';
+$_['text_return']      = 'Retourzendingen';
+$_['text_transaction'] = 'Transacties';
+$_['text_newsletter']  = 'Nieuwsbrief';
 ?>

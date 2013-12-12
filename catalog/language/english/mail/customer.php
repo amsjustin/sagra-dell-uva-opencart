@@ -1,18 +1,9 @@
 <?php
 // Text
-$_['text_subject']        = '%s - Thank you for registering';
-$_['text_welcome']        = 'Welcome and thank you for registering at %s!';
-$_['text_login']          = 'Your account has now been created and you can log in by using your email address and password by visiting our website or at the following URL:';
-$_['text_approval']       = 'Your account must be approved before you can login. Once approved you can log in by using your email address and password by visiting our website or at the following URL:';
-$_['text_services']       = 'Upon logging in, you will be able to access other services including reviewing past orders, printing invoices and editing your account information.';
-$_['text_thanks']         = 'Thanks,';
-$_['text_new_customer']   = 'New customer';
-$_['text_signup']         = 'A new customer has signed up:';
-$_['text_website']        = 'Web Site:';
-$_['text_customer_group'] = 'Customer Group:';
-$_['text_firstname']      = 'First Name:';
-$_['text_lastname']       = 'Last Name:';
-$_['text_company']        = 'Company:';
-$_['text_email']          = 'E-Mail:';
-$_['text_telephone']      = 'Telephone:';
+$_['text_subject']  = '%s - Hartelijk dank voor uw registratie';
+$_['text_welcome']  = 'Welkom bij %s!';
+$_['text_login']    = 'Uw account is aangemaakt. U kunt met uw e-mail adres en wachtwoord inloggen op het volgende adres:';
+$_['text_approval'] = 'Uw account dient nog te worden goedgekeurd voordat u kunt inloggen. Zodra dit gebeurd is kunt u inloggen op het volgende adres:';
+$_['text_services'] = 'Na het inloggen kunt u desgewenst uw persoonlijke gegevens aanpassen en uw eventuele bestelling(en) bekijken.';
+$_['text_thanks']   = 'Met vriendelijke groeten,';
 ?>

@@ -1,11 +1,11 @@
 <?php
 // Heading
-$_['heading_title'] = 'Your Order Has Been Processed!';
+$_['heading_title'] = 'Uw bestelling is geplaatst.';
 
 // Text
-$_['text_customer'] = '<p>Your order has been successfully processed!</p><p>You can view your order history by going to the <a href="%s">my account</a> page and by clicking on <a href="%s">history</a>.</p><p>If your purchase has an associated download, you can go to the account <a href="%s">downloads</a> page to view them.</p><p>Please direct any questions you have to the <a href="%s">store owner</a>.</p><p>Thanks for shopping with us online!</p>';
-$_['text_guest']    = '<p>Your order has been successfully processed!</p><p>Please direct any questions you have to the <a href="%s">store owner</a>.</p><p>Thanks for shopping with us online!</p>';
-$_['text_basket']   = 'Shopping Cart';
-$_['text_checkout'] = 'Checkout';
-$_['text_success']  = 'Success';
+$_['text_customer'] = '<p>Uw bestelling is door ons succesvol ontvangen.</p><p>U kunt een overzicht van uw bestellingen inzien via uw <a href="%s">account-pagina</a> of door <a href="%s">hier</a> te klikken.<p>Bestaat uw aankoop uit een download, dan kunt u in uw account naar uw <a href="%s">downloads</a> gaan om deze te downloaden.</p></p><p>Indien u vragen heeft, neemt u dan <a href="%s">contact</a> met ons op.</p><p>Hartelijk dank voor uw bestelling!</p>';
+$_['text_guest']    = '<p>Uw bestelling is door ons succesvol ontvangen.</p><p>Indien u vragen heeft, neemt u dan <a href="%s">contact</a> met ons op.</p><p>Hartelijk dank voor uw bestelling!</p>';
+$_['text_basket']   = 'Winkelwagen';
+$_['text_checkout'] = 'Afrekenen';
+$_['text_success']  = 'Succes';
 ?>

@@ -1,29 +1,29 @@
 <?php
 // Heading 
-$_['heading_title']    = 'Purchase a Gift Certificate';
+$_['heading_title']    = 'Geef eens een bon cadeau';
 
 // Text
 $_['text_account']     = 'Account';
-$_['text_voucher']     = 'Gift Voucher';
-$_['text_description'] = 'This gift certificate will be emailed to the recipient after your order has been paid for.';
-$_['text_agree']       = 'I understand that gift certificates are non-refundable.';
-$_['text_message']     = '<p>Thank you for purchasing a gift certificate! Once you have completed your order your gift voucher recipient will be sent an email with details how to redeem their gift voucher.</p>';
-$_['text_for']         = '%s Gift Certificate for %s';
+$_['text_voucher']     = 'Cadeaubon';
+$_['text_description'] = 'Deze cadeaubon zal per e-mail aan de ontvanger worden gestuurd zodra uw betaling succesvol is afgerond.';
+$_['text_agree']       = 'Ik ga ermee akkoord dat het aankoopbedrag van deze bon niet kan worden teruggestort.';
+$_['text_message']     = '<p>Bedankt voor het kopen van een cadeaubon! Zodra u uw betaling succesvol is afgerond wordt deze verstuurd naar de ontvanger, inclusief instructies voor het gebruik van deze bon.</p>';
+$_['text_for']         = '%s Cadeaubon voor %s';
 
 // Entry
-$_['entry_to_name']    = 'Recipient\'s Name:';
-$_['entry_to_email']   = 'Recipient\'s Email:';
-$_['entry_from_name']  = 'Your Name:';
-$_['entry_from_email'] = 'Your Email:';
-$_['entry_theme']      = 'Gift Certificate Theme:';
-$_['entry_message']    = 'Message:<br /><span class="help">(Optional)</span>';
-$_['entry_amount']     = 'Amount:<br /><span class="help">(Value must be between %s and %s)</span>';
+$_['entry_to_name']    = 'Naam ontvanger:';
+$_['entry_to_email']   = 'E-mail adres ontvanger:';
+$_['entry_from_name']  = 'Uw naam:';
+$_['entry_from_email'] = 'Uw e-mail adres:';
+$_['entry_theme']      = 'Ter gelegenheid van:<br /><span class="help">Voor welke gelegenheid krijgt de ontvanger deze cadeaubon.</span>';
+$_['entry_message']    = 'Bericht:<br /><span class="help">Uw bericht aan de ontvanger van deze cadeaubon.</span>';
+$_['entry_amount']     = 'Bedrag:<br /><span class="help">De veplichte waarde van deze cadeaubon ligt tussen 1 en 1000 Euro.</span>';
 
 // Error
-$_['error_to_name']    = 'Recipient\'s Name must be between 1 and 64 characters!';
-$_['error_from_name']  = 'Your Name must be between 1 and 64 characters!';
-$_['error_email']      = 'E-Mail Address does not appear to be valid!';
-$_['error_theme']      = 'You must select a theme!';
-$_['error_amount']     = 'Amount must be between %s and %s!';
-$_['error_agree']      = 'Warning: You must agree that the gift certificates are non-refundable!';
+$_['error_to_name']    = 'Naam Ontvanger dient tussen de 1 en 64 tekens lang te zijn!';
+$_['error_from_name']  = 'Uw naam dient tussen de 1 en 64 tekens lang te zijn!';
+$_['error_email']      = 'E-mail adres lijkt niet geldig!';
+$_['error_theme']      = 'Wilt u a.u.b. een gelegenheid selecteren?';
+$_['error_amount']     = 'Verplichte waarde tussen de %s en %s Euro!';
+$_['error_agree']      = 'U dient akkoord te gaan met de voorwaarden!';
 ?>

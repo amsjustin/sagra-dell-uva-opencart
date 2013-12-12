@@ -1,10 +1,10 @@
 <?php
 // Heading
-$_['heading_title'] = 'Your Account Has Been Created!';
+$_['heading_title'] = 'Uw account is aangemaakt';
 
 // Text
-$_['text_message']  = '<p>Congratulations! Your new account has been successfully created!</p> <p>You can now take advantage of member privileges to enhance your online shopping experience with us.</p> <p>If you have ANY questions about the operation of this online shop, please email the store owner.</p> <p>A confirmation has been sent to the provided email address. If you have not received it within the hour, please <a href="%s">contact us</a>.</p>';
-$_['text_approval'] = '<p>Thank you for registering with %s!</p><p>You will be notified by email once your account has been activated by the store owner.</p><p>If you have ANY questions about the operation of this online shop, please <a href="%s">contact the store owner</a>.</p>';
+$_['text_message']  = '<p>Uw account is succesvol aangemaakt.</p> <p>U kunt nu gebruikmaken van diverse privileges om het online winkelen nog gemakkelijker te maken.</p><p>Indien u vragen heeft over deze online winkel, aarzel dan niet en neem contact met ons op.</p> <p>Een bevestiging van uw registratie is naar uw e-mailadres gestuurd. Indien u deze niet binnen een uur ontvangt, neemt u dan <a href="%s">contact</a> met ons op.</p>';
+$_['text_approval'] = '<p>Bedankt voor uw registratie!</p><p>U ontvangt van ons een e-mail zodra uw account is geactiveerd.</p><p>Als u vragen heeft, neem dan <a href="%s">contact</a> met ons op.</p>';
 $_['text_account']  = 'Account';
-$_['text_success']  = 'Success';
+$_['text_success']  = 'Succes';
 ?>

@@ -1,17 +1,17 @@
 <?php
 // Heading 
-$_['heading_title']   = 'Forgot Your Password?';
+$_['heading_title']   = 'Wachtwoord vergeten?';
 
 // Text
 $_['text_account']    = 'Account';
-$_['text_forgotten']  = 'Forgotten Password';
-$_['text_your_email'] = 'Your E-Mail Address';
-$_['text_email']      = 'Enter the e-mail address associated with your account. Click submit to have your password e-mailed to you';
-$_['text_success']    = 'Success: A new password has been sent to your e-mail address.';
+$_['text_forgotten']  = 'Vergeten wachtwoord';
+$_['text_your_email'] = 'Uw e-mail adres';
+$_['text_email']      = 'Bent u uw wachtwoord vergeten? Vul dan hieronder het e-mail adres in wat aan uw account gekoppeld is. Klik vervolgens op <b>Verder</b> en u ontvangt van ons een nieuw wachtwoord.';
+$_['text_success']    = 'Succes: Er is een nieuw wachtwoord naar het door u opgegeven e-mail adres gestuurd.';
 
 // Entry
-$_['entry_email']     = 'E-Mail Address:';
+$_['entry_email']     = 'E-mail adres:';
 
 // Error
-$_['error_email']     = 'Warning: The E-Mail Address was not found in our records, please try again!';
+$_['error_email']     = 'Het door u opgegeven e-mail adres is niet gevonden in onze database, probeer het opnieuw.';
 ?>

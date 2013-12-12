@@ -25,6 +25,14 @@ i,
     animation: animate-warning 0.5s;
     -webkit-animation: animate-warning 0.5s; /* Safari and Chrome */
 }
+.success {
+    padding: 20px 25px;
+    margin-bottom: 25px;
+    background-color: #918a53 ;
+    color: #fff;
+    animation: animate-warning 0.5s;
+    -webkit-animation: animate-warning 0.5s; /* Safari and Chrome */
+}
 
 /* Animations */
 @keyframes animate-warning {
@@ -42,6 +50,10 @@ to {
 to {
     opacity: 1;
 }
+}
+
+a{
+    color: #000;
 }
 
 /* ==========================================================================
@@ -415,6 +427,7 @@ to {
 /* ==========================================================================
     REGISTER
 ============================================================================= */
+
 .register-top {
     padding: 25px;
     background-color: #fff;
@@ -486,13 +499,60 @@ to {
 }
 
 /* ==========================================================================
-    ACCOUNT-LOGIN
+    CONTENT OVERVIEW
 ============================================================================= */
 
-.account-login__content {
+.account-login__content,
+.overview-content {
     margin-top: 25px;
     padding: 25px;
     background-color: #fff;
+}
+
+/* ==========================================================================
+    WIJNREK
+============================================================================= */
+
+.wijnrek__wine {
+    width: 350px;
+    padding: 25px;
+    background-color: #fff;
+    float: left;
+    margin-top: 25px;
+    margin-right: 25px;
+}
+.wijnrek__wine h1 {
+    margin-top: 0px;
+}
+.wijnrek__wine h1 a {
+    text-decoration: none;
+}
+.wijnrek__wine-id {
+    color: #918a53;
+    font-size: 18px;
+    font-weight: bold;
+}
+.wijnrek__col-left {
+    width: 50px;
+    float: left;
+}
+.wijnrek__col-right {
+    width: 250px;
+    float: right;
+}
+.wijnrek__col-bottom {
+    float: left;
+    width: 100%;
+}
+.wijnrek__wine-img {
+    width: auto;
+    height: 180px;
+}
+.wijnrek__wine-visual {
+    width: 250px;
+    float: right;
+    height: 250px;
+    background-color: #ded592;
 }
 
 /* ==========================================================================

@@ -1,38 +1,38 @@
 <?php
 // Heading
-$_['heading_title']     = 'Search';
+$_['heading_title']     = 'Zoeken';
  
 // Text
-$_['text_search']       = 'Products meeting the search criteria';
-$_['text_keyword']      = 'Keywords';
-$_['text_category']     = 'All Categories';
-$_['text_sub_category'] = 'Search in subcategories';
-$_['text_critea']       = 'Search Criteria';
-$_['text_empty']        = 'There is no product that matches the search criteria.';
-$_['text_quantity']     = 'Qty:';
-$_['text_manufacturer'] = 'Brand:';
-$_['text_model']        = 'Product Code:'; 
-$_['text_points']       = 'Reward Points:'; 
-$_['text_price']        = 'Price:'; 
-$_['text_tax']          = 'Ex Tax:'; 
-$_['text_reviews']      = 'Based on %s reviews.'; 
-$_['text_compare']      = 'Product Compare (%s)'; 
-$_['text_display']      = 'Display:';
-$_['text_list']         = 'List';
-$_['text_grid']         = 'Grid';
-$_['text_sort']         = 'Sort By:';
-$_['text_default']      = 'Default';
-$_['text_name_asc']     = 'Name (A - Z)';
-$_['text_name_desc']    = 'Name (Z - A)';
-$_['text_price_asc']    = 'Price (Low &gt; High)';
-$_['text_price_desc']   = 'Price (High &gt; Low)';
-$_['text_rating_asc']   = 'Rating (Lowest)';
-$_['text_rating_desc']  = 'Rating (Highest)';
-$_['text_model_asc']    = 'Model (A - Z)';
-$_['text_model_desc']   = 'Model (Z - A)';
-$_['text_limit']        = 'Show:';
+$_['text_search']       = 'Producten die aan uw zoekcriteria voldoen';
+$_['text_keyword']      = 'Zoekwoorden';
+$_['text_category']     = 'Alle categorie&euml;n';
+$_['text_sub_category'] = 'Zoeken in sub-categorie&euml;n';
+$_['text_critea']       = 'Zoekcriteria';
+$_['text_empty']        = 'Geen product(en) gevonden.';
+$_['text_quantity']     = 'Aantal:';
+$_['text_manufacturer'] = 'Merk:';
+$_['text_model']        = 'Model:'; 
+$_['text_points']       = 'Spaarpunten:'; 
+$_['text_price']        = 'Prijs:'; 
+$_['text_tax']          = 'Excl. BTW:'; 
+$_['text_reviews']      = 'Gebaseerd op %s beoordeling(en).'; 
+$_['text_compare']      = 'Product vergelijk (%s)'; 
+$_['text_display']      = 'Weergave:';
+$_['text_list']         = 'Lijst';
+$_['text_grid']         = 'Rooster';
+$_['text_sort']         = 'Sorteer op:';
+$_['text_default']      = 'Standaard';
+$_['text_name_asc']     = 'Naam A - Z';
+$_['text_name_desc']    = 'Naam Z - A';
+$_['text_price_asc']    = 'Prijs Laag &gt; Hoog';
+$_['text_price_desc']   = 'Prijs Hoog &lt; Laag';
+$_['text_rating_asc']   = 'Laagste beoordeling'; 
+$_['text_rating_desc']  = 'Hoogste beoordeling';
+$_['text_model_asc']    = 'Model A - Z';
+$_['text_model_desc']   = 'Model Z - A';
+$_['text_limit']        = 'Aantal weergegeven:';
 
 // Entry
-$_['entry_search']      = 'Search:';
-$_['entry_description'] = 'Search in product descriptions';
+$_['entry_search']      = 'Zoeken:';
+$_['entry_description'] = 'Zoek in productomschrijvingen';
 ?>

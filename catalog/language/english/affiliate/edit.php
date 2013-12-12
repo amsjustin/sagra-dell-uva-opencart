@@ -1,38 +1,38 @@
 <?php
 // Heading 
-$_['heading_title']     = 'My Account Information';
+$_['heading_title']     = 'Mijn Account';
 
 // Text
 $_['text_account']      = 'Account';
-$_['text_edit']         = 'Edit Information';
-$_['text_your_details'] = 'Your Personal Details';
-$_['text_your_address'] = 'Your Address';
-$_['text_success']      = 'Success: Your account has been successfully updated.';
+$_['text_edit']         = 'Wijzig gegevens';
+$_['text_your_details'] = 'Persoonlijke gegevens';
+$_['text_your_address'] = 'Adres gegevens';
+$_['text_success']      = 'Succes: Uw gegevens zijn bijgewerkt.';
 
 // Entry
-$_['entry_firstname']   = 'First Name:';
-$_['entry_lastname']    = 'Last Name:';
-$_['entry_email']       = 'E-Mail:';
-$_['entry_telephone']   = 'Telephone:';
+$_['entry_firstname']   = 'Voornaam:';
+$_['entry_lastname']    = 'Achternaam:';
+$_['entry_email']       = 'E-mail adres:';
+$_['entry_telephone']   = 'Telefoon:';
 $_['entry_fax']         = 'Fax:';
-$_['entry_company']     = 'Company:';
-$_['entry_website']     = 'Web Site:';
-$_['entry_address_1']   = 'Address 1:';
-$_['entry_address_2']   = 'Address 2:';
-$_['entry_postcode']    = 'Post Code:';
-$_['entry_city']        = 'City:';
-$_['entry_country']     = 'Country:';
-$_['entry_zone']        = 'Region / State:';
+$_['entry_company']     = 'Bedrijf:';
+$_['entry_website']     = 'Website:';
+$_['entry_address_1']   = 'Adres 1:';
+$_['entry_address_2']   = 'Addes 2:';
+$_['entry_postcode']    = 'Postcode:';
+$_['entry_city']        = 'Plaats:';
+$_['entry_country']     = 'Land:';
+$_['entry_zone']        = 'Regio / Provincie:';
 
 // Error
-$_['error_exists']      = 'Warning: E-Mail address is already registered!';
-$_['error_firstname']   = 'First Name must be between 1 and 32 characters!';
-$_['error_lastname']    = 'Last Name must be between 1 and 32 characters!';
-$_['error_email']       = 'E-Mail Address does not appear to be valid!';
-$_['error_telephone']   = 'Telephone must be between 3 and 32 characters!';
-$_['error_address_1']   = 'Address 1 must be between 3 and 128 characters!';
-$_['error_city']        = 'City must be between 2 and 128 characters!';
-$_['error_country']     = 'Please select a country!';
-$_['error_zone']        = 'Please select a region / state!';
-$_['error_postcode']    = 'Postcode must be between 2 and 10 characters!';
+$_['error_exists']      = 'Er is al een account met dit e-mailadres!';
+$_['error_firstname']   = 'Voornaam dient tussen de 1 en 32 tekens lang te zijn!';
+$_['error_lastname']    = 'Achternaam dient tussen de 1 en 32 tekens lang te zijn!';
+$_['error_email']       = 'Ongeldig e-mailadres!';
+$_['error_telephone']   = 'Telefoon dient tussen de 3 en 32 tekens lang te zijn!';
+$_['error_address_1']   = 'Adres 1 dient tussen de 3 en 128 tekens lang te zijn!';
+$_['error_city']        = 'Woonplaats dient tussen de 2 en 128 tekens lang te zijn!';
+$_['error_country']     = 'Keuze van land is verplicht!';
+$_['error_zone']        = 'Keuze van provincie / regio is verplicht!';
+$_['error_postcode']    = 'Postcode dient tussen de 2 en 10 tekens lang te zijn!';
 ?>

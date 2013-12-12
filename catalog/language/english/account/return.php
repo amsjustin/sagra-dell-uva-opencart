@@ -1,63 +1,61 @@
 <?php
 // Heading 
-$_['heading_title']      = 'Product Returns';
+$_['heading_title']      = 'Retouraanvraag';
 
 // Text
 $_['text_account']       = 'Account';
-$_['text_return']        = 'Return Information';
-$_['text_return_detail'] = 'Return Details';
-$_['text_description']   = '<p>Please complete the form below to request an RMA number.</p>';
-$_['text_order']         = 'Order Information';
-$_['text_product']       = 'Product Information &amp; Reason for Return';
-$_['text_message']       = '<p>Thank you for submitting your return request. Your request has been sent to the relevant department for processing.</p><p> You will be notified via e-mail as to the status of your request.</p>';
-$_['text_return_id']     = 'Return ID:';
-$_['text_order_id']      = 'Order ID:';
-$_['text_date_ordered']  = 'Order Date:';
+$_['text_return']        = 'Informatie';
+$_['text_return_detail'] = 'Details';
+$_['text_description']   = '<p>U wilt een product aan ons retourneren. Kijk in onze Algemene Voorwaarden voor alle details betreffende uw Recht op retour.</p>';
+$_['text_order']         = 'Uw gegevens';
+$_['text_product']       = 'Product informatie &amp; Reden van retour';
+$_['text_message']       = '<p>Uw retouraanvraag is verstuurd!</p><p>U krijgt bericht wanneer deze in behandeling is genomen met daarbij eventuele vervolginstructies.';
+$_['text_return_id']     = 'Retournummer:';
+$_['text_order_id']      = 'Bestelnummer:';
+$_['text_date_ordered']  = 'Besteldatum:';
 $_['text_status']        = 'Status:';
-$_['text_date_added']    = 'Date Added:';
-$_['text_customer']      = 'Customer:';
-$_['text_comment']       = 'Return Comments';
-$_['text_history']       = 'Return History';
-$_['text_empty']         = 'You have not made any previous returns!';
-$_['text_agree']         = 'I have read and agree to the <a class="colorbox" href="%s" alt="%s"><b>%s</b></a>';
+$_['text_date_added']    = 'Datum:';
+$_['text_customer']      = 'Klant:';
+$_['text_comment']       = 'Opmerkingen';
+$_['text_history']       = 'Geschiedenis';
+$_['text_empty']         = 'U heeft nog geen eerdere retouraanvragen!';
+$_['text_error']         = 'Retouraanvraag niet gevonden!';
 
 // Column
-$_['column_product']     = 'Product Name';
+$_['column_product']     = 'Product';
 $_['column_model']       = 'Model';
-$_['column_quantity']    = 'Quantity';
-$_['column_price']       = 'Price';
-$_['column_opened']      = 'Opened';
-$_['column_comment']     = 'Comment';
-$_['column_reason']      = 'Reason';
-$_['column_action']      = 'Action';
-$_['column_date_added']  = 'Date Added';
+$_['column_quantity']    = 'Aantal';
+$_['column_price']       = 'Prijs';
+$_['column_opened']      = 'Geopend';
+$_['column_comment']     = 'Opmerking';
+$_['column_reason']      = 'Reden';
+$_['column_action']      = 'Actie';
+$_['column_date_added']  = 'Datum aangemaakt';
 $_['column_status']      = 'Status';
 
 // Entry
-$_['entry_order_id']     = 'Order ID:';
-$_['entry_date_ordered'] = 'Order Date:';
-$_['entry_firstname']    = 'First Name:';
-$_['entry_lastname']     = 'Last Name:';
-$_['entry_email']        = 'E-Mail:';
-$_['entry_telephone']    = 'Telephone:';
-$_['entry_product']      = 'Product Name:';
-$_['entry_model']        = 'Product Code:';
-$_['entry_quantity']     = 'Quantity:';
-$_['entry_reason']       = 'Reason for Return:';
-$_['entry_opened']       = 'Product is opened:';
-$_['entry_fault_detail'] = 'Faulty or other details:';
-$_['entry_captcha']      = 'Enter the code in the box below:';
+$_['entry_order_id']     = 'Bestelnummer:';
+$_['entry_date_ordered'] = 'Besteldatum:';
+$_['entry_firstname']    = 'Voornaam:';
+$_['entry_lastname']     = 'Achternaam:';
+$_['entry_email']        = 'E-mail adres:';
+$_['entry_telephone']    = 'Telefoon:';
+$_['entry_product']      = 'Product:';
+$_['entry_model']        = 'Model:';
+$_['entry_quantity']     = 'Aantal:';
+$_['entry_reason']       = 'Reden van retour:';
+$_['entry_opened']       = 'Product is geopend:';
+$_['entry_fault_detail'] = 'Fout(en) of andere opmerkingen:';
+$_['entry_captcha']      = 'Voer de onderstaande code in:';
 
 // Error
-$_['text_error']         = 'The returns you requested could not be found!';
-$_['error_order_id']     = 'Order ID required!';
-$_['error_firstname']    = 'First Name must be between 1 and 32 characters!';
-$_['error_lastname']     = 'Last Name must be between 1 and 32 characters!';
-$_['error_email']        = 'E-Mail Address does not appear to be valid!';
-$_['error_telephone']    = 'Telephone must be between 3 and 32 characters!';
-$_['error_product']      = 'Product Name must be greater than 3 and less than 255 characters!';
-$_['error_model']        = 'Product Model must be greater than 3 and less than 64 characters!';
-$_['error_reason']       = 'You must select at a return product reason!';
-$_['error_captcha']      = 'Verification code does not match the image!';
-$_['error_agree']        = 'Warning: You must agree to the %s!';
+$_['error_order_id']     = 'Bestelnummer verplicht!';
+$_['error_firstname']    = 'Voornaam dient tussen de 1 en 32 tekens lang te zijn!';
+$_['error_lastname']     = 'Achternaam dient tussen de 1 en 32 tekens lang te zijn!';
+$_['error_email']        = 'E-mail adres lijkt ongeldig!';
+$_['error_telephone']    = 'Telefoon dient tussen de 3 en 32 tekens lang te zijn!';
+$_['error_product']      = 'U dient minimaal 1 product te selecteren!';
+$_['error_model']        = 'Model dient tussen de 3 en 64 tekens lang te zijn!';
+$_['error_reason']       = 'Selecteer een reden van retour!';
+$_['error_captcha']      = 'De verificatiecode klopt niet!';
 ?>
