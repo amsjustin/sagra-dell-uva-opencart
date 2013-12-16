@@ -7,7 +7,7 @@
 <?php /*echo $column_left;*/ ?><?php /*echo $column_right;*/ ?>
 
 <div class="wrapper"><section class="content"><div class="inner">
-<div id="content"><?php /*echo $content_top;*/ ?>
+<div class="content__container"><?php /*echo $content_top;*/ ?>
   <div class="breadcrumb">
     <?php foreach ($breadcrumbs as $breadcrumb) { ?>
     <?php echo $breadcrumb['separator']; ?><a href="<?php echo $breadcrumb['href']; ?>"><?php echo $breadcrumb['text']; ?></a>

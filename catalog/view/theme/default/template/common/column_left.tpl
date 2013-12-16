@@ -42,8 +42,9 @@
                             
                             <h1>CATEGORIES</h1>
                             <?php 
-                                /* Counter om de ul's af te sluiten */
+                                /* Counter om de ul's te beginnen en af te sluiten */
                                 $ulcounter = 0;
+                                
                                 for ($i = 0; $i < $arrlength; $i++){
                                     if($ulcounter==0){
                                         echo '<ul>';
