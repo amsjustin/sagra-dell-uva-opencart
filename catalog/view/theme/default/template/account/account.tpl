@@ -11,6 +11,11 @@
     </div>
     <div class="overview-content">
         <h1>Mijn Profiel</h1>
+        <div class="account">
+            <div class="account__profile-pic"></div>
+            <div class="account__profile-creditials"></div>
+            <div class="account__profile-sum"></div>
+        </div>
         <div class="content">
             <ul>
                 <li><a href="<?php echo $password; ?>"><?php echo $text_password; ?></a></li>
