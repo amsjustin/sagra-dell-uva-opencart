@@ -361,7 +361,10 @@ to {
     height: 180px;
     float: left;
 }
-.product__content-description{
+.product__content-description--normal{
+	
+}
+.product__content-description--offthechart{
 	
 }
 .product__content-price {
