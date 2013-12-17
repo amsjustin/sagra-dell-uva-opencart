@@ -56,7 +56,7 @@
                                 <a href="#"><img src="html/assets/img/logo.jpg"></a>
                             </div>
                             <div class="header__account">
-                                <p>Welcome visitor you can login or create an account</p>
+                                <p>Welcome visitor you can <a href="http://localhost/opencart/index.php?route=account/register">login</a> or <a href="http://localhost/opencart/index.php?route=account/login">create an account</a></p>
                             </div>
                             <div class="clear-fix"></div>
                         </div>
