@@ -1,20 +1,23 @@
 <?php echo $header; ?>
 <?php
-    $wine_description = array(
-        "",
-        "",
-        "",
-        "",
-        ""
-    );
+$wine_description = array(
+"",
+"",
+"",
+"",
+""
+);
 ?>
 <section class="content">
     <?php echo $column_left; ?>
     <section class="product-overview">
         <div class="product-overview__breadcrumb">
-            <a href="#">Home</a>
-            » <a href="#">Laptops &amp; Notebooks</a>
+            <?php foreach ($breadcrumbs as $breadcrumb) { ?>
+            <?php echo $breadcrumb['separator']; ?><a href="<?php echo $breadcrumb['href']; ?>"><?php echo $breadcrumb['text']; ?></a>
+            <?php } ?>
         </div>
+        <?php var_dump($products); ?>
+        <hr>
         <article class="product">
             <div class="product__img">
                 <img src="html/assets/img/wine-preview.jpg">
