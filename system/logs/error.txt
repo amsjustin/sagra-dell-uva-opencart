@@ -349,6 +349,7 @@
 2013-12-17 12:19:53 - PHP Notice:  Undefined variable: menu_length in /Applications/MAMP/htdocs/opencart/catalog/view/theme/default/template/common/column_left.tpl on line 39
 2013-12-17 12:19:53 - PHP Warning:  Missing argument 3 for createCategories(), called in /Applications/MAMP/htdocs/opencart/catalog/view/theme/default/template/common/column_left.tpl on line 54 and defined in /Applications/MAMP/htdocs/opencart/catalog/view/theme/default/template/common/column_left.tpl on line 35
 2013-12-17 12:19:53 - PHP Notice:  Undefined variable: menu_length in /Applications/MAMP/htdocs/opencart/catalog/view/theme/default/template/common/column_left.tpl on line 39
+<<<<<<< HEAD
 2013-12-17 14:59:17 - PHP Notice:  Undefined variable: setting in /Users/moppedijk/Documents/00 Moppedijk/Hva/S02/Blok01/Project04/00 Sagra/sources/sagra-dell-uva-opencart/catalog/controller/common/home.php on line 19
 2013-12-17 14:59:17 - PHP Notice:  Undefined variable: setting in /Users/moppedijk/Documents/00 Moppedijk/Hva/S02/Blok01/Project04/00 Sagra/sources/sagra-dell-uva-opencart/catalog/controller/common/home.php on line 26
 2013-12-17 14:59:17 - PHP Notice:  Undefined variable: setting in /Users/moppedijk/Documents/00 Moppedijk/Hva/S02/Blok01/Project04/00 Sagra/sources/sagra-dell-uva-opencart/catalog/controller/common/home.php on line 26
@@ -824,3 +825,6 @@
 2013-12-17 17:04:54 - PHP Warning:  Invalid argument supplied for foreach() in /Users/moppedijk/Documents/00 Moppedijk/Hva/S02/Blok01/Project04/00 Sagra/sources/sagra-dell-uva-opencart/catalog/view/theme/default/template/common/home.tpl on line 6
 2013-12-17 17:06:47 - PHP Notice:  Undefined variable: breadcrumbs in /Users/moppedijk/Documents/00 Moppedijk/Hva/S02/Blok01/Project04/00 Sagra/sources/sagra-dell-uva-opencart/catalog/view/theme/default/template/common/home.tpl on line 6
 2013-12-17 17:06:47 - PHP Warning:  Invalid argument supplied for foreach() in /Users/moppedijk/Documents/00 Moppedijk/Hva/S02/Blok01/Project04/00 Sagra/sources/sagra-dell-uva-opencart/catalog/view/theme/default/template/common/home.tpl on line 6
+=======
+2013-12-17 14:34:01 - PHP Notice:  Undefined variable: product_info in /Applications/MAMP/htdocs/opencart/catalog/view/theme/default/template/product/product.tpl on line 3
+>>>>>>> da868772651279db2233cce0d9d811934c3c0595
