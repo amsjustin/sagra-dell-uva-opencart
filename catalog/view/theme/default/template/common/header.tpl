@@ -18,19 +18,19 @@
         <?php } ?>
         <!--<link rel="stylesheet" type="text/css" href="catalog/view/theme/default/stylesheet/stylesheet.css" />-->
         <?php foreach ($styles as $style) { ?>
-        
+
         <?php } ?>
-        
+
         <link rel="stylesheet" type="text/css" href="html/assets/css/font.css">
         <link rel="stylesheet" type="text/css" href="html/assets/css/normalize.css">
         <link rel="stylesheet" type="text/css" href="html/assets/css/style.css">
-        
+
         <script type="text/javascript" src="html/js/lib/jquery-1.8.2.min.js"></script>
         <script type="text/javascript" src="html/js/lib/jquery.inputfield.js"></script>
         <script type="text/javascript" src="html/js/lib/respond.min.js"></script>
-        
-        
-        
+
+
+
         <?php foreach ($scripts as $script) { ?>
         <script type="text/javascript" src="<?php echo $script; ?>"></script>
         <?php } ?>
@@ -44,7 +44,7 @@
         DD_belatedPNG.fix('#logo img');
         </script>
         <![endif]-->
-        
+
     </head>
     <body>
         <div class="wrapper">
@@ -56,7 +56,7 @@
                                 <a href="#"><img src="html/assets/img/logo.jpg"></a>
                             </div>
                             <div class="header__account">
-                                <p>Welcome visitor you can <a href="http://localhost/opencart/index.php?route=account/register">login</a> or <a href="http://localhost/opencart/index.php?route=account/login">create an account</a></p>
+                                <p>Welcome visitor you can <a href="http://localhost/opencart/index.php?route=account/login">login</a> or <a href="http://localhost/opencart/index.php?route=account/register">create an account</a></p>
                             </div>
                             <div class="clear-fix"></div>
                         </div>
@@ -79,11 +79,23 @@
                                 </div>
                                 <nav id="global-nav" class="global-nav global-nav--inactive">
                                     <ul class="global-nav__ul">
-                                        <li><a href="#">List</a></li>
-                                        <li><a href="#">List</a></li>
-                                        <li><a href="#">List</a></li>
-                                        <li><a href="#">List</a></li>
-                                        <li><a href="#">List</a></li>
+                                        <?php 
+                                            // menu array (later vullen met database etc)
+                                            $wine_menu_title = array(
+                                            "category item 1",
+                                            "category item 2",
+                                            "category item 3",
+                                            "category item 4",
+                                            "category item 5",
+                                            "category item 6",
+                                            "category item 7",
+                                            "category item 8",
+                                            "category item 9",
+                                            "category item 10",
+                                            "category item 11",
+                                            "category item 12",
+                                            );
+                                        ?>
                                     </ul>
                                 </nav>
                             </div>
@@ -93,7 +105,7 @@
                 </header>
                 <section class="content">
                     <div class="inner">
-                    <?php if ($error) { ?>
-                    <div class="warning"><?php echo $error ?><img src="catalog/view/theme/default/image/close.png" alt="" class="close" /></div>
-                    <?php } ?>
-                    <div id="notification"></div>
+                        <?php if ($error) { ?>
+                        <div class="warning"><?php echo $error ?><img src="catalog/view/theme/default/image/close.png" alt="" class="close" /></div>
+                        <?php } ?>
+                        <div id="notification"></div>
