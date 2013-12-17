@@ -87,7 +87,7 @@
                                 <a href="#"><img src="html/assets/img/logo.jpg"></a>
                             </div>
                             <div class="header__account">
-                                <p>Welcome visitor you can <a href="http://localhost/opencart/index.php?route=account/login">login</a> or <a href="http://localhost/opencart/index.php?route=account/register">create an account</a></p>
+                                <p>Welcome visitor you can <a href="<?php echo $base; ?>/index.php?route=account/login">login</a> or <a href="<?php echo $base; ?>/index.php?route=account/register">create an account</a></p>
                             </div>
                             <div class="clear-fix"></div>
                         </div>
