@@ -459,7 +459,7 @@ to {
     padding: 25px;
     background-color: #fff;
 }
-.form .error {
+.error {
     margin-top: 5px;
     color: #aa5f7e;
     text-align: right;
@@ -483,6 +483,17 @@ to {
     border: 0;
     background-color: #bebebe;
     width: 200px;
+}
+.form__input-holder textarea {
+    border: solid 1px #bebebe;
+    margin: 10px 0px;
+    resize: none;
+    width: 100%;
+}
+.form__input-holder textarea:focus {
+    border: solid 1px #9b9b9b;
+    outline: 0;
+
 }
 .form__checkbox-holder {
     margin: 20px    ;
