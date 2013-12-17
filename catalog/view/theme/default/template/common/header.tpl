@@ -16,6 +16,7 @@
         <?php foreach ($links as $link) { ?>
         <link href="<?php echo $link['href']; ?>" rel="<?php echo $link['rel']; ?>" />
         <?php } ?>
+        <!--<link rel="stylesheet" type="text/css" href="catalog/view/theme/default/stylesheet/stylesheet.css" />-->
         <?php foreach ($styles as $style) { ?>
         
         <?php } ?>
@@ -47,7 +48,8 @@
     </head>
     <body>
         <div class="wrapper">
-            <header class="header">
+            <div class="main">
+                <header class="header">
                     <div class="header__top">
                         <div class="inner">
                             <div class="header__logo">
@@ -55,9 +57,6 @@
                             </div>
                             <div class="header__account">
                                 <p>Welcome visitor you can login or create an account</p>
-                                <p><a href="http://localhost/opencart/index.php?route=account/register">Create an account</a></p>
-                                <p><a href="http://localhost/opencart/index.php?route=account/login">Log in</a></p>
-                                <p><a href="http://localhost/opencart/index.php?route=checkout/cart">Shopping cart</a></p>
                             </div>
                             <div class="clear-fix"></div>
                         </div>
@@ -78,39 +77,13 @@
                                         <i class="icon-pancake"></i>
                                     </a>
                                 </div>
-                                
-                                <?php
-                                    // Titels in menu menu
-                                    $wine_menu_title = array(
-                                        "menu item 1",
-                                        "menu item 2",
-                                        "menu item 3",
-                                        "menu item 4",
-                                        "menu item 5",
-                                    );
-                                    
-                                    // URLs in wijn menu
-                                    $wine_menu_url = array(
-                                        '#',
-                                        '#',
-                                        '#',
-                                        '#',
-                                        '#',
-                                    );
-                                ?>
-                                
                                 <nav id="global-nav" class="global-nav global-nav--inactive">
                                     <ul class="global-nav__ul">
-                                        
-                                        <?php
-                                            // array lengte
-                                            $arrlength=count($wine_menu_title);
-                                             
-                                            // vul de unordered list met list items
-                                            for ($i = 0; $i < $arrlength; $i++){
-                                                echo "<li><a href=\"$wine_menu_url[$i]\">" . $wine_menu_title[$i] . '</a></li>';
-                                            }
-                                        ?>
+                                        <li><a href="#">List</a></li>
+                                        <li><a href="#">List</a></li>
+                                        <li><a href="#">List</a></li>
+                                        <li><a href="#">List</a></li>
+                                        <li><a href="#">List</a></li>
                                     </ul>
                                 </nav>
                             </div>
@@ -118,12 +91,9 @@
                         </div>
                     </div>
                 </header>
-            <?php if ($categories) { ?>
-            
-            <?php } ?>
-            <?php if ($error) { ?>
-
-            <div class="warning"><?php echo $error ?><img src="catalog/view/theme/default/image/close.png" alt="" class="close" /></div>
-
-            <?php } ?>
-            <div id="notification"></div>
+                <section class="content">
+                    <div class="inner">
+                    <?php if ($error) { ?>
+                    <div class="warning"><?php echo $error ?><img src="catalog/view/theme/default/image/close.png" alt="" class="close" /></div>
+                    <?php } ?>
+                    <div id="notification"></div>

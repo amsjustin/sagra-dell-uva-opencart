@@ -1,3 +1,8 @@
+
+            </section>    
+        <div class="spacer"></div>
+    </div> <!-- / MAIN -->
+</div> <!-- / WRAPPER -->
 <footer class="footer">
     <div class="inner">
         <div class="footer__col footer__col--first">

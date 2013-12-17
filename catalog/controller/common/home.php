@@ -3,8 +3,6 @@ class ControllerCommonHome extends Controller {
 	public function index() {
 		$this->document->setTitle($this->config->get('config_title'));
 		$this->document->setDescription($this->config->get('config_meta_description'));
-                
-                $this->data['home_content'] = $this->language->get('home_content');
 
 		$this->data['heading_title'] = $this->config->get('config_title');
 		
@@ -16,7 +14,6 @@ class ControllerCommonHome extends Controller {
 		
 		$this->children = array(
 			'common/column_left',
-                        'information/content_home',
 			'common/column_right',
 			'common/content_top',
 			'common/content_bottom',
