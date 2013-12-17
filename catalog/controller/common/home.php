@@ -41,7 +41,7 @@ class ControllerCommonHome extends Controller {
 
             $this->data['products'][] = array(
                 'product_id' => $result['product_id'],
-                'thumb' => $image,
+                'thumb' => $result['image'],
                 'name' => $result['name'],
                 'price' => $price,
                 'special' => $special,

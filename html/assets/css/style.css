@@ -33,7 +33,17 @@ i,
     animation: animate-warning 0.5s;
     -webkit-animation: animate-warning 0.5s; /* Safari and Chrome */
 }
-
+.button {
+    background-color: #bebebe;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    display: inline-block;
+    text-decoration: none;
+}
+.button:hover {
+    background-color: #9b9b9b;
+}
 /* Animations */
 @keyframes animate-warning {
     from {
@@ -54,6 +64,12 @@ to {
 
 a{
     color: #000;
+}
+@media (max-width: 767px) {
+}
+@media (max-width: 480px) {
+}
+@media (min-width: 1200px) {
 }
 
 /* ==========================================================================
@@ -361,11 +377,8 @@ to {
     height: 180px;
     float: left;
 }
-.product__content-description--normal{
-	
-}
-.product__content-description--offthechart{
-	
+.product__content-description{
+
 }
 .product__content-price {
     vertical-align: text-top;
@@ -446,7 +459,7 @@ to {
     padding: 25px;
     background-color: #fff;
 }
-.form .error {
+.error {
     margin-top: 5px;
     color: #aa5f7e;
     text-align: right;
@@ -462,14 +475,42 @@ to {
     outline: 0;
     background-color: #9b9b9b;
 }
+.form__input-holder select {
+    width: 200px;
+}
 .form__input-holder input {
     padding: 10px;
     border: 0;
     background-color: #bebebe;
     width: 200px;
 }
+.form__input-holder textarea {
+    border: solid 1px #bebebe;
+    margin: 10px 0px;
+    resize: none;
+    width: 100%;
+}
+.form__input-holder textarea:focus {
+    border: solid 1px #9b9b9b;
+    outline: 0;
+
+}
+.form__checkbox-holder {
+    margin: 20px    ;
+}
+.form__checkbox-holder input,
+.form__checkbox-holder label {
+    display: inline-table;
+    margin-right: 10px;
+}
 .form__button-holder {
     margin: 20px 0px;
+}
+.form__button-holder .left {
+    float: left;
+}
+.form__button-holder .right {
+    float: right;
 }
 .submit-button {
     float: right;
@@ -485,8 +526,12 @@ to {
     .form__input-holder label {
         width: 150px;
     }
+    .form__input-holder select {
+        width: 200px;
+    }
 }
 @media (max-width: 480px) {
+    .form__input-holder select,
     .form__input-holder input,
     .form__input-holder label {
         width: 90%;
@@ -499,6 +544,7 @@ to {
     .form__input-holder label {
         width: 200px;
     }
+    .form__input-holder select,
     .form__input-holder input {
         width: 575px;
     }
@@ -571,7 +617,7 @@ to {
     min-height: 160px;
     position: relative;
     z-index: 1;
-    margin-top: 25px;
+    /*margin-top: 25px;*/
 }
 .footer__col {
     width: 100%;

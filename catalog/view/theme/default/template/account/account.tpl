@@ -11,6 +11,11 @@
     </div>
     <div class="overview-content">
         <h1>Mijn Profiel</h1>
+        <div class="account">
+            <div class="account__profile-pic"></div>
+            <div class="account__profile-creditials"></div>
+            <div class="account__profile-sum"></div>
+        </div>
         <div class="content">
             <ul>
                 <li><a href="<?php echo $password; ?>"><?php echo $text_password; ?></a></li>
@@ -22,13 +27,13 @@
         <div class="content">
             <ul>
                 <li><a href="<?php echo $order; ?>"><?php echo $text_order; ?></a></li>
-                <li><a href="<?php echo $download; ?>"><?php echo $text_download; ?></a></li>
+                <!--<li><a href="<?php echo $download; ?>"><?php echo $text_download; ?></a></li>-->
                 <?php if ($reward) { ?>
                 <li><a href="<?php echo $reward; ?>"><?php echo $text_reward; ?></a></li>
                 <?php } ?>
-                <li><a href="<?php echo $return; ?>"><?php echo $text_return; ?></a></li>
-                <li><a href="<?php echo $transaction; ?>"><?php echo $text_transaction; ?></a></li>
-                <li><a href="<?php echo $recurring; ?>"><?php echo $text_recurring; ?></a></li>
+                <!--<li><a href="<?php echo $return; ?>"><?php echo $text_return; ?></a></li>-->
+                <!--<li><a href="<?php echo $transaction; ?>"><?php echo $text_transaction; ?></a></li>-->
+                <!--<li><a href="<?php echo $recurring; ?>"><?php echo $text_recurring; ?></a></li>-->
             </ul>
         </div>
         <h2><?php echo $text_my_newsletter; ?></h2>

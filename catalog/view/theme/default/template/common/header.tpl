@@ -32,24 +32,15 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="UTF-8" />
         <title>Sagra dell'Uva</title>
-        <base href="<?php echo $base; ?>" />
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        
         <?php if ($description) { ?>
         <meta name="description" content="<?php echo $description; ?>" />
         <?php } ?>
         <?php if ($keywords) { ?>
         <meta name="keywords" content="<?php echo $keywords; ?>" />
-        <?php } ?>
-        <?php if ($icon) { ?>
-        <link href="<?php echo $icon; ?>" rel="icon" />
-        <?php } ?>
-        <?php foreach ($links as $link) { ?>
-        <link href="<?php echo $link['href']; ?>" rel="<?php echo $link['rel']; ?>" />
-        <?php } ?>
-        <!--<link rel="stylesheet" type="text/css" href="catalog/view/theme/default/stylesheet/stylesheet.css" />-->
-        <?php foreach ($styles as $style) { ?>
-
         <?php } ?>
 
         <link rel="stylesheet" type="text/css" href="html/assets/css/font.css">
