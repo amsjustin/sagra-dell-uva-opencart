@@ -361,6 +361,9 @@ to {
     height: 180px;
     float: left;
 }
+.product__content-description{
+	
+}
 .product__content-price {
     vertical-align: text-top;
     float: right;

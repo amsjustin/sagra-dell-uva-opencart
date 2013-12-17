@@ -1,5 +1,13 @@
 <?php echo $header; ?>
-
+<?php
+    $wine_description = array(
+        "",
+        "",
+        "",
+        "",
+        ""
+    );
+?>
 <section class="content">
     <?php echo $column_left; ?>
     <section class="product-overview">
@@ -15,7 +23,8 @@
                 <div class="product__content-title">
                     <h1>Duetto Greco Matera DOC</h1>
                 </div>
-                <div class="product__content-visual"></div>
+                <div class="product__content-visual"><img src="html/assets/img/radarchart.png" alt="" /></div>
+                <div class="product__content-description">1 - Zoet</div>
                 <div class="product__content-price">
                     <a href="#">€29,95 <i class="icon-arrow-right"></i></a>
                 </div>
@@ -29,7 +38,7 @@
                 <div class="product__content-title">
                     <h1>Duetto Greco Matera DOC</h1>
                 </div>
-                <div class="product__content-visual"></div>
+                <div class="product__content-visual"><img src="html/assets/img/radarchart.png" alt="" /></div>
                 <div class="product__content-price">
                     <a href="#">€29,95 <i class="icon-arrow-right"></i></a>
                 </div>
@@ -43,7 +52,7 @@
                 <div class="product__content-title">
                     <h1>Duetto Greco Matera DOC</h1>
                 </div>
-                <div class="product__content-visual"></div>
+                <div class="product__content-visual"><img src="html/assets/img/radarchart.png" alt="" /></div>
                 <div class="product__content-price">
                     <a href="#">€29,95 <i class="icon-arrow-right"></i></a>
                 </div>
@@ -57,7 +66,7 @@
                 <div class="product__content-title">
                     <h1>Duetto Greco Matera DOC</h1>
                 </div>
-                <div class="product__content-visual"></div>
+                <div class="product__content-visual"><img src="html/assets/img/radarchart.png" alt="" /></div>
                 <div class="product__content-price">
                     <a href="#">€29,95 <i class="icon-arrow-right"></i></a>
                 </div>
@@ -71,7 +80,7 @@
                 <div class="product__content-title">
                     <h1>Duetto Greco Matera DOC</h1>
                 </div>
-                <div class="product__content-visual"></div>
+                <div class="product__content-visual"><img src="html/assets/img/radarchart.png" alt="" /></div>
                 <div class="product__content-price">
                     <a href="#">€29,95 <i class="icon-arrow-right"></i></a>
                 </div>
@@ -85,7 +94,7 @@
                 <div class="product__content-title">
                     <h1>Duetto Greco Matera DOC</h1>
                 </div>
-                <div class="product__content-visual"></div>
+                <div class="product__content-visual"><img src="html/assets/img/radarchart.png" alt="" /></div>
                 <div class="product__content-price">
                     <a href="#">€29,95 <i class="icon-arrow-right"></i></a>
                 </div>
@@ -99,7 +108,7 @@
                 <div class="product__content-title">
                     <h1>Duetto Greco Matera DOC</h1>
                 </div>
-                <div class="product__content-visual"></div>
+                <div class="product__content-visual"><img src="html/assets/img/radarchart.png" alt="" /></div>
                 <div class="product__content-price">
                     <a href="#">€29,95 <i class="icon-arrow-right"></i></a>
                 </div>
@@ -113,7 +122,7 @@
                 <div class="product__content-title">
                     <h1>Duetto Greco Matera DOC</h1>
                 </div>
-                <div class="product__content-visual"></div>
+                <div class="product__content-visual"><img src="html/assets/img/radarchart.png" alt="" /></div>
                 <div class="product__content-price">
                     <a href="#">€29,95 <i class="icon-arrow-right"></i></a>
                 </div>
@@ -127,7 +136,7 @@
                 <div class="product__content-title">
                     <h1>Duetto Greco Matera DOC</h1>
                 </div>
-                <div class="product__content-visual"></div>
+                <div class="product__content-visual"><img src="html/assets/img/radarchart.png" alt="" /></div>
                 <div class="product__content-price">
                     <a href="#">€29,95 <i class="icon-arrow-right"></i></a>
                 </div>
@@ -141,7 +150,7 @@
                 <div class="product__content-title">
                     <h1>Duetto Greco Matera DOC</h1>
                 </div>
-                <div class="product__content-visual"></div>
+                <div class="product__content-visual"><img src="html/assets/img/radarchart.png" alt="" /></div>
                 <div class="product__content-price">
                     <a href="#">€29,95 <i class="icon-arrow-right"></i></a>
                 </div>
@@ -155,7 +164,7 @@
                 <div class="product__content-title">
                     <h1>Duetto Greco Matera DOC</h1>
                 </div>
-                <div class="product__content-visual"></div>
+                <div class="product__content-visual"><img src="html/assets/img/radarchart.png" alt="" /></div>
                 <div class="product__content-price">
                     <a href="#">€29,95 <i class="icon-arrow-right"></i></a>
                 </div>
@@ -169,7 +178,7 @@
                 <div class="product__content-title">
                     <h1>Duetto Greco Matera DOC</h1>
                 </div>
-                <div class="product__content-visual"></div>
+                <div class="product__content-visual"><img src="html/assets/img/radarchart.png" alt="" /></div>
                 <div class="product__content-price">
                     <a href="#">€29,95 <i class="icon-arrow-right"></i></a>
                 </div>
@@ -183,7 +192,7 @@
                 <div class="product__content-title">
                     <h1>Duetto Greco Matera DOC</h1>
                 </div>
-                <div class="product__content-visual"></div>
+                <div class="product__content-visual"><img src="html/assets/img/radarchart.png" alt="" /></div>
                 <div class="product__content-price">
                     <a href="#">€29,95 <i class="icon-arrow-right"></i></a>
                 </div>
@@ -197,7 +206,7 @@
                 <div class="product__content-title">
                     <h1>Duetto Greco Matera DOC</h1>
                 </div>
-                <div class="product__content-visual"></div>
+                <div class="product__content-visual"><img src="html/assets/img/radarchart.png" alt="" /></div>
                 <div class="product__content-price">
                     <a href="#">€29,95 <i class="icon-arrow-right"></i></a>
                 </div>
@@ -211,7 +220,7 @@
                 <div class="product__content-title">
                     <h1>Duetto Greco Matera DOC</h1>
                 </div>
-                <div class="product__content-visual"></div>
+                <div class="product__content-visual"><img src="html/assets/img/radarchart.png" alt="" /></div>
                 <div class="product__content-price">
                     <a href="#">€29,95 <i class="icon-arrow-right"></i></a>
                 </div>
