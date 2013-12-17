@@ -1,5 +1,14 @@
 <?php echo $header; ?>
 <?php
+<<<<<<< HEAD
+$wine_description = array(
+"",
+"",
+"",
+"",
+""
+);
+=======
     $wine_description = array(
         "1 - Zoet",
         "2 - Zuur",
@@ -25,6 +34,7 @@
     
         return $returnValue;
     }
+>>>>>>> 41afff436513abcebbe5726ab8932cf34871bea1
 ?>
 <script type="text/javascript">
     // Creating the data for chart.js
@@ -56,9 +66,12 @@
     <?php echo $column_left; ?>
     <section class="product-overview">
         <div class="product-overview__breadcrumb">
-            <a href="#">Home</a>
-            » <a href="#">Laptops &amp; Notebooks</a>
+            <?php foreach ($breadcrumbs as $breadcrumb) { ?>
+            <?php echo $breadcrumb['separator']; ?><a href="<?php echo $breadcrumb['href']; ?>"><?php echo $breadcrumb['text']; ?></a>
+            <?php } ?>
         </div>
+        <?php var_dump($products); ?>
+        <hr>
         <article class="product">
             <div class="product__img">
                 <img src="html/assets/img/wine-preview.jpg">
