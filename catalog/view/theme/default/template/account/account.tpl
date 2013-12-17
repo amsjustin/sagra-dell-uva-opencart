@@ -10,8 +10,7 @@
         <?php } ?>
     </div>
     <div class="overview-content">
-        <h1><?php echo $heading_title; ?></h1>
-        <h2><?php echo $text_my_account; ?></h2>
+        <h1>Mijn Profiel</h1>
         <div class="content">
             <ul>
                 <li><a href="<?php echo $password; ?>"><?php echo $text_password; ?></a></li>

@@ -14,18 +14,14 @@
         <form action="<?php echo $action; ?>" method="post" enctype="multipart/form-data">
             <p><?php echo $text_email; ?></p>
             <h2><?php echo $text_your_email; ?></h2>
-            <div class="content">
-                <table class="form">
-                    <tr>
-                        <td><?php echo $entry_email; ?></td>
-                        <td><input type="text" name="email" value="" /></td>
-                    </tr>
-                </table>
+            <div class="form__input-holder">
+                <label for="email"><?php echo $entry_email; ?></label>
+                <input type="text" name="email" value="" />
             </div>
-            <div class="buttons">
+            <div class="form__button-holder">
                 <div class="left"><a href="<?php echo $back; ?>" class="button"><?php echo $button_back; ?></a></div>
                 <div class="right">
-                    <input type="submit" value="<?php echo $button_continue; ?>" class="button" />
+                    <input type="submit" value="<?php echo $button_continue; ?>" class="submit-button" />
                 </div>
             </div>
         </form>

@@ -10,45 +10,45 @@
         <?php echo $breadcrumb['separator']; ?><a href="<?php echo $breadcrumb['href']; ?>"><?php echo $breadcrumb['text']; ?></a>
         <?php } ?>
     </div>
-    <div class="register-top">
+    <div class="top">
         <h1><?php echo $heading_title; ?></h1>
         <p><?php echo $text_account_already; ?></p>
     </div>
-    <form class="register-form" action="<?php echo $action; ?>" method="post" enctype="multipart/form-data">
-        <div class="register-form__row">
+    <form class="form" action="<?php echo $action; ?>" method="post" enctype="multipart/form-data">
+        <div class="form__row">
             <h2><?php echo $text_your_details; ?></h2>
-            <div class="register-form__input-holder">
+            <div class="form__input-holder">
                 <label for="firstname"><span class="required">*</span> <?php echo $entry_firstname; ?></label>
                 <input type="text" name="firstname" value="<?php echo $firstname; ?>" />
                 <?php if ($error_firstname) { ?><div class="error"><?php echo $error_firstname; ?></div><?php } ?>
             </div>
-            <div class="register-form__input-holder">
+            <div class="form__input-holder">
                 <label for="lastname"><span class="required">*</span> <?php echo $entry_lastname; ?></label>
                 <input type="text" name="lastname" value="<?php echo $lastname; ?>" />
                 <?php if ($error_lastname) { ?><div class="error"><?php echo $error_lastname; ?></div><?php } ?>
             </div>
-            <div class="register-form__input-holder">
+            <div class="form__input-holder">
                 <label for="email"><span class="required">*</span> <?php echo $entry_email; ?></label>
                 <input type="text" name="email" value="<?php echo $email; ?>" />
                 <?php if ($error_email) { ?><div class="error"><?php echo $error_email; ?></div><?php } ?>
             </div>
-            <div class="register-form__input-holder">
+            <div class="form__input-holder">
                 <label for="telephone"><span class="required">*</span> <?php echo $entry_telephone; ?></label>
                 <input type="text" name="telephone" value="<?php echo $telephone; ?>" />
                 <?php if ($error_telephone) { ?><div class="error"><?php echo $error_telephone; ?></div><?php } ?>
             </div>
-            <div class="register-form__input-holder">
+            <div class="form__input-holder">
                 <label for="fax"><?php echo $entry_fax; ?></label>
                 <input type="text" name="fax" value="<?php echo $fax; ?>" />
             </div>
         </div>
-        <div class="register-form__row">
+        <div class="form__row">
             <h2><?php echo $text_your_address; ?></h2>
-            <div class="register-form__input-holder">
+            <div class="form__input-holder">
                 <label for="company"><?php echo $entry_company; ?></label>
                 <input type="text" name="company" value="<?php echo $company; ?>" />
             </div>
-            <div class="register-form__input-holder">
+            <div class="form__input-holder">
                 <?php echo $entry_customer_group; ?>
                 <?php foreach ($customer_groups as $customer_group) { ?>
                 <?php if ($customer_group['customer_group_id'] == $customer_group_id) { ?>
@@ -62,46 +62,46 @@
                 <?php } ?>
                 <?php } ?>
             </div>
-            <div class="register-form__input-holder">
+            <div class="form__input-holder">
                 <label for="company_id"><div id="company-id-required" class="required">*</div> <?php echo $entry_company_id; ?></label>
                 <input type="text" name="company_id" value="<?php echo $company_id; ?>" />
                 <?php if ($error_company_id) { ?>
                 <div class="error"><?php echo $error_company_id; ?></div>
                 <?php } ?>
             </div>
-            <div class="register-form__input-holder">
+            <div class="form__input-holder">
                 <label for="tax_id"><span id="tax-id-required" class="required">*</span> <?php echo $entry_tax_id; ?></label>
                 <input type="text" name="tax_id" value="<?php echo $tax_id; ?>" />
                 <?php if ($error_tax_id) { ?>
                 <div class="error"><?php echo $error_tax_id; ?></div>
                 <?php } ?>
             </div>
-            <div class="register-form__input-holder">
+            <div class="form__input-holder">
                 <label for="address_1"><span class="required">*</span> <?php echo $entry_address_1; ?></label>
                 <input type="text" name="address_1" value="<?php echo $address_1; ?>" />
                 <?php if ($error_address_1) { ?>
                 <div class="error"><?php echo $error_address_1; ?></div>
                 <?php } ?>
             </div>
-            <div class="register-form__input-holder">
+            <div class="form__input-holder">
                 <label for="address_2"><?php echo $entry_address_2; ?></label>
                 <input type="text" name="address_2" value="<?php echo $address_2; ?>" />
             </div>
-            <div class="register-form__input-holder">
+            <div class="form__input-holder">
                 <label for="city"><span class="required">*</span> <?php echo $entry_city; ?></label>
                 <input type="text" name="city" value="<?php echo $city; ?>" />
                 <?php if ($error_city) { ?>
                 <div class="error"><?php echo $error_city; ?></div>
                 <?php } ?>
             </div>
-            <div class="register-form__input-holder">
+            <div class="form__input-holder">
                 <label for="postcode"><span id="postcode-required" class="required">*</span> <?php echo $entry_postcode; ?></label>
                 <input type="text" name="postcode" value="<?php echo $postcode; ?>" />
                 <?php if ($error_postcode) { ?>
                 <div class="error"><?php echo $error_postcode; ?></div>
                 <?php } ?>
             </div>
-            <div class="register-form__input-holder">
+            <div class="form__input-holder">
                 <label for="country_id"><span class="required">*</span> <?php echo $entry_country; ?></label>
                 <select name="country_id">
                     <option value=""><?php echo $text_select; ?></option>
@@ -117,7 +117,7 @@
                 <div class="error"><?php echo $error_country; ?></div>
                 <?php } ?>
             </div>
-            <div class="register-form__input-holder">
+            <div class="form__input-holder">
                 <label for="zone_id"><span class="required">*</span> <?php echo $entry_zone; ?></label>
                 <select name="zone_id"></select>
                 <?php if ($error_zone) { ?>
@@ -125,16 +125,16 @@
                 <?php } ?>
             </div>
         </div>
-        <div class="register-form__row">
+        <div class="form__row">
             <h2><?php echo $text_your_password; ?></h2>
-            <div class="register-form__input-holder">
+            <div class="form__input-holder">
                 <label for="password"><span class="required">*</span> <?php echo $entry_password; ?></label>
                 <input type="password" name="password" value="<?php echo $password; ?>" />
                 <?php if ($error_password) { ?>
                 <div class="error"><?php echo $error_password; ?></div>
                 <?php } ?>
             </div>
-            <div class="register-form__input-holder">
+            <div class="form__input-holder">
                 <label for="password"><span class="required">*</span> <?php echo $entry_confirm; ?></label>
                 <input type="password" name="confirm" value="<?php echo $confirm; ?>" />
                 <?php if ($error_confirm) { ?>
@@ -142,7 +142,7 @@
                 <?php } ?>
             </div>
         </div>
-        <div class="register-form__row">
+        <div class="form__row">
             <h2><?php echo $text_newsletter; ?></h2>
             <?php echo $entry_newsletter; ?>
             <?php if ($newsletter) { ?>
@@ -157,7 +157,7 @@
             <?php echo $text_no; ?>
             <?php } ?>
             <?php if ($text_agree) { ?>
-            <div class="buttons">
+            <div class="form__button-holder">
                 <div class="right">
                     <?php echo $text_agree; ?>
                     <?php if ($agree) { ?>
@@ -170,7 +170,7 @@
                 </div>
             </div>
             <?php } else { ?>
-            <div class="buttons">
+            <div class="form__button-holder">
                 <div class="right">
                     <input type="submit" value="<?php echo $button_continue; ?>" class="submit-button" />
                     <div class="clear-fix"></div>

@@ -428,41 +428,41 @@ to {
     REGISTER
 ============================================================================= */
 
-.register-top {
+.top {
     padding: 25px;
     background-color: #fff;
     margin: 25px 0px;
 }
-.register-top h1 {
+.top h1 {
     margin-top: 0px;
 }
-.register-form {
+.form {
     padding: 25px;
     background-color: #fff;
 }
-.register-form .error {
+.form .error {
     margin-top: 5px;
     color: #aa5f7e;
     text-align: right;
 }
-.register-form__input-holder {
+.form__input-holder {
     padding: 10px 0px;
 }
-.register-form__input-holder label {
+.form__input-holder label {
     width: 150px;
     display: inline-block;
 }
-.register-form__input-holder input:focus {
+.form__input-holder input:focus {
     outline: 0;
     background-color: #9b9b9b;
 }
-.register-form__input-holder input {
+.form__input-holder input {
     padding: 10px;
     border: 0;
     background-color: #bebebe;
     width: 200px;
 }
-.buttons {
+.form__button-holder {
     margin: 20px 0px;
 }
 .submit-button {
@@ -473,16 +473,16 @@ to {
     border: none;
 }
 @media (max-width: 767px) {
-    .register-form__input-holder input {
+    .form__input-holder input {
         width: 200px
     }
-    .register-form__input-holder label {
+    .form__input-holder label {
         width: 150px;
     }
 }
 @media (max-width: 480px) {
-    .register-form__input-holder input,
-    .register-form__input-holder label {
+    .form__input-holder input,
+    .form__input-holder label {
         width: 90%;
     }
     .submit-button {
@@ -490,10 +490,10 @@ to {
     }
 }
 @media (min-width: 1200px) {
-    .register-form__input-holder label {
+    .form__input-holder label {
         width: 200px;
     }
-    .register-form__input-holder input {
+    .form__input-holder input {
         width: 575px;
     }
 }

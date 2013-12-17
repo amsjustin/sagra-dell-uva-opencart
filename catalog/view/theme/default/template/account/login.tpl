@@ -22,21 +22,21 @@
         </div>
         <div class="right">
             <h2><?php echo $text_returning_customer; ?></h2>
+            <p><?php echo $text_i_am_returning_customer; ?></p>
             <form action="<?php echo $action; ?>" method="post" enctype="multipart/form-data">
-                <div class="content">
-                    <p><?php echo $text_i_am_returning_customer; ?></p>
-                    <b><?php echo $entry_email; ?></b><br />
+                <div class="form__input-holder">
+                    <label for="email"><?php echo $entry_email; ?></label>
                     <input type="text" name="email" value="<?php echo $email; ?>" />
-                    <br />
-                    <br />
-                    <b><?php echo $entry_password; ?></b><br />
+                </div>
+                <div class="form__input-holder">
+                    <label for="password"><?php echo $entry_password; ?></label>
                     <input type="password" name="password" value="<?php echo $password; ?>" />
-                    <br />
-                    <a href="<?php echo $forgotten; ?>"><?php echo $text_forgotten; ?></a><br />
-                    <br />
-                    <input type="submit" value="<?php echo $button_login; ?>" class="button" />
+                </div>
+                <div class="form__button-holder">
+                    <a href="<?php echo $forgotten; ?>"><?php echo $text_forgotten; ?></a>
+                    <input type="submit" value="<?php echo $button_login; ?>" class="submit-button" />
                     <?php if ($redirect) { ?>
-                    <input type="hidden" name="redirect" value="<?php echo $redirect; ?>" />
+                    <input class="submit-button" type="hidden" name="redirect" value="<?php echo $redirect; ?>" />
                     <?php } ?>
                 </div>
             </form>
