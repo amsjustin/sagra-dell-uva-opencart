@@ -1,5 +1,4 @@
 <?php echo $header; ?>
-<<<<<<< HEAD
 <?php
     $wine_description = array(
         "1 - Zoet",
@@ -33,8 +32,6 @@
             }   
         
 ?>
-=======
->>>>>>> 1f7988d99756db21cd21a2b5e01896c1ad8f4fbc
 <section class="content">
     <?php echo $column_left; ?>
     <section class="product-overview">
@@ -55,7 +52,11 @@
                     <h1>Duetto Greco Matera DOC</h1>
                 </div>
                 <div class="product__content-visual"><img src="html/assets/img/radarchart.png" alt="" /></div>
-                <div class="product__content-description">1 - Zoet</div>
+                <?php 
+                    $descriptionClass = isOnChart(19);
+                    echo $descriptionClass;
+                    echo "<div class=\"$descriptionClass\">" . '1 - Zoet' . '</div>';
+                ?>
                 <div class="product__content-price">
                     <a href="#">€29,95 <i class="icon-arrow-right"></i></a>
                 </div>
@@ -64,205 +65,6 @@
         
         
         
-<<<<<<< HEAD
-=======
-        <article class="product">
-            <div class="product__img">
-                <img src="html/assets/img/wine-preview.jpg">
-            </div>
-            <div class="product__content">
-                <div class="product__content-title">
-                    <h1>Duetto Greco Matera DOC</h1>
-                </div>
-                <div class="product__content-visual"><img src="html/assets/img/radarchart.png" alt="" /></div>
-                <div class="product__content-price">
-                    <a href="#">€29,95 <i class="icon-arrow-right"></i></a>
-                </div>
-            </div>
-        </article>
-        <article class="product">
-            <div class="product__img">
-                <img src="html/assets/img/wine-preview.jpg">
-            </div>
-            <div class="product__content">
-                <div class="product__content-title">
-                    <h1>Duetto Greco Matera DOC</h1>
-                </div>
-                <div class="product__content-visual"><img src="html/assets/img/radarchart.png" alt="" /></div>
-                <div class="product__content-price">
-                    <a href="#">€29,95 <i class="icon-arrow-right"></i></a>
-                </div>
-            </div>
-        </article>
-        <article class="product">
-            <div class="product__img">
-                <img src="html/assets/img/wine-preview.jpg">
-            </div>
-            <div class="product__content">
-                <div class="product__content-title">
-                    <h1>Duetto Greco Matera DOC</h1>
-                </div>
-                <div class="product__content-visual"><img src="html/assets/img/radarchart.png" alt="" /></div>
-                <div class="product__content-price">
-                    <a href="#">€29,95 <i class="icon-arrow-right"></i></a>
-                </div>
-            </div>
-        </article>
-        <article class="product">
-            <div class="product__img">
-                <img src="html/assets/img/wine-preview.jpg">
-            </div>
-            <div class="product__content">
-                <div class="product__content-title">
-                    <h1>Duetto Greco Matera DOC</h1>
-                </div>
-                <div class="product__content-visual"><img src="html/assets/img/radarchart.png" alt="" /></div>
-                <div class="product__content-price">
-                    <a href="#">€29,95 <i class="icon-arrow-right"></i></a>
-                </div>
-            </div>
-        </article>
-        <article class="product">
-            <div class="product__img">
-                <img src="html/assets/img/wine-preview.jpg">
-            </div>
-            <div class="product__content">
-                <div class="product__content-title">
-                    <h1>Duetto Greco Matera DOC</h1>
-                </div>
-                <div class="product__content-visual"><img src="html/assets/img/radarchart.png" alt="" /></div>
-                <div class="product__content-price">
-                    <a href="#">€29,95 <i class="icon-arrow-right"></i></a>
-                </div>
-            </div>
-        </article>
-        <article class="product">
-            <div class="product__img">
-                <img src="html/assets/img/wine-preview.jpg">
-            </div>
-            <div class="product__content">
-                <div class="product__content-title">
-                    <h1>Duetto Greco Matera DOC</h1>
-                </div>
-                <div class="product__content-visual"><img src="html/assets/img/radarchart.png" alt="" /></div>
-                <div class="product__content-price">
-                    <a href="#">€29,95 <i class="icon-arrow-right"></i></a>
-                </div>
-            </div>
-        </article>
-        <article class="product">
-            <div class="product__img">
-                <img src="html/assets/img/wine-preview.jpg">
-            </div>
-            <div class="product__content">
-                <div class="product__content-title">
-                    <h1>Duetto Greco Matera DOC</h1>
-                </div>
-                <div class="product__content-visual"><img src="html/assets/img/radarchart.png" alt="" /></div>
-                <div class="product__content-price">
-                    <a href="#">€29,95 <i class="icon-arrow-right"></i></a>
-                </div>
-            </div>
-        </article>
-        <article class="product">
-            <div class="product__img">
-                <img src="html/assets/img/wine-preview.jpg">
-            </div>
-            <div class="product__content">
-                <div class="product__content-title">
-                    <h1>Duetto Greco Matera DOC</h1>
-                </div>
-                <div class="product__content-visual"><img src="html/assets/img/radarchart.png" alt="" /></div>
-                <div class="product__content-price">
-                    <a href="#">€29,95 <i class="icon-arrow-right"></i></a>
-                </div>
-            </div>
-        </article>
-        <article class="product">
-            <div class="product__img">
-                <img src="html/assets/img/wine-preview.jpg">
-            </div>
-            <div class="product__content">
-                <div class="product__content-title">
-                    <h1>Duetto Greco Matera DOC</h1>
-                </div>
-                <div class="product__content-visual"><img src="html/assets/img/radarchart.png" alt="" /></div>
-                <div class="product__content-price">
-                    <a href="#">€29,95 <i class="icon-arrow-right"></i></a>
-                </div>
-            </div>
-        </article>
-        <article class="product">
-            <div class="product__img">
-                <img src="html/assets/img/wine-preview.jpg">
-            </div>
-            <div class="product__content">
-                <div class="product__content-title">
-                    <h1>Duetto Greco Matera DOC</h1>
-                </div>
-                <div class="product__content-visual"><img src="html/assets/img/radarchart.png" alt="" /></div>
-                <div class="product__content-price">
-                    <a href="#">€29,95 <i class="icon-arrow-right"></i></a>
-                </div>
-            </div>
-        </article>
-        <article class="product">
-            <div class="product__img">
-                <img src="html/assets/img/wine-preview.jpg">
-            </div>
-            <div class="product__content">
-                <div class="product__content-title">
-                    <h1>Duetto Greco Matera DOC</h1>
-                </div>
-                <div class="product__content-visual"><img src="html/assets/img/radarchart.png" alt="" /></div>
-                <div class="product__content-price">
-                    <a href="#">€29,95 <i class="icon-arrow-right"></i></a>
-                </div>
-            </div>
-        </article>
-        <article class="product">
-            <div class="product__img">
-                <img src="html/assets/img/wine-preview.jpg">
-            </div>
-            <div class="product__content">
-                <div class="product__content-title">
-                    <h1>Duetto Greco Matera DOC</h1>
-                </div>
-                <div class="product__content-visual"><img src="html/assets/img/radarchart.png" alt="" /></div>
-                <div class="product__content-price">
-                    <a href="#">€29,95 <i class="icon-arrow-right"></i></a>
-                </div>
-            </div>
-        </article>
-        <article class="product">
-            <div class="product__img">
-                <img src="html/assets/img/wine-preview.jpg">
-            </div>
-            <div class="product__content">
-                <div class="product__content-title">
-                    <h1>Duetto Greco Matera DOC</h1>
-                </div>
-                <div class="product__content-visual"><img src="html/assets/img/radarchart.png" alt="" /></div>
-                <div class="product__content-price">
-                    <a href="#">€29,95 <i class="icon-arrow-right"></i></a>
-                </div>
-            </div>
-        </article>
-        <article class="product">
-            <div class="product__img">
-                <img src="html/assets/img/wine-preview.jpg">
-            </div>
-            <div class="product__content">
-                <div class="product__content-title">
-                    <h1>Duetto Greco Matera DOC</h1>
-                </div>
-                <div class="product__content-visual"><img src="html/assets/img/radarchart.png" alt="" /></div>
-                <div class="product__content-price">
-                    <a href="#">€29,95 <i class="icon-arrow-right"></i></a>
-                </div>
-            </div>
-        </article>
->>>>>>> 1f7988d99756db21cd21a2b5e01896c1ad8f4fbc
         <div class="product"></div>
         <div class="product"></div>
         <div class="product"></div>
