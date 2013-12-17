@@ -12,30 +12,29 @@
     <div class="overview-content">
         <h1><?php echo $heading_title; ?></h1>
         <form action="<?php echo $action; ?>" method="post" enctype="multipart/form-data">
-            <h2><?php echo $text_your_details; ?></h2>
             <div class="form__input-holder">
-                <span class="required">*</span> <?php echo $entry_firstname; ?>
+                <label for="firstname"><span class="required">*</span> <?php echo $entry_firstname; ?></label>
                 <input type="text" name="firstname" value="<?php echo $firstname; ?>" />
                 <?php if ($error_firstname) { ?>
                 <span class="error"><?php echo $error_firstname; ?></span>
                 <?php } ?>
             </div>
             <div class="form__input-holder">
-                <span class="required">*</span> <?php echo $entry_lastname; ?>
+                <label for="lastname"><span class="required">*</span> <?php echo $entry_lastname; ?></label>
                 <input type="text" name="lastname" value="<?php echo $lastname; ?>" />
                 <?php if ($error_lastname) { ?>
                 <span class="error"><?php echo $error_lastname; ?></span>
                 <?php } ?>
             </div>
             <div class="form__input-holder">
-                <span class="required">*</span> <?php echo $entry_email; ?>
+                <label for="email"><span class="required">*</span> <?php echo $entry_email; ?></label>
                 <input type="text" name="email" value="<?php echo $email; ?>" />
                 <?php if ($error_email) { ?>
                 <span class="error"><?php echo $error_email; ?></span>
                 <?php } ?>
             </div>
             <div class="form__input-holder">
-                <span class="required">*</span> <?php echo $entry_telephone; ?>
+                <label for="telephone"><span class="required">*</span> <?php echo $entry_telephone; ?></label>
                 <input type="text" name="telephone" value="<?php echo $telephone; ?>" />
                 <?php if ($error_telephone) { ?>
                 <span class="error"><?php echo $error_telephone; ?></span>
@@ -51,6 +50,7 @@
                     <input type="submit" value="<?php echo $button_continue; ?>" class="submit-button"/>
                 </div>
             </div>
+            <div class="clear-fix"></div>
         </form>
     </div>
 </section>

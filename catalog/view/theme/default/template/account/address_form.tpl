@@ -27,8 +27,10 @@
             <div class="form__input-holder">
                 <label for="company"><?php echo $entry_company; ?></label>
                 <input type="text" name="company" value="<?php echo $company; ?>" />
+            </div>
+            <div class="form__input-holder">
                 <?php if ($company_id_display) { ?>
-                <?php echo $entry_company_id; ?>
+                <label for="company_id"><?php echo $entry_company_id; ?></label>
                 <input type="text" name="company_id" value="<?php echo $company_id; ?>" />
                 <?php if ($error_company_id) { ?>
                 <span class="error"><?php echo $error_company_id; ?></span>
@@ -45,32 +47,33 @@
                 <?php } ?>
             </div>
             <div class="form__input-holder">
-                <label<span class="required">*</span> <?php echo $entry_address_1; ?>
+                <label for="address_1"><span class="required">*</span> <?php echo $entry_address_1; ?></label>
                 <input type="text" name="address_1" value="<?php echo $address_1; ?>" />
                 <?php if ($error_address_1) { ?>
                 <span class="error"><?php echo $error_address_1; ?></span>
                 <?php } ?>
             </div>
             <div class="form__input-holder">
-                <?php echo $entry_address_2; ?>
+                <label for="address_2"><?php echo $entry_address_2; ?></label>
                 <input type="text" name="address_2" value="<?php echo $address_2; ?>" />
+            </div>
+            <div class="form__input-holder">
 
-
-                <span class="required">*</span> <?php echo $entry_city; ?>
+                <label for="city"><span class="required">*</span> <?php echo $entry_city; ?></label>
                 <input type="text" name="city" value="<?php echo $city; ?>" />
                 <?php if ($error_city) { ?>
                 <span class="error"><?php echo $error_city; ?></span>
                 <?php } ?>
             </div>
             <div class="form__input-holder">
-                <span id="postcode-required" class="required">*</span> <?php echo $entry_postcode; ?>
+                <label for="postcode"><span id="postcode-required" class="required">*</span> <?php echo $entry_postcode; ?></label>
                 <input type="text" name="postcode" value="<?php echo $postcode; ?>" />
                 <?php if ($error_postcode) { ?>
                 <span class="error"><?php echo $error_postcode; ?></span>
                 <?php } ?>
             </div>
             <div class="form__input-holder">
-                <span class="required">*</span> <?php echo $entry_country; ?>
+                <label for="country_id"><span class="required">*</span> <?php echo $entry_country; ?></label>
                 <select name="country_id">
                     <option value=""><?php echo $text_select; ?></option>
                     <?php foreach ($countries as $country) { ?>
@@ -86,15 +89,14 @@
                 <?php } ?>
             </div>
             <div class="form__input-holder">
-                <span class="required">*</span> <?php echo $entry_zone; ?>
-                <select name="zone_id">
-                </select>
+                <label for="zone_id"><span class="required">*</span> <?php echo $entry_zone; ?></label>
+                <select name="zone_id"></select>
                 <?php if ($error_zone) { ?>
                 <span class="error"><?php echo $error_zone; ?></span>
                 <?php } ?>
             </div>
-            <div class="form__input-holder">
-                <?php echo $entry_default; ?>
+            <div class="form__checkbox-holder">
+                <label for="default"><?php echo $entry_default; ?></label>
                 <?php if ($default) { ?>
                 <input type="radio" name="default" value="1" checked="checked" />
                 <?php echo $text_yes; ?>
@@ -107,16 +109,16 @@
                 <?php echo $text_no; ?>
                 <?php } ?>
             </div>
+
+            <div class="form__button-holder">
+                <div class="left"><a href="<?php echo $back; ?>" class="button"><?php echo $button_back; ?></a></div>
+                <div class="right">
+                    <input type="submit" value="<?php echo $button_continue; ?>" class="submit-button" />
+                </div>
+            </div>
+            <div class="clear-fix"></div>
+        </form>
     </div>
-    <div class="form__input-holder">
-        <div class="left"><a href="<?php echo $back; ?>" class="button"><?php echo $button_back; ?></a></div>
-        <div class="right">
-            <input type="submit" value="<?php echo $button_continue; ?>" class="submit-button" />
-        </div>
-    </div>
-    <div class="clear-fix"></div>
-</form>
-</div>
 </section>
 <div class="clear-fix"></div>
 <script type="text/javascript"><!--
