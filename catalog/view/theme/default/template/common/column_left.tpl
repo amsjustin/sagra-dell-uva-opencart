@@ -34,17 +34,17 @@
     // length van de array meegeven voor de loop
     $arrlength = count($wine_categories_title);  
         
-    function createCategories($menu_title,$menu_url,$menu_length){
+    function createCategories($categories_title,$categories_url,$categories_length){
             /* Counter om de ul's te beginnen en af te sluiten */
             $ulcounter = 0;
 
-            for ($i = 0; $i < $menu_length; $i++){
+            for ($i = 0; $i < $categories_length; $i++){
               if($ulcounter==0){
               echo '<ul>';
             }
             $ulcounter++;
 
-            echo "<li><a href=\"$menu_url[$i]\">" . $menu_title[$i] . '</a></li>';
+            echo "<li><a href=\"$categories_url[$i]\">" . $categories_title[$i] . '</a></li>';
 
             if($ulcounter==3){
                 $ulcounter=0;

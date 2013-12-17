@@ -1,3 +1,34 @@
+<?php
+    // menu array (later vullen met database etc)
+    $wine_menu_title = array(
+        "menu item 1",
+        "menu item 2",
+        "menu item 3",
+        "menu item 4",
+        "menu item 5",
+    );
+    
+    $wine_menu_url = array(
+        '#',
+        '#',
+        '#',
+        '#',
+        '#',
+    );
+    
+    $arrlength = count($wine_menu_title);
+    
+    function createWineMenu($menu_title,$menu_url,$menu_length){
+        echo '<ul>';
+        
+        for ($i = 0; $i < $menu_length; $i++){
+            echo "<li><a href=\"$menu_url[$i]\">" . $menu_title[$i] . '</a></li>';
+        }
+        
+        echo '</ul>';
+    }
+?>
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -79,22 +110,9 @@
                                 </div>
                                 <nav id="global-nav" class="global-nav global-nav--inactive">
                                     <ul class="global-nav__ul">
-                                        <?php 
-                                            // menu array (later vullen met database etc)
-                                            $wine_menu_title = array(
-                                            "category item 1",
-                                            "category item 2",
-                                            "category item 3",
-                                            "category item 4",
-                                            "category item 5",
-                                            "category item 6",
-                                            "category item 7",
-                                            "category item 8",
-                                            "category item 9",
-                                            "category item 10",
-                                            "category item 11",
-                                            "category item 12",
-                                            );
+                                        <?php   
+                                            // pannekoek wijn menu aanmaken
+                                            createWineMenu($wine_menu_title, $wine_menu_url, $arrlength); 
                                         ?>
                                     </ul>
                                 </nav>
