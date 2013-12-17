@@ -1,1 +1,1 @@
-<!--CONTENT TOP-->
+CONTENT TOP
