@@ -918,3 +918,59 @@
 2013-12-18 0:51:56 - PHP Notice:  Undefined index: visual in /Applications/MAMP/htdocs/opencart/catalog/view/theme/default/template/common/home.tpl on line 31
 2013-12-18 0:51:56 - PHP Notice:  Undefined variable: breadcrumbs in /Applications/MAMP/htdocs/opencart/catalog/view/theme/default/template/common/home.tpl on line 39
 2013-12-18 0:51:56 - PHP Warning:  Invalid argument supplied for foreach() in /Applications/MAMP/htdocs/opencart/catalog/view/theme/default/template/common/home.tpl on line 39
+2013-12-18 0:56:58 - PHP Notice:  Undefined variable: breadcrumbs in /Applications/MAMP/htdocs/opencart/catalog/view/theme/default/template/common/home.tpl on line 39
+2013-12-18 0:56:58 - PHP Warning:  Invalid argument supplied for foreach() in /Applications/MAMP/htdocs/opencart/catalog/view/theme/default/template/common/home.tpl on line 39
+2013-12-18 0:57:40 - PHP Notice:  Undefined variable: breadcrumbs in /Applications/MAMP/htdocs/opencart/catalog/view/theme/default/template/common/home.tpl on line 39
+2013-12-18 0:57:40 - PHP Warning:  Invalid argument supplied for foreach() in /Applications/MAMP/htdocs/opencart/catalog/view/theme/default/template/common/home.tpl on line 39
+2013-12-18 0:59:13 - PHP Notice:  Undefined variable: breadcrumbs in /Applications/MAMP/htdocs/opencart/catalog/view/theme/default/template/common/home.tpl on line 39
+2013-12-18 0:59:13 - PHP Warning:  Invalid argument supplied for foreach() in /Applications/MAMP/htdocs/opencart/catalog/view/theme/default/template/common/home.tpl on line 39
+2013-12-18 1:00:16 - PHP Notice:  Undefined variable: breadcrumbs in /Applications/MAMP/htdocs/opencart/catalog/view/theme/default/template/common/home.tpl on line 39
+2013-12-18 1:00:16 - PHP Warning:  Invalid argument supplied for foreach() in /Applications/MAMP/htdocs/opencart/catalog/view/theme/default/template/common/home.tpl on line 39
+2013-12-18 1:03:17 - PHP Notice:  Undefined variable: breadcrumbs in /Applications/MAMP/htdocs/opencart/catalog/view/theme/default/template/common/home.tpl on line 39
+2013-12-18 1:03:17 - PHP Warning:  Invalid argument supplied for foreach() in /Applications/MAMP/htdocs/opencart/catalog/view/theme/default/template/common/home.tpl on line 39
+2013-12-18 1:03:17 - PHP Notice:  Undefined variable: breadcrumbs in /Applications/MAMP/htdocs/opencart/catalog/view/theme/default/template/common/home.tpl on line 39
+2013-12-18 1:03:17 - PHP Warning:  Invalid argument supplied for foreach() in /Applications/MAMP/htdocs/opencart/catalog/view/theme/default/template/common/home.tpl on line 39
+2013-12-18 1:03:18 - PHP Notice:  Undefined variable: breadcrumbs in /Applications/MAMP/htdocs/opencart/catalog/view/theme/default/template/common/home.tpl on line 39
+2013-12-18 1:03:18 - PHP Warning:  Invalid argument supplied for foreach() in /Applications/MAMP/htdocs/opencart/catalog/view/theme/default/template/common/home.tpl on line 39
+2013-12-18 1:03:18 - PHP Notice:  Undefined variable: breadcrumbs in /Applications/MAMP/htdocs/opencart/catalog/view/theme/default/template/common/home.tpl on line 39
+2013-12-18 1:03:18 - PHP Warning:  Invalid argument supplied for foreach() in /Applications/MAMP/htdocs/opencart/catalog/view/theme/default/template/common/home.tpl on line 39
+2013-12-18 1:03:18 - PHP Notice:  Undefined variable: breadcrumbs in /Applications/MAMP/htdocs/opencart/catalog/view/theme/default/template/common/home.tpl on line 39
+2013-12-18 1:03:18 - PHP Warning:  Invalid argument supplied for foreach() in /Applications/MAMP/htdocs/opencart/catalog/view/theme/default/template/common/home.tpl on line 39
+2013-12-18 1:03:19 - PHP Notice:  Undefined variable: breadcrumbs in /Applications/MAMP/htdocs/opencart/catalog/view/theme/default/template/common/home.tpl on line 39
+2013-12-18 1:03:19 - PHP Warning:  Invalid argument supplied for foreach() in /Applications/MAMP/htdocs/opencart/catalog/view/theme/default/template/common/home.tpl on line 39
+2013-12-18 1:03:19 - PHP Notice:  Undefined variable: breadcrumbs in /Applications/MAMP/htdocs/opencart/catalog/view/theme/default/template/common/home.tpl on line 39
+2013-12-18 1:03:19 - PHP Warning:  Invalid argument supplied for foreach() in /Applications/MAMP/htdocs/opencart/catalog/view/theme/default/template/common/home.tpl on line 39
+2013-12-18 1:03:19 - PHP Notice:  Undefined variable: breadcrumbs in /Applications/MAMP/htdocs/opencart/catalog/view/theme/default/template/common/home.tpl on line 39
+2013-12-18 1:03:19 - PHP Warning:  Invalid argument supplied for foreach() in /Applications/MAMP/htdocs/opencart/catalog/view/theme/default/template/common/home.tpl on line 39
+2013-12-18 1:03:19 - PHP Notice:  Undefined variable: breadcrumbs in /Applications/MAMP/htdocs/opencart/catalog/view/theme/default/template/common/home.tpl on line 39
+2013-12-18 1:03:19 - PHP Warning:  Invalid argument supplied for foreach() in /Applications/MAMP/htdocs/opencart/catalog/view/theme/default/template/common/home.tpl on line 39
+2013-12-18 1:03:20 - PHP Notice:  Undefined variable: breadcrumbs in /Applications/MAMP/htdocs/opencart/catalog/view/theme/default/template/common/home.tpl on line 39
+2013-12-18 1:03:20 - PHP Warning:  Invalid argument supplied for foreach() in /Applications/MAMP/htdocs/opencart/catalog/view/theme/default/template/common/home.tpl on line 39
+2013-12-18 1:03:20 - PHP Notice:  Undefined variable: breadcrumbs in /Applications/MAMP/htdocs/opencart/catalog/view/theme/default/template/common/home.tpl on line 39
+2013-12-18 1:03:20 - PHP Warning:  Invalid argument supplied for foreach() in /Applications/MAMP/htdocs/opencart/catalog/view/theme/default/template/common/home.tpl on line 39
+2013-12-18 1:03:44 - PHP Notice:  Undefined variable: breadcrumbs in /Applications/MAMP/htdocs/opencart/catalog/view/theme/default/template/common/home.tpl on line 39
+2013-12-18 1:03:44 - PHP Warning:  Invalid argument supplied for foreach() in /Applications/MAMP/htdocs/opencart/catalog/view/theme/default/template/common/home.tpl on line 39
+2013-12-18 1:03:45 - PHP Notice:  Undefined variable: breadcrumbs in /Applications/MAMP/htdocs/opencart/catalog/view/theme/default/template/common/home.tpl on line 39
+2013-12-18 1:03:45 - PHP Warning:  Invalid argument supplied for foreach() in /Applications/MAMP/htdocs/opencart/catalog/view/theme/default/template/common/home.tpl on line 39
+2013-12-18 1:03:45 - PHP Notice:  Undefined variable: breadcrumbs in /Applications/MAMP/htdocs/opencart/catalog/view/theme/default/template/common/home.tpl on line 39
+2013-12-18 1:03:45 - PHP Warning:  Invalid argument supplied for foreach() in /Applications/MAMP/htdocs/opencart/catalog/view/theme/default/template/common/home.tpl on line 39
+2013-12-18 1:03:45 - PHP Notice:  Undefined variable: breadcrumbs in /Applications/MAMP/htdocs/opencart/catalog/view/theme/default/template/common/home.tpl on line 39
+2013-12-18 1:03:45 - PHP Warning:  Invalid argument supplied for foreach() in /Applications/MAMP/htdocs/opencart/catalog/view/theme/default/template/common/home.tpl on line 39
+2013-12-18 1:04:58 - PHP Notice:  Undefined variable: breadcrumbs in /Applications/MAMP/htdocs/opencart/catalog/view/theme/default/template/common/home.tpl on line 39
+2013-12-18 1:04:58 - PHP Warning:  Invalid argument supplied for foreach() in /Applications/MAMP/htdocs/opencart/catalog/view/theme/default/template/common/home.tpl on line 39
+2013-12-18 1:04:58 - PHP Notice:  Undefined variable: breadcrumbs in /Applications/MAMP/htdocs/opencart/catalog/view/theme/default/template/common/home.tpl on line 39
+2013-12-18 1:04:58 - PHP Warning:  Invalid argument supplied for foreach() in /Applications/MAMP/htdocs/opencart/catalog/view/theme/default/template/common/home.tpl on line 39
+2013-12-18 1:04:59 - PHP Notice:  Undefined variable: breadcrumbs in /Applications/MAMP/htdocs/opencart/catalog/view/theme/default/template/common/home.tpl on line 39
+2013-12-18 1:04:59 - PHP Warning:  Invalid argument supplied for foreach() in /Applications/MAMP/htdocs/opencart/catalog/view/theme/default/template/common/home.tpl on line 39
+2013-12-18 1:04:59 - PHP Notice:  Undefined variable: breadcrumbs in /Applications/MAMP/htdocs/opencart/catalog/view/theme/default/template/common/home.tpl on line 39
+2013-12-18 1:04:59 - PHP Warning:  Invalid argument supplied for foreach() in /Applications/MAMP/htdocs/opencart/catalog/view/theme/default/template/common/home.tpl on line 39
+2013-12-18 1:08:05 - PHP Notice:  Undefined variable: breadcrumbs in /Applications/MAMP/htdocs/opencart/catalog/view/theme/default/template/common/home.tpl on line 39
+2013-12-18 1:08:05 - PHP Warning:  Invalid argument supplied for foreach() in /Applications/MAMP/htdocs/opencart/catalog/view/theme/default/template/common/home.tpl on line 39
+2013-12-18 1:08:06 - PHP Notice:  Undefined variable: breadcrumbs in /Applications/MAMP/htdocs/opencart/catalog/view/theme/default/template/common/home.tpl on line 39
+2013-12-18 1:08:06 - PHP Warning:  Invalid argument supplied for foreach() in /Applications/MAMP/htdocs/opencart/catalog/view/theme/default/template/common/home.tpl on line 39
+2013-12-18 1:11:59 - PHP Notice:  Undefined variable: breadcrumbs in /Applications/MAMP/htdocs/opencart/catalog/view/theme/default/template/common/home.tpl on line 39
+2013-12-18 1:11:59 - PHP Warning:  Invalid argument supplied for foreach() in /Applications/MAMP/htdocs/opencart/catalog/view/theme/default/template/common/home.tpl on line 39
+2013-12-18 1:23:04 - PHP Notice:  Undefined variable: breadcrumbs in /Applications/MAMP/htdocs/opencart/catalog/view/theme/default/template/common/home.tpl on line 39
+2013-12-18 1:23:04 - PHP Warning:  Invalid argument supplied for foreach() in /Applications/MAMP/htdocs/opencart/catalog/view/theme/default/template/common/home.tpl on line 39
+2013-12-18 1:24:12 - PHP Notice:  Undefined variable: breadcrumbs in /Applications/MAMP/htdocs/opencart/catalog/view/theme/default/template/common/home.tpl on line 37
+2013-12-18 1:24:12 - PHP Warning:  Invalid argument supplied for foreach() in /Applications/MAMP/htdocs/opencart/catalog/view/theme/default/template/common/home.tpl on line 37

@@ -15,9 +15,7 @@
     function isOnChart($positionOnChart){
         $returnValue = '';
         
-        echo 'waarde is: ' . $positionOnChart;
-        
-        if($positionOnChart>20){
+        if($positionOnChart>50){
             $returnValue = 'product__content-description--offthechart';
         }else{
             $returnValue = 'product__content-description--normal';
@@ -43,32 +41,36 @@
         <?php var_dump($products); ?>
         <hr>
         
-        <article class="product">
-            <div class="product__img">
-                <img src="html/assets/img/wine-preview.jpg">
-            </div>
-            <div class="product__content">
-                <div class="product__content-title">
-                    <h1>Duetto Greco Matera DOC</h1>
-                </div>
-                <div class="product__content-visual"><img src="html/assets/img/radarchart.png" alt="" /></div>
-                <?php 
+        <?php
+            foreach ($products as $product){
+                echo    '<article class="product">
+                    <div class="product__img">
+                        <img src="html/assets/img/wine-preview.jpg">
+                    </div>
+                    <div class="product__content">
+                        <div class="product__content-title">
+                            <h1>Duetto Greco Matera DOC</h1>
+                    </div>
+                    <div class="product__content-visual"><img src="html/assets/img/radarchart.png" alt="" /></div>';
+                    
                     $descriptionClass = isOnChart(19);
-                    echo $descriptionClass;
                     echo "<div class=\"$descriptionClass\">" . '1 - Zoet' . '</div>';
-                ?>
-                <div class="product__content-price">
-                    <a href="#">€29,95 <i class="icon-arrow-right"></i></a>
-                </div>
-            </div>
-        </article>
-        
-        
-        
-        <div class="product"></div>
-        <div class="product"></div>
-        <div class="product"></div>
-        <div class="product"></div>
+                    echo "<div class=\"$descriptionClass\">" . '2 - Zuur' . '</div>';
+                    echo "<div class=\"$descriptionClass\">" . '3 - Fruitig' . '</div>';
+                    echo "<div class=\"$descriptionClass\">" . '4 - Prijs' . '</div>';
+                    echo "<div class=\"$descriptionClass\">" . '5 - Jaar' . '</div>';
+                    echo "<div class=\"$descriptionClass\">" . '6 - Druif' . '</div>';
+                    echo "<div class=\"$descriptionClass\">" . '7 - Regio' . '</div>';
+                    
+                    
+                    echo '<div class="product__content-price">
+                                <a href="#">€29,95 <i class="icon-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </article>';
+            } // end of foreach
+            
+        ?>
     </section>
     <div class="clear-fix"></div>
 </section>
