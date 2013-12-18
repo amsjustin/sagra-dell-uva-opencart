@@ -297,6 +297,10 @@ to {
 }
 .category-menu h1 {
     margin: 0px 0px 20px 0px;
+    color: #aa5f7e;
+}
+.category-menu a{
+	color: #aa5f7e;
 }
 
 @media (max-width: 767px) {
@@ -383,6 +387,7 @@ to {
 .product__content-price {
     vertical-align: text-top;
     float: right;
+    padding-top:38px;
 }
 .product__content-price a {
     text-decoration: none;

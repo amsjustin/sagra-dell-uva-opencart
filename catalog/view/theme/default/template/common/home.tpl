@@ -29,11 +29,10 @@
     <?php echo $column_left; ?>
     <section class="product-overview">
         <div class="product-overview__breadcrumb">
-            <?php foreach ($breadcrumbs as $breadcrumb) { ?>
-            <?php echo $breadcrumb['separator']; ?><a href="<?php echo $breadcrumb['href']; ?>"><?php echo $breadcrumb['text']; ?></a>
+            <?php  { ?>
+            <?php ?><a href="<?php echo $base; ?>"><?php echo 'home'; ?></a>
             <?php } ?>
         </div>
-        <hr>
         
         <?php
             // create product counter to edit 'product-visual' canvas id
@@ -49,20 +48,23 @@
                 $product_price = $product['price'];
                 $product_thumb = $product["thumb"];
                 $radar_visual_data = $product['visual'];
+                $product_id = $product['product_id'];
                 
                 array_push($product_id_array, $product['product_id']);
                 array_push($product_visual_array, $radar_visual_data);
+                
+                $image_url = $base . 'image/' . $product["image"];
 
                 echo    "<article class=\"product\">
                     <div class=\"product__img\">
-                        <img src=\"html/assets/img/wine-preview.jpg\">
+                        <img width=\"180\" height=\"220\" src=\"$image_url\">
                     </div>
                     <div class=\"product__content\">
                         <div class=\"product__content-title\">
                             <h1>$product_name</h1>
                     </div>
                     <div class=\"product__content-visual\">
-                        <canvas id=\"product-visual-$product_counter\" width=\"180\" height=\"180\"></canvas>
+                        <canvas id=\"product-visual-$product_id\" width=\"180\" height=\"180\"></canvas>
                     </div>";
                     
                     $descriptionClass = isOnChart(19);
@@ -91,26 +93,16 @@
     // Creating the data for chart.js
     // Extend data with new object in wines array
     var wines = [
+        
+    <?php foreach($products as $product){ ?>
         {
             "userData": [65,59,90,81,56,55,40],
-            "id": 1,
-            "wineData": <?php echo $radar_visual_data; ?>
+            "id": <?php echo $product['product_id'] ?>,
+            "wineData": <?php echo $product['visual']; ?>
         },
+
+    <?php } ?>
     ];
-    
-    function pushWines(wine_id, wine_data){
-       wines.push( {
-        "userData": [65,59,90,81,56,55,40],
-        "id": wine_id,
-        "wineData": wine_data
-      } ); 
-    }
-    
-    for(var i=1; i< <?php echo $products_amount ?>; i++){
-            pushWines(i, <?php echo $radar_visual_data; ?>);
-                        
-        }//end for loop
-    
 
     // Function that generates the chart by array input
     var createRadarChart = function(array) {
