@@ -355,7 +355,11 @@ to {
     color: #918a53;
     font-size: 20px;
     margin: 0;
-    padding: 0;
+    padding: 0 0 10px 0;
+}
+.product a {
+    color: #918a53;
+    text-decoration: none;
 }
 .product__img {
     width: 91px;
@@ -372,7 +376,7 @@ to {
     float: left;
     width: 270px;
     background-color: #fff;
-    padding: 20px 10px;
+    padding: 10px 10px 20px 10px;
     min-height: 210px;
     border-bottom: #918a53 2px solid;
 }
@@ -422,6 +426,8 @@ to {
     }
     .product__content-title h1 {
         margin: 10px 0px;
+        padding-bottom: 20px;
+        
     }
     .product__content-price {
         margin: 0px 10px 10px 0px;

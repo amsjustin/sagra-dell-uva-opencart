@@ -1,16 +1,16 @@
 <?php
     // menu array (later vullen met database etc)
     $wine_menu_title = array(
-        "menu item 1",
-        "menu item 2",
-        "menu item 3",
-        "menu item 4",
-        "menu item 5",
+        "Mijn account",
+        "Mijn wijnrek",
+        "Wijn toevoegen",
+        "Mijn bestellingen",
+        "Overzicht smaak",
     );
     
     $wine_menu_url = array(
-        '#',
-        '#',
+        'http://localhost/opencart//index.php?route=account/account',
+        'http://localhost/opencart/index.php?route=account/wishlist',
         '#',
         '#',
         '#',
