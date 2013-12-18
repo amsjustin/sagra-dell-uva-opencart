@@ -74,10 +74,14 @@
                     <div class="header__top">
                         <div class="inner">
                             <div class="header__logo">
-                                <a href="#"><img src="html/assets/img/logo.jpg"></a>
+                                <a title="Sagra dell\'UVA" href="<?php echo $base; ?>"><img src="html/assets/img/logo.jpg"></a>
                             </div>
                             <div class="header__account">
+                                <?php if($logged){ ?>
+                                <p>Welcome! Bekijk je <a href="<?php echo $base; ?>/index.php?route=account/account">account</a> of <a href="<?php echo $base; ?>/index.php?route=account/logout">log uit</a></p>
+                                <?php }else { ?>
                                 <p>Welcome visitor you can <a href="<?php echo $base; ?>/index.php?route=account/login">login</a> or <a href="<?php echo $base; ?>/index.php?route=account/register">create an account</a></p>
+                                <?php } ?>
                             </div>
                             <div class="clear-fix"></div>
                         </div>
