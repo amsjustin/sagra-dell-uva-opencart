@@ -6,6 +6,12 @@ class ControllerCommonHome extends Controller {
         $this->document->setTitle($this->config->get('config_title'));
         $this->document->setDescription($this->config->get('config_meta_description'));
         $this->data['heading_title'] = $this->config->get('config_title');
+        
+        if (isset($this->request->server['HTTPS']) && (($this->request->server['HTTPS'] == 'on') || ($this->request->server['HTTPS'] == '1'))) {
+            $server = $this->config->get('config_ssl');
+        } else {
+            $server = $this->config->get('config_url');
+        }
 
         $this->load->model('catalog/product');
         $this->data['products'] = array();
@@ -15,6 +21,8 @@ class ControllerCommonHome extends Controller {
             'start' => 0,
             'limit' => 30
         );
+        
+        $this->data['base'] = $server;
 
         $results = $this->model_catalog_product->getProducts($data);
 
@@ -48,7 +56,8 @@ class ControllerCommonHome extends Controller {
                 'rating' => $rating,
                 'reviews' => sprintf($this->language->get('text_reviews'), (int) $result['reviews']),
                 'href' => $this->url->link('product/product', 'product_id=' . $result['product_id']),
-                'visual' => $result['visual']
+                'visual' => $result['visual'],
+                'image' => $result['image']
             );
         }
 
