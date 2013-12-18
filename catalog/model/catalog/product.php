@@ -57,7 +57,8 @@ class ModelCatalogProduct extends Model {
                 'date_added' => $query->row['date_added'],
                 'date_modified' => $query->row['date_modified'],
                 'viewed' => $query->row['viewed'],
-                'visual' => '[12,24,34,45,56,67,68]'
+                'visual' => '[12,24,34,45,56,67,68]',
+                'damn' => 'hollaback'
             );
         } else {
             return false;

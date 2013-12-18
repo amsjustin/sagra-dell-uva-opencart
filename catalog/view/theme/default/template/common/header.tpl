@@ -50,8 +50,7 @@
         <script type="text/javascript" src="html/js/lib/jquery-1.8.2.min.js"></script>
         <script type="text/javascript" src="html/js/lib/jquery.inputfield.js"></script>
         <script type="text/javascript" src="html/js/lib/respond.min.js"></script>
-
-
+        <script type="text/javascript" src="html/js/lib/chart.min.js"></script>
 
         <?php foreach ($scripts as $script) { ?>
         <script type="text/javascript" src="<?php echo $script; ?>"></script>
