@@ -1,1 +1,1 @@
-<div class="actueel"><img src="html/assets/img/samsungdingen.png" alt="" /></div>
+<div class="actueel"><a href="#"><img src="html/assets/img/actueel-proeverij.png" alt="" /></a></div>
