@@ -1,1 +1,1 @@
-<div class=""><img src="html/assets/img/samsungdingen.png" alt="" /></div>
+<div class="actueel"><img src="html/assets/img/samsungdingen.png" alt="" /></div>
