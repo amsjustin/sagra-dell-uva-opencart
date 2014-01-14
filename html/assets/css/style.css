@@ -149,6 +149,20 @@ a{
     float: right;
 }
 
+.header .login {
+    padding:0;
+    float:right;
+}
+
+.header .links a {   
+	padding: 0px 0px 0px 7px;
+	text-decoration: none;
+}
+.header .links a + a {
+	margin-left: 8px;
+	border-left: 1px solid #CCC;
+}
+
 @media (max-width: 767px) {
     .header__logo {
         width: 100%;

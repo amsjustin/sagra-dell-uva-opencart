@@ -80,9 +80,12 @@
                                 <?php if($logged){ ?>
                                 <p>Welcome! Bekijk je <a href="<?php echo $base; ?>/index.php?route=account/account">account</a> of <a href="<?php echo $base; ?>/index.php?route=account/logout">log uit</a></p>
                                 <?php }else { ?>
-                                <p>Welcome visitor you can <a href="<?php echo $base; ?>/index.php?route=account/login">login</a> or <a href="<?php echo $base; ?>/index.php?route=account/register">create an account</a></p>
+                                <p class="login">Welcome visitor you can <a href="<?php echo $base; ?>/index.php?route=account/login">login</a> or <a href="<?php echo $base; ?>/index.php?route=account/register">create an account</a></p>
                                 <?php } ?>
+                                <p class="links"><a href="<?php echo $home; ?>"><?php echo $text_home; ?></a><a href="<?php echo $wishlist; ?>" id="wishlist-total"><?php echo $text_wishlist; ?></a><a href="<?php echo $account; ?>"><?php echo $text_account; ?></a><a href="<?php echo $shopping_cart; ?>"><?php echo $text_shopping_cart; ?></a><a href="<?php echo $checkout; ?>"><?php echo $text_checkout; ?></a></p>
+                                
                             </div>
+                            
                             <div class="clear-fix"></div>
                         </div>
                     </div>

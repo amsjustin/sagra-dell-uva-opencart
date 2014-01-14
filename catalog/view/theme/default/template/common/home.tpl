@@ -26,7 +26,7 @@
 ?>
 
 <section class="content">
-    <?php echo $column_left; ?>
+    <?php echo $column_left; ?><?php echo $column_right; ?>
     <section class="product-overview">
         <div class="product-overview__breadcrumb">
             <?php  { ?>
