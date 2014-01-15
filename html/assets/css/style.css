@@ -156,12 +156,12 @@ a{
 }
 
 .header .links a {   
-	padding: 0px 0px 0px 7px;
-	text-decoration: none;
+    padding: 0px 0px 0px 7px;
+    text-decoration: none;
 }
 .header .links a + a {
-	margin-left: 8px;
-	border-left: 1px solid #CCC;
+    margin-left: 8px;
+    border-left: 1px solid #CCC;
 }
 
 @media (max-width: 767px) {
@@ -400,7 +400,7 @@ to {
     color: #aa5f7e;
 }
 .category-menu a{
-	color: #aa5f7e;
+    color: #aa5f7e;
 }
 
 @media (max-width: 767px) {
@@ -527,7 +527,7 @@ to {
     .product__content-title h1 {
         margin: 10px 0px;
         padding-bottom: 20px;
-        
+
     }
     .product__content-price {
         margin: 0px 10px 10px 0px;
@@ -552,6 +552,51 @@ to {
         margin: 0px 0px 0px 25px;
         float: right;
     }   
+}
+
+/* ==========================================================================
+    PRODUCT SINGLE
+============================================================================= */
+
+.product-info__image {
+    border-bottom: solid 1px #aa5f7e;
+}
+
+.product-info__table {
+    margin-top: 20px;
+}
+.product-info__table-top {
+    overflow: hidden;
+    border-bottom: solid 1px #aa5f7e;
+    position: relative;
+}
+.product-info__table-top .selected {
+    background-color: #aa5f7e;
+    color: #fff;
+    border: solid 1px #aa5f7e;
+}
+.product-info__table-top a {
+    padding: 10px 20px;
+    float: left;
+    display: inline-block;
+    text-decoration: none;
+    border: solid 1px #fff;
+}
+.product-info__table-content {
+    padding: 20px;
+    border-left: solid 1px #aa5f7e;
+    border-right: solid 1px #aa5f7e;
+    border-bottom: solid 1px #aa5f7e;
+}
+@media (max-width: 480px) {
+    .product-info__table-top a {
+        display: block;
+        float: none;
+        border-top: solid 1px #aa5f7e;
+        border-left: solid 1px #aa5f7e;
+        border-right: solid 1px #aa5f7e;
+        border-bottom: solid 1px #fff;
+    }
 }
 
 /* ==========================================================================
@@ -594,6 +639,9 @@ to {
     border: 0;
     background-color: #bebebe;
     width: 200px;
+}
+.form__input-holder input[type="radio"] {
+    width: 20px !important;
 }
 .form__input-holder textarea {
     border: solid 1px #bebebe;
@@ -640,6 +688,9 @@ to {
     .form__input-holder select {
         width: 200px;
     }
+    .form__input-holder--small input {
+        width: 100%;
+    }
 }
 @media (max-width: 480px) {
     .form__input-holder select,
@@ -658,6 +709,9 @@ to {
     .form__input-holder select,
     .form__input-holder input {
         width: 575px;
+    }
+    .form__input-holder--small input {
+        width: 525px;
     }
 }
 
