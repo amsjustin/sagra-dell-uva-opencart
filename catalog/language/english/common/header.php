@@ -1,7 +1,7 @@
 <?php
 // Text
 $_['text_home']          = 'Home';
-$_['text_wishlist']      = 'Verlanglijst (%s)';
+$_['text_wishlist']      = 'Mijn wijnrek (%s)';
 $_['text_shopping_cart'] = 'Winkelwagen';
 $_['text_search']        = 'Zoeken';
 $_['text_welcome']       = 'Welkom bezoeker, Wilt u <a href="%s">inloggen</a> of <a href="%s">registreren</a>?';

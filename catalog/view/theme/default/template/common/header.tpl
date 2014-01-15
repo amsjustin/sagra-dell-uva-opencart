@@ -1,16 +1,16 @@
 <?php
     // menu array (later vullen met database etc)
     $wine_menu_title = array(
-        "menu item 1",
-        "menu item 2",
-        "menu item 3",
-        "menu item 4",
-        "menu item 5",
+        "Mijn account",
+        "Mijn wijnrek",
+        "Wijn toevoegen",
+        "Mijn bestellingen",
+        "Overzicht smaak",
     );
     
     $wine_menu_url = array(
-        '#',
-        '#',
+        'http://localhost/opencart//index.php?route=account/account',
+        'http://localhost/opencart/index.php?route=account/wishlist',
         '#',
         '#',
         '#',
@@ -76,13 +76,17 @@
                             <div class="header__logo">
                                 <a title="Sagra dell\'UVA" href="<?php echo $base; ?>"><img src="html/assets/img/logo.jpg"></a>
                             </div>
+                            
                             <div class="header__account">
                                 <?php if($logged){ ?>
                                 <p>Welcome! Bekijk je <a href="<?php echo $base; ?>/index.php?route=account/account">account</a> of <a href="<?php echo $base; ?>/index.php?route=account/logout">log uit</a></p>
                                 <?php }else { ?>
-                                <p>Welcome visitor you can <a href="<?php echo $base; ?>/index.php?route=account/login">login</a> or <a href="<?php echo $base; ?>/index.php?route=account/register">create an account</a></p>
+                                <p class="login">Welcome visitor you can <a href="<?php echo $base; ?>/index.php?route=account/login">login</a> or <a href="<?php echo $base; ?>/index.php?route=account/register">create an account</a></p>
                                 <?php } ?>
+                                
+                                
                             </div>
+                            <?php echo $cart; ?>
                             <div class="clear-fix"></div>
                         </div>
                     </div>
@@ -96,7 +100,10 @@
                                     <div id="search-btn-submit" class="search__form-submit"><i class="icon-magnifyglass"></i></div>
                                 </form>
                             </div>
-                            <div class="global-nav__container">
+                            
+                            <div class="global-menu-fullscreen__alles"><p class="links"><a href="<?php echo $wishlist; ?>" id="wishlist-total"><?php echo $text_wishlist; ?></a><a href="<?php echo $account; ?>"><?php echo $text_account; ?></a><a href="<?php echo $shopping_cart; ?>"><?php echo $text_shopping_cart; ?></a></p></div>
+                            
+                            <!--<div class="global-nav__container">
                                 <div class="global-nav__button">
                                     <a id="gloval-nav-btn" title="Klik" href="javascript:void(0);">
                                         <i class="icon-pancake"></i>
@@ -110,7 +117,7 @@
                                         ?>
                                     </ul>
                                 </nav>
-                            </div>
+                            </div>-->
                             <div class="clear-fix"></div>
                         </div>
                     </div>

@@ -25,8 +25,8 @@
     }   
 ?>
 
-<section class="content">
-    <?php echo $column_left; ?>
+<section class="content"><?php echo $content_top; ?>
+    <?php echo $column_left; ?><?php echo $column_right; ?>
     <section class="product-overview">
         <div class="product-overview__breadcrumb">
             <?php  { ?>
@@ -49,6 +49,7 @@
                 $product_thumb = $product["thumb"];
                 $radar_visual_data = $product['visual'];
                 $product_id = $product['product_id'];
+                $product_href = $product['href'];
                 
                 array_push($product_id_array, $product['product_id']);
                 array_push($product_visual_array, $radar_visual_data);
@@ -57,11 +58,11 @@
 
                 echo    "<article class=\"product\">
                     <div class=\"product__img\">
-                        <img width=\"180\" height=\"220\" src=\"$image_url\">
+                        <a href=\"$product_href\"><img width=\"180\" height=\"220\" src=\"$image_url\"></a>
                     </div>
                     <div class=\"product__content\">
                         <div class=\"product__content-title\">
-                            <h1>$product_name</h1>
+                            <h1><a href=\"$product_href\">$product_name</a></h1>
                     </div>
                     <div class=\"product__content-visual\">
                         <canvas id=\"product-visual-$product_id\" width=\"180\" height=\"180\"></canvas>
@@ -78,7 +79,7 @@
                     
                     
                     echo "<div class=\"product__content-price\">
-                                <a href=\"#\">$product_price <i class=\"icon-arrow-right\"></i></a>
+                                <a href=\"$product_href\">$product_price <i class=\"icon-arrow-right\"></i></a>
                             </div>
                         </div>
                     </article>";
