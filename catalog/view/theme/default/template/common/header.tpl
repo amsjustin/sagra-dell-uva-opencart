@@ -83,7 +83,7 @@
                                 <?php }else { ?>
                                 <p class="login">Welcome visitor you can <a href="<?php echo $base; ?>/index.php?route=account/login">login</a> or <a href="<?php echo $base; ?>/index.php?route=account/register">create an account</a></p>
                                 <?php } ?>
-                                <p class="links"><a href="<?php echo $home; ?>"><?php echo $text_home; ?></a><a href="<?php echo $wishlist; ?>" id="wishlist-total"><?php echo $text_wishlist; ?></a><a href="<?php echo $account; ?>"><?php echo $text_account; ?></a><a href="<?php echo $shopping_cart; ?>"><?php echo $text_shopping_cart; ?></a><a href="<?php echo $checkout; ?>"><?php echo $text_checkout; ?></a></p>
+                                
                                 
                             </div>
                             <?php echo $cart; ?>
@@ -100,7 +100,10 @@
                                     <div id="search-btn-submit" class="search__form-submit"><i class="icon-magnifyglass"></i></div>
                                 </form>
                             </div>
-                            <div class="global-nav__container">
+                            
+                            <div class="global-menu-fullscreen__alles"><p class="links"><a href="<?php echo $wishlist; ?>" id="wishlist-total"><?php echo $text_wishlist; ?></a><a href="<?php echo $account; ?>"><?php echo $text_account; ?></a><a href="<?php echo $shopping_cart; ?>"><?php echo $text_shopping_cart; ?></a></p></div>
+                            
+                            <!--<div class="global-nav__container">
                                 <div class="global-nav__button">
                                     <a id="gloval-nav-btn" title="Klik" href="javascript:void(0);">
                                         <i class="icon-pancake"></i>
@@ -114,7 +117,7 @@
                                         ?>
                                     </ul>
                                 </nav>
-                            </div>
+                            </div>-->
                             <div class="clear-fix"></div>
                         </div>
                     </div>

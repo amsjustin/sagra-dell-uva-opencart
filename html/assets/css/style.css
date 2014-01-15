@@ -147,6 +147,7 @@ a{
 }
 .header__account {
     float: right;
+    width:327px;
 }
 
 .header .login {
@@ -218,6 +219,12 @@ a{
     padding:0;
     margin:0;
     float:right;
+}
+
+.global-menu-fullscreen__alles {
+    min-width: 300px;
+    position: absolute;
+    right: 25px;
 }
 
 /* ==========================================================================
