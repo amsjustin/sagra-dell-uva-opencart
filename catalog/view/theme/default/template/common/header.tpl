@@ -51,6 +51,7 @@
         <script type="text/javascript" src="html/js/lib/jquery.inputfield.js"></script>
         <script type="text/javascript" src="html/js/lib/respond.min.js"></script>
         <script type="text/javascript" src="html/js/lib/chart.min.js"></script>
+        <script type="text/javascript" src="html/js/lib/common.js"></script>
 
         <?php foreach ($scripts as $script) { ?>
         <script type="text/javascript" src="<?php echo $script; ?>"></script>
@@ -84,9 +85,9 @@
                                 <p class="login">Welcome visitor you can <a href="<?php echo $base; ?>/index.php?route=account/login">login</a> or <a href="<?php echo $base; ?>/index.php?route=account/register">create an account</a></p>
                                 <?php } ?>
                                 
-                                
+                                <?php echo $cart; ?>
                             </div>
-                            <?php echo $cart; ?>
+                            
                             <div class="clear-fix"></div>
                         </div>
                     </div>
@@ -117,8 +118,8 @@
                                         ?>
                                     </ul>
                                 </nav>
-                            </div>-->
-                            <div class="clear-fix"></div>
+                            </div>--> 
+                           <div class="clear-fix"></div>
                         </div>
                     </div>
                 </header>
