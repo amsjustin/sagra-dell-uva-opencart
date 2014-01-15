@@ -102,7 +102,13 @@
                                 </form>
                             </div>
                             
-                            <div class="global-menu-fullscreen__alles"><p class="links"><a href="<?php echo $wishlist; ?>" id="wishlist-total"><?php echo $text_wishlist; ?></a><a href="<?php echo $account; ?>"><?php echo $text_account; ?></a><a href="<?php echo $shopping_cart; ?>"><?php echo $text_shopping_cart; ?></a></p></div>
+                            <div class="global-menu-fullscreen__alles">
+                                <p class="links">
+                                    <span class="global-menu__item"><a href="<?php echo $wishlist; ?>" id="wishlist-total"><?php echo $text_wishlist; ?></a></span>
+                                    <span class="global-menu__item"><a href="<?php echo $account; ?>"><?php echo $text_account; ?></a></span>
+                                    <span class="global-menu__item"><a href="<?php echo $shopping_cart; ?>"><?php echo $text_shopping_cart; ?></a></span>
+                                </p>
+                            </div>
                             
                             <!--<div class="global-nav__container">
                                 <div class="global-nav__button">

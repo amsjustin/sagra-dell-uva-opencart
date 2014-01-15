@@ -156,8 +156,8 @@ a{
 }
 
 .header .links a {   
-    padding: 0px 0px 0px 7px;
     text-decoration: none;
+    font-size: large;
 }
 .header .links a + a {
     margin-left: 8px;
@@ -215,34 +215,12 @@ a{
     padding-bottom: 20px;
 }
 
-#cart .heading {
-float: right;
-margin-right: 172px;
-margin-top: 15px;
-padding-left: 14px;
-padding-right: 14px;
-background: #FFF;
-position: relative;
-z-index: 1;
-}
+
 
 .heading h4 {
     padding:10px 0px;
     margin:0;
-}
-
-#cart .empty {
-    padding-top: 50px;
-    text-align: center;
-}
-
-#cart .heading a span {
-    background: #FFFFFF url('../img/arrow-down.png') 100% 50% no-repeat;
-    padding-right: 15px;
-}
-
-#cart .heading a{
-    cursor: pointer;
+    font-weight: normal;
 }
 
 #cart {
@@ -251,6 +229,31 @@ z-index: 1;
     z-index: 9;
     min-width: 300px;
     margin-top: 35px;
+}
+
+#cart .empty {
+    padding-top: 50px;
+    text-align: center;
+}
+
+#cart .heading {
+	float: right;
+	margin-right: 172px;
+	margin-top: 15px;
+	padding-left: 14px;
+	padding-right: 14px;
+	background: #FFF;
+	position: relative;
+	z-index: 1;
+}
+
+#cart .heading a{
+    cursor: pointer;
+}
+
+#cart .heading a span {
+    background: #FFFFFF url('../img/arrow-down.png') 100% 50% no-repeat;
+    padding-right: 15px;
 }
 
 #cart .content {
@@ -294,6 +297,16 @@ z-index: 1;
     min-width: 300px;
     position: absolute;
     right: 25px;
+}
+
+.global-menu__item {
+	color: #fff;
+	background-color:#918a52;
+	padding: 10px;
+}
+
+.global-menu__item a {
+	color:#fff;
 }
 
 /* ==========================================================================
