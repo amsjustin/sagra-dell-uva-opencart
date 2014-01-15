@@ -42,9 +42,6 @@
                         <?php } else { ?>
                         <span class="price-old"><?php echo $price; ?></span> <span class="price-new"><?php echo $special; ?></span>
                         <?php } ?>
-                        <!--<?php if ($points) { ?>-->
-                        <!--<span class="reward"><small><?php echo $text_points; ?> <?php echo $points; ?></small></span><br />-->
-                        <!--<?php } ?>-->
                         <?php if ($discounts) { ?>
                         <div class="discount">
                             <?php foreach ($discounts as $discount) { ?>
@@ -212,31 +209,27 @@
                         <?php } ?>
                     </div>
                     <?php } ?>
+                    <div class="product-info__content-order">
+                        <span><?php echo $text_qty; ?></span>
+                        <input type="text" name="quantity" size="2" value="<?php echo $minimum; ?>" />
+                        <input type="hidden" name="product_id" size="2" value="<?php echo $product_id; ?>" />
+                        <input type="button" value="<?php echo $button_cart; ?>" id="button-cart" class="button" />
+                    </div>
                     <div class="product-info__content-cart">
-                        <div>
-                            <span><?php echo $text_qty; ?></span>
-                            <input type="text" name="quantity" size="2" value="<?php echo $minimum; ?>" />
-                            <input type="hidden" name="product_id" size="2" value="<?php echo $product_id; ?>" />
-                            <input type="button" value="<?php echo $button_cart; ?>" id="button-cart" class="button" />
-                        </div>
-                        <div>
-                            <a onclick="addToWishList('<?php echo $product_id; ?>');"><?php echo $button_wishlist; ?></a>
-                            <a onclick="addToCompare('<?php echo $product_id; ?>');"><?php echo $button_compare; ?></a>
+                        <div class="form__button-holder">
+                            <a class="button button--green" href="javascript:void(0);" onclick="addToWishList('<?php echo $product_id; ?>');"><?php echo $button_wishlist; ?></a>
+                            <a class="button" href="javascript:void(0);" onclick="addToCompare('<?php echo $product_id; ?>');"><?php echo $button_compare; ?></a>
                         </div>
                     </div>
                     <?php if ($minimum > 1) { ?>
                     <div class="minimum"><?php echo $text_minimum; ?></div>
                     <?php } ?>
+                    <div class="clear-fix"></div>
                 </div>
                 <?php if ($review_status) { ?>
                 <div class="product-info__content-review">
                     <div>
-                        <img src="catalog/view/theme/default/image/stars-<?php echo $rating; ?>.png" alt="<?php echo $reviews; ?>" />&nbsp;&nbsp;<a onclick="$('a[href=\'#tab-review\']').trigger('click');"><?php echo $reviews; ?></a>&nbsp;&nbsp;|&nbsp;&nbsp;<a onclick="$('a[href=\'#tab-review\']').trigger('click');"><?php echo $text_write; ?></a></div>
-                    <!--                    <div class="share"> AddThis Button BEGIN 
-                                            <div class="addthis_default_style"><a class="addthis_button_compact"><?php echo $text_share; ?></a> <a class="addthis_button_email"></a><a class="addthis_button_print"></a> <a class="addthis_button_facebook"></a> <a class="addthis_button_twitter"></a></div>
-                                            <script type="text/javascript" src="//s7.addthis.com/js/250/addthis_widget.js"></script> 
-                                             AddThis Button END  
-                                        </div>-->
+                        <img src="catalog/view/theme/default/image/stars-<?php echo $rating; ?>.png" alt="<?php echo $reviews; ?>" />&nbsp;&nbsp;<a href="javascript:void(0);" onclick="$('a[href=\'#tab-review\']').trigger('click');"><?php echo $reviews; ?></a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="javascript:void(0);" onclick="$('a[href=\'#tab-review\']').trigger('click');"><?php echo $text_write; ?></a></div>
                 </div>
                 <?php } ?>
             </div>
