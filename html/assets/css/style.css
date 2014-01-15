@@ -174,6 +174,7 @@ a{
 .header .links a {   
     padding: 0px 0px 0px 4px;
     text-decoration: none;
+    font-size: large;
 }
 .header .links a + a {
     margin-left: 0px;
@@ -232,6 +233,7 @@ a{
 .actueel {
     padding-bottom: 20px;
 }
+<<<<<<< HEAD
 #cart .heading {
     float: right;
     /*margin-right: 172px;*/
@@ -249,18 +251,49 @@ a{
     padding:10px 0px;
     margin:0;
     text-align: right;
+=======
+
+
+
+.heading h4 {
+    padding:10px 0px;
+    margin:0;
+    font-weight: normal;
+}
+
+#cart {
+    position: absolute;
+    top: 0px;
+    z-index: 9;
+    min-width: 300px;
+    margin-top: 35px;
+>>>>>>> 184204f1359e986cfb1e82dccc8eb0b3c325a8a3
 }
 #cart .empty {
     padding-top: 50px;
     text-align: center;
 }
+<<<<<<< HEAD
 #cart .heading a span {
     background: #FFFFFF url('../img/arrow-down.png') 100% 50% no-repeat;
     padding-right: 15px;
+=======
+
+#cart .heading {
+	float: right;
+	margin-right: 172px;
+	margin-top: 15px;
+	padding-left: 14px;
+	padding-right: 14px;
+	background: #FFF;
+	position: relative;
+	z-index: 1;
+>>>>>>> 184204f1359e986cfb1e82dccc8eb0b3c325a8a3
 }
 #cart .heading a{
     cursor: pointer;
 }
+<<<<<<< HEAD
 #cart .heading p {
     text-align: right;
 }
@@ -271,6 +304,12 @@ a{
     min-width: 300px;
     margin-top: 35px;
     right: 25px;
+=======
+
+#cart .heading a span {
+    background: #FFFFFF url('../img/arrow-down.png') 100% 50% no-repeat;
+    padding-right: 15px;
+>>>>>>> 184204f1359e986cfb1e82dccc8eb0b3c325a8a3
 }
 #cart .content {
     clear: both;
@@ -314,6 +353,16 @@ a{
         position: relative;
         margin-bottom: 20px;
     }
+}
+
+.global-menu__item {
+	color: #fff;
+	background-color:#918a52;
+	padding: 10px;
+}
+
+.global-menu__item a {
+	color:#fff;
 }
 
 /* ==========================================================================
