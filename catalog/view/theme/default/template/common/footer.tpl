@@ -47,17 +47,29 @@
 
 <script type="text/javascript">
     var menuState = false;
+    var catMenuState = false;
     $('#gloval-nav-btn').click(function(){
     if(menuState) {
-    $('#global-nav').removeClass('global-nav--isactive');
-    $('#global-nav').addClass('global-nav--inactive');
-    menuState = false;
-}else {
-$('#global-nav').removeClass('global-nav--inactive');
-$('#global-nav').addClass('global-nav--isactive');
-menuState = true;
-}
-});
+        $('#global-nav').removeClass('global-nav--isactive');
+        $('#global-nav').addClass('global-nav--inactive');
+        menuState = false;
+    }else {
+        $('#global-nav').removeClass('global-nav--inactive');
+        $('#global-nav').addClass('global-nav--isactive');
+        menuState = true;
+        }
+    });
+    $('#category-menu-button').click(function(){
+    if(menuState) {
+        $('#category-menu-list').removeClass('category-menu-list--isactive');
+        $('#category-menu-list').addClass('category-menu-list--inactive');
+        menuState = false;
+    }else {
+        $('#category-menu-list').removeClass('category-menu-list--inactive');
+        $('#category-menu-list').addClass('category-menu-list--isactive');
+        menuState = true;
+        }
+    });
 </script>
 </div>
 </body>
