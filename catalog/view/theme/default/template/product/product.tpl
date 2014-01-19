@@ -13,16 +13,8 @@
             <div class="product-info__image">
                 <?php if ($thumb) { ?>
                 <div class="image">
-                    <!--<a href="<?php echo $popup; ?>" title="<?php echo $heading_title; ?>" class="colorbox"><img src="<?php echo $thumb; ?>" title="<?php echo $heading_title; ?>" alt="<?php echo $heading_title; ?>" id="image" /></a>-->
                     <img src="<?php echo $thumb; ?>" title="<?php echo $heading_title; ?>" alt="<?php echo $heading_title; ?>" id="image" />
                 </div>
-                <?php } ?>
-<!--                <?php if ($images) { ?>-->
-                <!--<div class="image-additional">-->
-                    <!--<?php foreach ($images as $image) { ?>-->
-                <!--<a href="<?php echo $image['popup']; ?>" title="<?php echo $heading_title; ?>" class="colorbox"><img src="<?php echo $image['thumb']; ?>" title="<?php echo $heading_title; ?>" alt="<?php echo $heading_title; ?>" /></a>-->
-                <!--<?php } ?>-->
-                <!--</div>-->
                 <?php } ?>
             </div>
             <?php } ?>
@@ -213,7 +205,7 @@
                         <span><?php echo $text_qty; ?></span>
                         <input type="text" name="quantity" size="2" value="<?php echo $minimum; ?>" />
                         <input type="hidden" name="product_id" size="2" value="<?php echo $product_id; ?>" />
-                        <input type="button" value="<?php echo $button_cart; ?>" id="button-cart" class="button" />
+                        <a href="javascript:void(0);" class="button button--order" id="button-cart"><span><?php echo $button_cart; ?></span><i class="glyphicon glyphicon-shopping-cart"></i></a>
                     </div>
                     <div class="product-info__content-cart">
                         <div class="form__button-holder">

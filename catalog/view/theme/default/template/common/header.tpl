@@ -1,34 +1,3 @@
-<?php
-// menu array (later vullen met database etc)
-$wine_menu_title = array(
-"Mijn account",
-"Mijn wijnrek",
-"Wijn toevoegen",
-"Mijn bestellingen",
-"Overzicht smaak",
-);
-
-$wine_menu_url = array(
-'http://localhost/opencart//index.php?route=account/account',
-'http://localhost/opencart/index.php?route=account/wishlist',
-'#',
-'#',
-'#',
-);
-
-$arrlength = count($wine_menu_title);
-
-function createWineMenu($menu_title,$menu_url,$menu_length){
-echo '<ul>';
-
-for ($i = 0; $i < $menu_length; $i++){
-echo "<li><a href=\"$menu_url[$i]\">" . $menu_title[$i] . '</a></li>';
-}
-
-echo '</ul>';
-}
-?>
-
 <!DOCTYPE html>
 <html>
     <head>
@@ -46,6 +15,7 @@ echo '</ul>';
         <link rel="stylesheet" type="text/css" href="html/assets/css/font.css">
         <link rel="stylesheet" type="text/css" href="html/assets/css/normalize.css">
         <link rel="stylesheet" type="text/css" href="html/assets/css/style.css">
+        <link rel="stylesheet" type="text/css" href="html/assets/css/glyphicon.css">
 
         <script type="text/javascript" src="html/js/lib/jquery-1.8.2.min.js"></script>
         <script type="text/javascript" src="html/js/lib/jquery.inputfield.js"></script>
@@ -80,7 +50,7 @@ echo '</ul>';
                             <div class="header__account">
                                 <div class="header__login">
                                     <?php if($logged){ ?>
-                                    <p>Welcome! Bekijk je <a href="<?php echo $base; ?>/index.php?route=account/account">account</a> of <a href="<?php echo $base; ?>/index.php?route=account/logout">log uit</a></p>
+                                    <p>Welcome! Bekijk je <a href="<?php echo $base; ?>/index.php?route=account/account">account</a> of <a href="<?php echo $base; ?>/index.php?route=account/logout">log uit</a> </p>
                                     <?php }else { ?>
                                     <p class="login">Welcome visitor you can <a href="<?php echo $base; ?>/index.php?route=account/login">login</a> or <a href="<?php echo $base; ?>/index.php?route=account/register">create an account</a></p>
                                     <?php } ?>
@@ -110,9 +80,9 @@ echo '</ul>';
                                 </div>
                                 <nav id="global-nav" class="global-nav global-nav--inactive">
                                     <ul class="global-nav__ul">
-                                        <li><a href="<?php echo $wishlist; ?>" id="wishlist-total"><?php echo $text_wishlist; ?></a></li>
-                                        <li><a href="<?php echo $account; ?>"><?php echo $text_account; ?></a></li>
-                                        <li><a href="<?php echo $shopping_cart; ?>"><?php echo $text_shopping_cart; ?></a></li>
+                                        <li><a href="<?php echo $wishlist; ?>" id="wishlist-total"><i class="glyphicon glyphicon-glass"></i><?php echo $text_wishlist; ?></a></li>
+                                        <li><a href="<?php echo $account; ?>"><i class="glyphicon glyphicon glyphicon-user"></i><?php echo $text_account; ?></a></li>
+                                        <li><a href="<?php echo $shopping_cart; ?>"><i class="glyphicon glyphicon-shopping-cart"></i><?php echo $text_shopping_cart; ?></a></li>
                                     </ul>
                                 </nav>
                             </div> 

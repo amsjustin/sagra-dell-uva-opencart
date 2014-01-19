@@ -25,8 +25,10 @@
     }   
 ?>
 
-<section class="content"><?php echo $content_top; ?>
-    <?php echo $column_left; ?><?php echo $column_right; ?>
+<section class="content">
+    <?php echo $content_top; ?>
+    <?php echo $column_left; ?>
+    <?php echo $column_right; ?>
     <section class="product-overview">
         <div class="product-overview__breadcrumb">
             <?php  { ?>
@@ -84,8 +86,9 @@
                         </div>
                     </article>";
             } // end of foreach
-            
         ?>
+        <!--<?php echo $content_bottom; ?>-->
+        
     </section>
     <div class="clear-fix"></div>
 </section>
