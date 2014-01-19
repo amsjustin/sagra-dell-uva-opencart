@@ -26,16 +26,10 @@
 ?>
 
 <section class="content">
-    <?php echo $content_top; ?>
     <?php echo $column_left; ?>
     <?php echo $column_right; ?>
     <section class="product-overview">
-        <div class="product-overview__breadcrumb">
-            <?php  { ?>
-            <?php ?><a href="<?php echo $base; ?>"><?php echo 'home'; ?></a>
-            <?php } ?>
-        </div>
-        
+        <?php echo $content_top; ?>
         <?php
             // create product counter to edit 'product-visual' canvas id
             $product_counter = 0;
