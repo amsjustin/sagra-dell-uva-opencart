@@ -16,6 +16,9 @@
         <link rel="stylesheet" type="text/css" href="html/assets/css/normalize.css">
         <link rel="stylesheet" type="text/css" href="html/assets/css/style.css">
         <link rel="stylesheet" type="text/css" href="html/assets/css/glyphicon.css">
+        <link rel="stylesheet" type="text/css" href="catalog/view/theme/default/stylesheet/slideshow.css">
+        <link rel="stylesheet" type="text/css" href="catalog/view/theme/default/stylesheet/carousel.css">
+
 
         <script type="text/javascript" src="html/js/lib/jquery-1.8.2.min.js"></script>
         <script type="text/javascript" src="html/js/lib/jquery.inputfield.js"></script>

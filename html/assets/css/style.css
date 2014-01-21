@@ -439,6 +439,11 @@ to {
     margin-top: 25px;
 }
 
+.featured-item {
+    float: left;
+    width: 180px;
+}
+
 /* ==========================================================================
     CATEGORIE
 ============================================================================= */
@@ -447,11 +452,11 @@ to {
     float: left;
 }
 .category-menu {
-    float: left;
     min-width: 250px;
     background: #fff;
-    padding: 25px 0px;
+    padding: 25px 10px;
     border-bottom: solid 2px #aa5f7e;
+    height: 200px;
 }
 .category-menu ul {
     list-style: none;
@@ -496,7 +501,7 @@ to {
     .category-menu {
         min-width: 430px;
         max-width: 430px;
-        padding: 25px 0px;
+        padding: 25px 10px;
         margin-bottom: 10px;
     }
     .category-menu__button {
@@ -524,7 +529,7 @@ to {
 @media (min-width: 1200px) {
     .category-menu {
         min-width: 250px;
-        padding: 25px 0px;
+        padding: 25px 25px;
     }
 }
 
@@ -533,7 +538,7 @@ to {
 ============================================================================= */
 
 .product-overview {
-    width: 425px;
+    width: 1050px;
     margin: 0px 0px 0px 25px;
     float: right;
 }
@@ -612,7 +617,7 @@ to {
         width: 300px;
     }
 }
-@media (max-width: 480px) {
+@media (max-width: 1050px) {
     .product-overview {
         width: 100%;
         margin: 0px 0px 0px 25px;
@@ -647,7 +652,7 @@ to {
 }
 @media (min-width: 1200px) {
     .product-overview {
-        width: 850px;
+        width: 1050px;
         margin: 0px 0px 0px 25px;
         float: right;
     }   

@@ -81,7 +81,7 @@
                     </article>";
             } // end of foreach
         ?>
-        <!--<?php echo $content_bottom; ?>-->
+
         
     </section>
     <div class="clear-fix"></div>
