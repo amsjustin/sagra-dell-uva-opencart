@@ -54,7 +54,7 @@
 
                 echo    "<article class=\"product\">
                     <div class=\"product__img\">
-                        <a href=\"$product_href\"><img width=\"180\" height=\"220\" src=\"$image_url\"></a>
+                        <a href=\"$product_href\"><img width=\"\" height=\"\" src=\"$image_url\"></a>
                     </div>
                     <div class=\"product__content\">
                         <div class=\"product__content-title\">
