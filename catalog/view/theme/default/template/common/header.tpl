@@ -28,6 +28,7 @@
                 $('.bxslider').bxSlider();
               });
         </script>
+        
 
         <link rel="stylesheet" type="text/css" href="html/assets/css/font.css">
         <link rel="stylesheet" type="text/css" href="html/assets/css/normalize.css">
