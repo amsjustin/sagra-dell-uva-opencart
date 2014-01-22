@@ -118,9 +118,9 @@ return $returnValue;
         
             <?php foreach($products as $product){ ?>
         {
-                "userData": [randomize(),randomize(),randomize(),randomize(),randomize(),randomize(),randomize()],
+                "userData": [65,59,90,81,56,55,40],
                 "id": <?php echo $product['product_id'] ?>,
-                "wineData": <?php echo $product['visual']; ?>
+                "wineData": [randomize(),randomize(),randomize(),randomize(),randomize(),randomize(),randomize()]
                 },
 
                 <?php } ?>
