@@ -46,6 +46,10 @@
 </section>
 <div class="clear-fix"></div>
 <script type="text/javascript">
+    function randomize(){
+        return Math.floor(Math.random()*100);
+    }
+    
     // Creating the data for chart.js
     // Extend data with new object in wines array
     var wines = [
