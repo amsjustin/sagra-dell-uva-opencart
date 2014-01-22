@@ -30,7 +30,11 @@ return $returnValue;
     <?php echo $column_right; ?>
     <section class="product-overview">
         <?php echo $content_top; ?>
-        <div class="actueel"><img style="width: 100%;" src="html/assets/img/actueel-proeverij.png"/></div>
+        <ul class="bxslider">
+            <li><a href="http://cmd.moppedijk.nl/sagra/index.php?route=account/account"><img src="html/assets/img/actueel-proeverij.png"></a></li>
+            <li><a href="http://cmd.moppedijk.nl/sagra/index.php?route=account/wishlist"><img src="html/assets/img/actueel-wijnrek.png"></a></li>
+            <li><a href="http://cmd.moppedijk.nl/sagra/index.php?route=product/category&path=83_87"><img src="html/assets/img/actueel-rodewijn.png"></a></li>
+        </ul>
         <div class="overview-content">
             <h2>Sagra dell'Uva 'feest van de druif'</h2>
             <p>Sagra dell’Uva is een winkel, gespecialiseerd in Italiaanse wijnen, grappa’s, en olijfolie.</p>

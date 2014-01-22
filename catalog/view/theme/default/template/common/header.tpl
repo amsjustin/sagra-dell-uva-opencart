@@ -11,6 +11,23 @@
         <?php if ($keywords) { ?>
         <meta name="keywords" content="<?php echo $keywords; ?>" />
         <?php } ?>
+        
+        <script type="text/javascript" src="html/js/lib/jquery-1.8.2.min.js"></script>
+        <script type="text/javascript" src="html/js/lib/jquery.inputfield.js"></script>
+        <script type="text/javascript" src="html/js/lib/respond.min.js"></script>
+        <script type="text/javascript" src="html/js/lib/chart.min.js"></script>
+        <script type="text/javascript" src="html/js/lib/common.js"></script>
+        
+        <!-- bxSlider Javascript file -->
+        <script src="html/js/lib/jquery.bxslider.min.js"></script>
+        <!-- bxSlider CSS file -->
+        <link href="html/assets/css/jquery.bxslider.css" rel="stylesheet" />
+        
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $('.bxslider').bxSlider();
+              });
+        </script>
 
         <link rel="stylesheet" type="text/css" href="html/assets/css/font.css">
         <link rel="stylesheet" type="text/css" href="html/assets/css/normalize.css">
@@ -18,13 +35,6 @@
         <link rel="stylesheet" type="text/css" href="html/assets/css/glyphicon.css">
         <link rel="stylesheet" type="text/css" href="catalog/view/theme/default/stylesheet/slideshow.css">
         <link rel="stylesheet" type="text/css" href="catalog/view/theme/default/stylesheet/carousel.css">
-
-
-        <script type="text/javascript" src="html/js/lib/jquery-1.8.2.min.js"></script>
-        <script type="text/javascript" src="html/js/lib/jquery.inputfield.js"></script>
-        <script type="text/javascript" src="html/js/lib/respond.min.js"></script>
-        <script type="text/javascript" src="html/js/lib/chart.min.js"></script>
-        <script type="text/javascript" src="html/js/lib/common.js"></script>
 
         <?php foreach ($scripts as $script) { ?>
         <script type="text/javascript" src="<?php echo $script; ?>"></script>
