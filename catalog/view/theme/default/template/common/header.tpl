@@ -53,7 +53,8 @@
                             <div class="header__account">
                                 <div class="header__login">
                                     <?php if($logged){ ?>
-                                    <p>Welcome! Bekijk je <a href="<?php echo $base; ?>/index.php?route=account/account">account</a> of <a href="<?php echo $base; ?>/index.php?route=account/logout">log uit</a> </p>
+                                    <a href="<?php echo $base; ?>/index.php?route=account/logout">log uit</a>
+                                    <a href="<?php echo $base; ?>/index.php?route=account/account"><div class="header__account-profile-pic" style="background-image: url('<?php echo $base; ?>/html/assets/img/profile-pic.png');"><img src="<?php echo $base; ?>/html/assets/img/profile-pic-overlay.png"/></div></a>
                                     <?php }else { ?>
                                     <p class="login">Welcome visitor you can <a href="<?php echo $base; ?>/index.php?route=account/login">login</a> or <a href="<?php echo $base; ?>/index.php?route=account/register">create an account</a></p>
                                     <?php } ?>
@@ -94,7 +95,7 @@
                     </div>
                 </header>
                 <section class="content">
-                    <div class="inner">
+                    <div class="inner inner--background-overlay">
                         <?php if ($error) { ?>
                         <div class="warning"><?php echo $error ?><img src="catalog/view/theme/default/image/close.png" alt="" class="close" /></div>
                         <?php } ?>

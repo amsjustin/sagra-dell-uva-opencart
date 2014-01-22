@@ -6,7 +6,10 @@ html,
 body {
     height: 100%;
     font-family: 'arapeyregular';
-    background-color: #abdae2;
+    /*background-color: #abdae2;*/
+    background-image: url('../img/background.png');
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 .clear-fix {
@@ -167,7 +170,7 @@ a{
 }
 .header__account {
     float: right;
-    width: 327px;
+    width: 370px;
     position: relative;
 }
 
@@ -188,8 +191,19 @@ a{
 }
 .header__login {
     float: right;
+    padding: 0px 20px;
+    background-color: #abdae2;
+    color: #fff;
+    margin-top: 20px;
 }
-
+.header__login a {
+    color: #fff;
+}
+.header__account-profile-pic {
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+}
 @media (max-width: 767px) {
     .header__logo {
         width: 100%;
@@ -262,7 +276,7 @@ a{
     top: 0px;
     z-index: 9;
     min-width: 255px;
-    margin-top: 35px;
+    margin-top: 70px;
     right: 0;
 }
 #cart .heading a i {
@@ -1024,6 +1038,23 @@ to {
     .footer__col--last {
         margin: 0px 0px 0px 25px; 
     }
+}
+
+.checkout #checkout,
+.checkout #payment-address,
+.checkout #shipping-address,
+.checkout #shipping-method,
+.checkout #payment-method,
+.checkout #confirm {
+    margin: 10px 0px;
+}
+.checkout .checkout-heading {
+    padding: 10px;
+    background-color: #bebebe;
+}
+.checkout .checkout-content {
+    padding: 5px;
+    border: solid 1px #bebebe;
 }
 
 /* ==========================================================================
