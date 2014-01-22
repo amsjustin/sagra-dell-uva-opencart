@@ -3987,3 +3987,7 @@
 >>>>>>> 20d696f824c641d3ed75c8896b7d0b3992febe48
 2014-01-18 11:55:31 - PHP Warning:  unlink(system/cache/cache.language.1389967746): No such file or directory in /Users/moppedijk/Documents/00 Moppedijk/Hva/S02/Blok01/Project04/00 Sagra/sources/sagra-dell-uva-opencart/system/library/cache.php on line 18
 2014-01-18 11:55:31 - PHP Warning:  unlink(system/cache/cache.currency.1389967746): No such file or directory in /Users/moppedijk/Documents/00 Moppedijk/Hva/S02/Blok01/Project04/00 Sagra/sources/sagra-dell-uva-opencart/system/library/cache.php on line 18
+2014-01-22 11:34:13 - PHP Notice:  Undefined index: visual in /Users/moppedijk/Documents/00 Moppedijk/Hva/S02/Blok01/Project04/00 Sagra/sources/sagra-dell-uva-opencart/catalog/view/theme/default/template/account/wishlist.tpl on line 57
+2014-01-22 11:34:14 - PHP Notice:  Undefined index: visual in /Users/moppedijk/Documents/00 Moppedijk/Hva/S02/Blok01/Project04/00 Sagra/sources/sagra-dell-uva-opencart/catalog/view/theme/default/template/account/wishlist.tpl on line 57
+2014-01-22 11:34:14 - PHP Notice:  Undefined index: visual in /Users/moppedijk/Documents/00 Moppedijk/Hva/S02/Blok01/Project04/00 Sagra/sources/sagra-dell-uva-opencart/catalog/view/theme/default/template/account/wishlist.tpl on line 57
+2014-01-22 11:34:14 - PHP Notice:  Undefined index: visual in /Users/moppedijk/Documents/00 Moppedijk/Hva/S02/Blok01/Project04/00 Sagra/sources/sagra-dell-uva-opencart/catalog/view/theme/default/template/account/wishlist.tpl on line 57

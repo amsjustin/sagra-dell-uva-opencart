@@ -250,9 +250,6 @@ a{
         width: 98px;
     }
 }
-.actueel {
-    padding-bottom: 20px;
-}
 #cart .heading {
     float: right;
     margin-top: 15px;
@@ -468,9 +465,8 @@ to {
 .category-menu {
     min-width: 250px;
     background: #fff;
-    padding: 25px 10px;
+    padding: 25px 0px;
     border-bottom: solid 2px #aa5f7e;
-    height: 200px;
 }
 .category-menu ul {
     list-style: none;
@@ -543,7 +539,7 @@ to {
 @media (min-width: 1200px) {
     .category-menu {
         min-width: 250px;
-        padding: 25px 25px;
+        padding: 25px 0px;
     }
 }
 
@@ -552,7 +548,7 @@ to {
 ============================================================================= */
 
 .product-overview {
-    width: 1050px;
+    width: 405px;
     margin: 0px 0px 0px 25px;
     float: right;
 }
@@ -596,7 +592,7 @@ to {
     float: left;
     width: 270px;
     background-color: #fff;
-    padding: 10px 10px 20px 10px;
+    padding: 12px 10px 20px 10px;
     min-height: 210px;
     border-bottom: #918a53 2px solid;
 }
@@ -631,7 +627,7 @@ to {
         width: 300px;
     }
 }
-@media (max-width: 1050px) {
+@media (max-width: 480px) {
     .product-overview {
         width: 100%;
         margin: 0px 0px 0px 25px;
@@ -666,7 +662,7 @@ to {
 }
 @media (min-width: 1200px) {
     .product-overview {
-        width: 1050px;
+        width: 850px;
         margin: 0px 0px 0px 25px;
         float: right;
     }   
@@ -759,6 +755,9 @@ to {
 .product-info__image {
     border-bottom: solid 1px #aa5f7e;
     padding-bottom: 20px;
+}
+.product-info__image .image {
+    display: inline-block;
 }
 .product-info__table {
     margin-top: 20px;
@@ -976,7 +975,26 @@ to {
     width: 250px;
     float: right;
     height: 250px;
-    background-color: #ded592;
+}
+@media (max-width: 480px) {
+    .wijnrek__wine {
+        width: 100%;
+        padding: 25px 0px;
+    }
+    .wijnrek__wine h1 {
+        margin-top: 0px;
+        margin: 25px;
+    }
+    .wijnrek__wine-img {
+        height: auto;
+    }
+    .wijnrek__col-left {
+        margin: 0px 25px;
+    }
+    .wijnrek__col-bottom {
+        width: auto;
+        padding: 25px;
+    }
 }
 
 /* ==========================================================================

@@ -27,7 +27,7 @@
             </div>
             <div class="wijnrek__col-right">
                 <div class="wijnrek__wine-visual">
-                    <canvas id="product-visual-<?php echo $product['product_id']; ?>"></canvas>
+                    <canvas width="250" height="250" id="product-visual-<?php echo $product['product_id']; ?>"></canvas>
                 </div>
             </div>
             <div class="wijnrek__col-bottom">
@@ -45,4 +45,60 @@
     <?php } ?>
 </section>
 <div class="clear-fix"></div>
+<script type="text/javascript">
+    // Creating the data for chart.js
+    // Extend data with new object in wines array
+    var wines = [
+        
+            <?php foreach($products as $product){ ?>
+        {
+                "userData": [65,59,90,81,56,55,40],
+                "id": <?php echo $product['product_id'] ?>,
+                "wineData": [12,24,34,45,56,67,68]
+                },
+
+                <?php } ?>
+        ];
+
+    // Function that generates the chart by array input
+    var createRadarChart = function(array) {
+    console.log(array.id);
+
+    var userChart = array.userData; // userChart data array
+    var wineChart = array.wineData; // wineChart data array
+    var canvasId = "product-visual-" + array.id; // Generate canvas id, has to correspond with the <html> canvas id
+
+    var radarChartData = {
+    labels : ["Eating","Drinking","Sleeping","Designing","Coding","Partying","Running"],
+    datasets : [
+                {
+                fillColor : "rgba(220,220,220,0.5)",
+                strokeColor : "rgba(220,220,220,1)",
+                pointColor : "rgba(220,220,220,1)",
+                pointStrokeColor : "#fff",
+                data : userChart
+            },
+                {
+            fillColor : "rgba(151,187,205,0.5)",
+            strokeColor : "rgba(151,187,205,1)",
+            pointColor : "rgba(151,187,205,1)",
+            pointStrokeColor : "#fff",
+            data : wineChart
+        }
+    ]	
+}
+var myRadar = new Chart(document.getElementById(canvasId).getContext("2d")).Radar(radarChartData,{scaleShowLabels : true, pointLabelFontSize : 1});
+}
+
+// Foreach loop
+var forEach = function(array, action) {
+for(i = 0; i < array.length; i++) {
+action(array[i]);
+}
+}
+
+// Loop trough wines and create radarchart
+forEach(wines, createRadarChart);
+
+</script>
 <?php echo $footer; ?>

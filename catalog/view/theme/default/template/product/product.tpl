@@ -16,11 +16,11 @@
                     <img src="<?php echo $thumb; ?>" title="<?php echo $heading_title; ?>" alt="<?php echo $heading_title; ?>" id="image" />
                 </div>
                 <?php } ?>
+                <canvas id="product-visual" width="200" height="200" class="visual"></canvas>
             </div>
             <?php } ?>
             <div class="product-info__content">
                 <div class="product-info__content-description">
-                    <!--<?php echo $visualizer; ?>-->
                     <?php if ($manufacturer) { ?>
                     <div class="product-info__content-menufacturer">
                         <span>Wijnhuis:</span> <a href="<?php echo $manufacturers; ?>"><?php echo $manufacturer; ?></a><br />
@@ -347,6 +347,58 @@
 });
 });
 //--></script> 
+<script type="text/javascript">
+// Creating the data for chart.js
+// Extend data with new object in wines array
+        var wines = [
+                {
+                "userData": [65,59,90,81,56,55,40],
+                "id": 49,
+                "wineData": [12,24,34,45,56,67,68]                
+            },
+        ];
+        
+        // Function that generates the chart by array input
+        var createRadarChart = function(array) {
+        console.log(array.id);
+
+        var userChart = array.userData; // userChart data array
+        var wineChart = array.wineData; // wineChart data array
+        var canvasId = "product-visual"// Generate canvas id, has to correspond with the <html> canvas id
+
+        var radarChartData = {
+        labels : ["Eating","Drinking","Sleeping","Designing","Coding","Partying","Running"],
+        datasets : [
+                {
+    fillColor : "rgba(220,220,220,0.5)",
+    strokeColor : "rgba(220,220,220,1)",
+    pointColor : "rgba(220,220,220,1)",
+    pointStrokeColor : "#fff",
+    data : userChart
+},
+                {
+fillColor : "rgba(151,187,205,0.5)",
+strokeColor : "rgba(151,187,205,1)",
+pointColor : "rgba(151,187,205,1)",
+pointStrokeColor : "#fff",
+data : wineChart
+}
+]	
+}
+var myRadar = new Chart(document.getElementById(canvasId).getContext("2d")).Radar(radarChartData,{scaleShowLabels : true, pointLabelFontSize : 1});
+}
+
+// Foreach loop
+var forEach = function(array, action) {
+for(i = 0; i < array.length; i++) {
+action(array[i]);
+}
+}
+
+// Loop trough wines and create radarchart
+forEach(wines, createRadarChart);
+
+</script>
 <script type="text/javascript"><!--
 
 $('select[name="profile_id"], input[name="quantity"]').change(function(){
