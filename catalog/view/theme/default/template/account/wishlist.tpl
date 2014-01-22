@@ -54,7 +54,7 @@
         {
                 "userData": [65,59,90,81,56,55,40],
                 "id": <?php echo $product['product_id'] ?>,
-                "wineData": [12,24,34,45,56,67,68]
+                "wineData": [randomize(),randomize(),randomize(),randomize(),randomize(),randomize(),randomize()]
                 },
 
                 <?php } ?>
