@@ -108,13 +108,17 @@ return $returnValue;
 </section>
 
 <script type="text/javascript">
+    function randomize(){
+        return Math.floor(Math.random()*100);
+    }
+    
     // Creating the data for chart.js
     // Extend data with new object in wines array
     var wines = [
         
             <?php foreach($products as $product){ ?>
         {
-                "userData": [65,59,90,81,56,55,40],
+                "userData": [randomize(),randomize(),randomize(),randomize(),randomize(),randomize(),randomize()],
                 "id": <?php echo $product['product_id'] ?>,
                 "wineData": <?php echo $product['visual']; ?>
                 },
